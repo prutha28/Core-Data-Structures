@@ -1,0 +1,8 @@
+package fixed.size.stacks;
+
+public class Stack {
+
+	Array data; 
+	
+	
+}
