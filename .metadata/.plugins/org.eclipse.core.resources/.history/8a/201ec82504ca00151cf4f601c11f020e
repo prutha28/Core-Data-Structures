@@ -1,0 +1,17 @@
+package arrays.unsorted;
+
+public class ArraysTest {
+
+	public static void main(String[] args) {
+		
+		Array arr = new Array() ;
+		arr.add(10) ;
+		arr.add(20) ;
+		arr.insertAtStart(100) ;
+		arr.insertAtStart(109) ;
+		
+		System.out.println("Array Contents : ");
+		arr.showContents() ;
+	}
+
+}

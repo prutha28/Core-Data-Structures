@@ -1,0 +1,149 @@
+package arrays.unsorted;
+
+public class Array implements IArray
+{
+	// ( Since this a static array, this remains fixed, once an array is initialized)
+	public static int SIZE = 10 ;
+
+	int[] data ;
+
+	//	Number of elements in the array at any point of time.
+	int count ; 
+
+	/**
+	 * No args Constructor.
+	 */
+	public Array() {
+		this.count = 0 ;
+		this.data = new int[ SIZE ] ;
+	}
+
+	/**
+	 * This method inserts the element at the end of the array.
+	 * 
+	 * @param element
+	 * @return true if the element was inserted successfully
+	 * false if the element was not inserted ( due to array index out of bounds)
+	 */
+
+	public boolean add(int element) {
+		return insertAtEnd(element) ;
+	}
+
+	@Override
+	public boolean insertAtStart(int element) {
+		return insertAtIndex(element, 0) ;
+	}
+
+	public boolean insertAtEnd(int element) {
+		return insertAtIndex(element, this.count) ;
+	}
+
+	public boolean insertAtIndex(int element, int index) {
+
+		if( index < 0 || index > SIZE){
+			throw new ArrayIndexOutOfBoundsException("Invalid Index :" + index ) ;
+		}
+
+		if(isFull())	{
+			System.out.println("The array is full.") ;		
+			return false;
+		}
+		else {
+			
+			int i = count - 1 ;
+			while( i >= index){
+				data[ i + 1 ] = data[ i ] ;
+				i-- ;
+			}
+			data[ index ] = element ;
+			count++ ;
+			return true;
+		}
+	}
+		@Override
+		public int elementAtIndex(int index) {
+			return data[index];
+		}
+
+		@Override
+		public int search(int element) {
+			int i = 0 ;
+			while( i < count ){
+				if( data[i] ==  element){
+					return i ; 
+				}
+			}
+			return -1;
+		}
+
+		public int delete(int element) {
+			int index = this.search(element) ;
+			if( index == -1 ){
+				System.out.println("Element not Found.");
+				return -1 ;
+			}
+			return deleteElementAtIndex(index) ; 
+		}
+
+		public int deleteElementAtIndex(int index) {
+			
+			if( index < 0 || index > SIZE || index >= count){
+				throw new ArrayIndexOutOfBoundsException() ;
+			}
+			
+			int element = elementAtIndex(index) ;
+			
+			int i = index ;
+			while( i <= count-2){
+				data[ i ] = data[ i+1] ;
+				i++ ;
+			}
+			return element ;
+		}
+
+		@Override
+		public int[] deleteAll(int element) {
+			// intODO Auto-generated method stub
+			return null;
+		}
+
+		@Override
+		public int deleteFromBegin() {
+			// intODO Auto-generated method stub
+			return 0;
+		}
+
+		@Override
+		public int deleteFromEnd() {
+			// intODO Auto-generated method stub
+			return 0;
+		}
+
+		@Override
+		public int binarySearch(int element, int beginIndex, int endIndex) {
+			// intODO Auto-generated method stub
+			return 0;
+		}
+
+		@Override
+		public int[] insertionSort(int[] arr) {
+			// intODO Auto-generated method stub
+			return null;
+		}
+
+		private boolean isEmpty(){
+			return (this.count == 0 ?  true: false); 
+		}	
+
+		private boolean isFull(){
+			return ( this.count == SIZE) ;
+		}
+
+		public void showContents() {
+			for (int i = 0; i < this.count; i++) {
+				System.out.print( data[ i ] + " ");
+			}
+			System.out.println();
+		}
+	}

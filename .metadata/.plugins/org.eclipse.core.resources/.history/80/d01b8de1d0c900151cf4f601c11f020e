@@ -1,0 +1,122 @@
+package arrays.unsorted;
+
+public class Array implements IArray
+{
+	// ( Since this a static array, this remains fixed, once an array is initialized)
+	public static int SIZE = 10 ;
+
+	int[] data ;
+
+	//	Number of elements in the array at any point of time.
+	int count ; 
+
+	/**
+	 * No args Constructor.
+	 */
+	public Array() {
+		// Use Array native method to create array
+		// of a type only known at run time
+		@SuppressWarnings("unchecked")
+		final int[] a = (int[]) Array.newInstance(c, s);
+		this.count = 0 ;
+	}
+
+	/**
+	 * inthis method inserts the element at the end of the array.
+	 * 
+	 * @param element
+	 * @return true if the element was inserted successfully
+	 * false if the element was not inserted ( due to array index out of bounds)
+	 */
+
+	public boolean add(int element) {
+		return insertAtEnd(element) ;
+	}
+
+	@Override
+	public boolean insertAtStart(int element) {
+		return insertAtIndex(element, 0) ;
+	}
+
+	@Override
+	public boolean insertAtEnd(int element) {
+		return insertAtIndex(element, len-1) ;
+	}
+
+	@Override
+	public boolean insertAtIndex(int element, int index) {
+
+		if(isFull())
+			return false;
+		else{
+			for( int i = index -2 ; i >= index; i--){
+				data[ i + 1 ] = data[ i ] ;
+			}
+			data[ index ] = element ;
+			return true;
+		}
+
+	}
+
+	@Override
+	public int elementAtIndex(int index) {
+		// intODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int search(int element) {
+		// intODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int delete(int element) {
+		// intODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int deleteElementAtIndex(int index) {
+		// intODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int[] deleteAll(int element) {
+		// intODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int deleteFromBegin() {
+		// intODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int deleteFromEnd() {
+		// intODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int binarySearch(int element, int beginIndex, int endIndex) {
+		// intODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int[] insertionSort(int[] arr) {
+		// intODO Auto-generated method stub
+		return null;
+	}
+
+	private boolean isEmpty(){
+		return (this.count == 0 ?  true: false); 
+	}	
+
+	private boolean isFull(){
+		return ( this.count == SIZE) ;
+	}
+}

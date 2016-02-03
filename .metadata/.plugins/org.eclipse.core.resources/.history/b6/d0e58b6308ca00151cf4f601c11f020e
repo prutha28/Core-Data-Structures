@@ -1,0 +1,34 @@
+package arrays.unsorted;
+
+public class ArraysTest {
+
+	public static void main(String[] args) {
+		
+		Array arr = new Array() ;
+		
+		// Insertions
+		arr.add(10) ;
+		arr.add(20) ;
+		arr.insertAtStart(100) ;
+		arr.insertAtStart(109) ;
+		arr.insertAtEnd(99) ;
+		arr.add(66) ;
+		arr.insertAtIndex(33, 3 ) ;
+		
+		System.out.println("Array Contents : ");
+		arr.showContents() ;
+		
+		// Searching
+		
+		System.out.println("The element at index 4 is " + arr.elementAtIndex(4)) ;
+		System.out.println("The element 33 was found at index " + arr.search(33));
+		System.out.println("The element 3 was found at index " + arr.search(3));
+		arr.add(10) ;
+		System.out.println("The element 10 was found at indices : " + arr.searchAll(10));
+		// Deleting
+		
+		
+		
+	}
+
+}

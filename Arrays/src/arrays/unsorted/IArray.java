@@ -1,27 +1,29 @@
 package arrays.unsorted;
 
+import java.util.List;
+
 
 /** 
 
-	This stores an array of elements of the specified type T.
+	inthis stores an array of elements of the specified type int.
 
 **/
 
-public interface IArray<T>{
+public interface IArray{
 
 	/**
-	 * This method inserts the element at the end of the array.
+	 * inthis method inserts the element at the end of the array.
 	 * 
 	 * @param element
 	 * @return true if the element was inserted successfully
 	 * false if the element was not inserted ( due to array index out of bounds)
 	 */
-	public boolean insert(int element) ;
+	public boolean add(int element) ;
 	public boolean insertAtStart( int element) ;
 	public boolean insertAtEnd( int element) ;
 
 	/**
-	 * This method inserts the specified element at the specified index 
+	 * inthis method inserts the specified element at the specified index 
 	 * @param element
 	 * @param index
 	 * @return
@@ -29,7 +31,7 @@ public interface IArray<T>{
 	public boolean insertAtIndex( int element, int index ) ;
 	
 	/**
-	 * This returns the element at the specified index.
+	 * inthis returns the element at the specified index.
 	 * @param index
 	 * @return
 	 */
@@ -43,7 +45,8 @@ public interface IArray<T>{
 	 * @return
 	 */
 	public int search( int element ) ;
-	
+	public List<Integer> searchAll(int element) ;
+		
 	/**
 	 * Deletes the first occurrence of the specified element
 	 * @param element
@@ -52,17 +55,18 @@ public interface IArray<T>{
 	public int delete( int element) ;
 	
 	public int deleteElementAtIndex( int index ) ;
+	
 	/**
 	 * This method deletes all the occurrences of the specified element.
 	 * @param element
 	 * @return the array of indices of elements that were removed.
 	 */
-	public int[] deleteAll( int element ) ;
+	public Integer[] deleteAllOccurences( int element ) ;
 
 	public int deleteFromBegin() ;
 	public int deleteFromEnd() ;
 	
 	public int binarySearch( int element, int beginIndex, int endIndex) ;
 	
-	
+	public int[] insertionSort( int[] arr ) ;
 }

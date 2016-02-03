@@ -1,0 +1,15 @@
+package arrays;
+
+
+/** 
+
+	This stores an array of elements of the specified type T.
+
+**/
+
+public interface IArray<T>{
+
+	
+
+
+}

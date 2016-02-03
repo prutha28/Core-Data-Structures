@@ -1,91 +1,183 @@
 package arrays.unsorted;
 
-public class Array<T> implements IArray<T>
+import java.util.ArrayList;
+import java.util.List;
+
+public class Array implements IArray
 {
-	T[] data ;
-	int len ;
-	
+	// ( Since this a static array, this remains fixed, once an array is initialized)
+	public static int SIZE = 10 ;
+
+	int[] data ;
+
+	//	Number of elements in the array at any point of time.
+	int count ; 
+
 	/**
-	 * NO Args Constructor.
+	 * No args Constructor.
 	 */
-	public Array(){
-		this.data = null ;
-		this.len = 0 ;
+	public Array() {
+		this.count = 0 ;
+		this.data = new int[ SIZE ] ;
 	}
 
-	@Override
-	public boolean insert(int element) {
-		// TODO Auto-generated method stub
-		return false;
+	/**
+	 * This method inserts the element at the end of the array.
+	 * 
+	 * @param element
+	 * @return true if the element was inserted successfully
+	 * false if the element was not inserted ( due to array index out of bounds)
+	 */
+
+	public boolean add(int element) {
+		return insertAtEnd(element) ;
 	}
 
 	@Override
 	public boolean insertAtStart(int element) {
-		// TODO Auto-generated method stub
-		return false;
+		return insertAtIndex(element, 0) ;
 	}
 
-	@Override
 	public boolean insertAtEnd(int element) {
-		// TODO Auto-generated method stub
-		return false;
+		return insertAtIndex(element, this.count) ;
 	}
 
-	@Override
 	public boolean insertAtIndex(int element, int index) {
-		// TODO Auto-generated method stub
-		return false;
-	}
 
-	@Override
+		if( index < 0 || index > SIZE){
+			throw new ArrayIndexOutOfBoundsException("Invalid Index :" + index ) ;
+		}
+
+		if(isFull())	{
+			System.out.println("The array is full.") ;		
+			return false;
+		}
+		else {
+
+			int i = count - 1 ;
+			while( i >= index){
+				data[ i + 1 ] = data[ i ] ;
+				i-- ;
+			}
+			data[ index ] = element ;
+			count++ ;
+			return true;
+		}
+	}
 	public int elementAtIndex(int index) {
-		// TODO Auto-generated method stub
-		return 0;
+		return data[index];
 	}
 
-	@Override
 	public int search(int element) {
-		// TODO Auto-generated method stub
-		return 0;
+		int i = 0 ;
+		while( i < count ){
+			if( data[i] ==  element){
+				return i ; 
+			}
+			i++ ;
+		}
+		return -1;
 	}
 
-	@Override
+	public List<Integer> searchAll(int element) {
+		int i = 0 ;
+		List<Integer> indices = new ArrayList<Integer>() ;
+
+		while( i < count ){
+			if( data[i] ==  element)
+				indices.add(i) ;
+			i++ ;
+		}
+		return indices ;
+	}
+
 	public int delete(int element) {
-		// TODO Auto-generated method stub
-		return 0;
+		int index = this.search(element) ;
+		if( index == -1 ){
+			System.out.println("Element not Found.");
+			return -1 ;
+		}else{
+			deleteElementAtIndex(index) ;
+		}
+		return index ; 
 	}
 
-	@Override
 	public int deleteElementAtIndex(int index) {
-		// TODO Auto-generated method stub
-		return 0;
+
+		if( index < 0 || index > SIZE || index >= count){
+			throw new ArrayIndexOutOfBoundsException() ;
+		}
+
+		int element = elementAtIndex(index) ;
+
+		int i = index ;
+		while( i <= count-2){
+			data[ i ] = data[ i+1] ;
+			i++ ;
+		}
+		data[ i ] = 0 ;
+		count-- ;
+		return element ;
 	}
 
-	@Override
-	public int[] deleteAll(int element) {
-		// TODO Auto-generated method stub
-		return null;
+	/**
+	 * This method deletes all the occurrences of the specified element.
+	 * @param element
+	 * @return the array of indices of elements that were removed.
+	 * 
+	 * NOTE : Fetching all the indices first & then deleting the occurrences will not work
+	 * i.e.
+	 * 		List<Integer> indices = searchAll( element) ;
+			for (Integer index : indices) {
+				deleteElementAtIndex(index) ;
+			}
+			
+			Because when the first occurrence is deleted, the index of the subsequent 
+			occurrences automatically get decremented.
+	 */
+	public Integer[] deleteAllOccurences(int element) {		
+		List<Integer> indices = searchAll(element) ;
+		int index;
+		for (int i = 0; i < count; i++) {
+			index = search(element) ;
+			if( index != -1)
+				delete(element) ;
+		}
+		return indices.toArray(new Integer[indices.size()]);
 	}
 
-	@Override
 	public int deleteFromBegin() {
-		// TODO Auto-generated method stub
-		return 0;
+		return deleteElementAtIndex(0);
 	}
 
-	@Override
 	public int deleteFromEnd() {
-		// TODO Auto-generated method stub
-		return 0;
+		return deleteElementAtIndex(count-1);
 	}
 
 	@Override
 	public int binarySearch(int element, int beginIndex, int endIndex) {
-		// TODO Auto-generated method stub
+		// intODO Auto-generated method stub
 		return 0;
 	}
-	
-	
-	
-	
+
+	@Override
+	public int[] insertionSort(int[] arr) {
+		// intODO Auto-generated method stub
+		return null;
+	}
+
+	private boolean isEmpty(){
+		return (this.count == 0 ?  true: false); 
+	}	
+
+	private boolean isFull(){
+		return ( this.count == SIZE) ;
+	}
+
+	public void showContents() {
+		for (int i = 0; i < this.count; i++) {
+			System.out.print( data[ i ] + " ");
+		}
+		System.out.println();
+	}
 }

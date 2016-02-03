@@ -1,0 +1,19 @@
+package arrays;
+
+public class Array<T> implements IArray<T>
+{
+	T[] data ;
+	int len ;
+	
+	/**
+	 * NO Args Constructor.
+	 */
+	public Array(){
+		this.data = null ;
+		this.len = 0 ;
+	}
+	
+	
+	
+	
+}

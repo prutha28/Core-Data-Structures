@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;arrays&apos; to &apos;arrays.unsorted&apos;&#x0A;- Original project: &apos;Arrays&apos;&#x0A;- Original element: &apos;Arrays/src/arrays&apos;&#x0A;- Renamed element: &apos;Arrays/src/arrays.unsorted&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;arrays&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;arrays" name="arrays.unsorted" qualified="false" references="true" stamp="1454362327806" textual="false" version="1.0"/>
+</session>

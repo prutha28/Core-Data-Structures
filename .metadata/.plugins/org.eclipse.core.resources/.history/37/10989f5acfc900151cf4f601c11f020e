@@ -1,0 +1,116 @@
+package arrays.unsorted;
+
+public class Array<T> implements IArray<T>
+{
+	T[] data ;
+	// Number of elements in the array 
+	// ( Since this a static array, this remains fixed, once an array is initialized)
+	int len ; 
+	
+	/**
+	 * No args Constructor.
+	 */
+	public Array(){
+		this.data = null ;
+		this.len = 0 ;
+	}
+
+	/**
+	 * This method inserts the element at the end of the array.
+	 * 
+	 * @param element
+	 * @return true if the element was inserted successfully
+	 * false if the element was not inserted ( due to array index out of bounds)
+	 */
+
+	public boolean add(T element) {
+		return insertAtEnd(element) ;
+	}
+
+	@Override
+	public boolean insertAtStart(T element) {
+		return insertAtIndex(element, 0) ;
+	}
+
+	@Override
+	public boolean insertAtEnd(T element) {
+		return insertAtIndex(element, len-1) ;
+	}
+
+	@Override
+	public boolean insertAtIndex(T element, int index) {
+		
+		if(isFull())
+			return false;
+		else{
+			for( int i = index -2 ; i >= index; i--){
+				data[ i + 1 ] = data[ i ] ;
+			}
+			data[ index ] = element ;
+			return true;
+		}
+		
+	}
+
+	@Override
+	public int elementAtIndex(int index) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int search(int element) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int delete(int element) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int deleteElementAtIndex(int index) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int[] deleteAll(int element) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int deleteFromBegin() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int deleteFromEnd() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int binarySearch(int element, int beginIndex, int endIndex) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int[] insertionSort(int[] arr) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	private boolean isEmpty(){
+		return (this.len == 0 ?  true: false); 
+	}	
+	
+	private boolean isFull(){
+		return ( this.len)
+	}
+}
