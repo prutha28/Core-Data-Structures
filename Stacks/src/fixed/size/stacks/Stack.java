@@ -12,22 +12,50 @@ public class Stack implements IStack {
 	}
 
 	public void push(int element) {
-		
+		if( isFull())
+			System.out.println("Stack is full, cant push more elements.");
+		else{
+			top++ ;
+			data[ top ] = element ;
+		}
 	}
 
 	public int pop() {
-		return 0;
+		if( isEmpty()){
+			System.out.println("Stack is empty, nothing to pop.");
+			return -1;
+		}
+		int popped = data[ top ];
+		top-- ;
+		return popped ;
 	}
 
 	public int top() {
-		return 0;
+		return data[ top ];
 	}
 
 	public int size() {
-		return 0;
+		return ( top + 1);
 	}
 
 	public void showContents() {
-		
+		int i = top ;
+		if( i==-1){
+			System.out.println("Stack is Empty!");
+			return ;
+		}
+		System.out.println("Stack top-down.");
+		while( i > -1){
+			System.out.println( data[i] );
+			i-- ;
+		}
+	}
+
+	public boolean isEmpty() {
+		return ( top == -1 ? true : false );
+	}
+
+	public boolean isFull() {
+		return (size()== SIZE? true : false) ;
 	}
 }

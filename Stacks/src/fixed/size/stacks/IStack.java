@@ -12,4 +12,8 @@ public interface IStack {
 	
 	public void showContents() ;
 	
+	public boolean isEmpty() ;
+	
+	public boolean isFull() ;
+	
 }
