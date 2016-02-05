@@ -1,0 +1,10 @@
+package arrays.sorted;
+
+public class SortedArrayTest {
+
+	public static void main(String[] args) {
+
+		SortedArray sa = new SortedArray() ;
+	}
+
+}

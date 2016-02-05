@@ -1,66 +1,181 @@
 package arrays.sorted;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 
-public class SortedArray implements IArray
+public class SortedArray
 {
+	String[] data ;
+	int count ;
+	private static int SIZE = 10 ;
 
-	public boolean add(int element) {
-		return false;
+	public SortedArray(){
+		data = new String[ SIZE ] ;
+//		for (int i = 0; i < SIZE; i++) {
+//			data[ i ] = "\0" ;
+//		}
+		count = 0 ;
 	}
 
-	public boolean insertAtStart(int element) {
-		return false;
+	// TODO
+	public int sortedInsert( String element ){
+		int mid = count /2 ;
+		int begin = 0 ;
+		int end = count -1 ;
+		int i ;
+
+		while( begin < end ){
+			if( element.equals(data[mid])){
+				i = mid ;
+				while( i < end ){
+					data[ i +1] = data[ i ] ;
+					i++ ;
+				}
+				return mid ;
+			}else if( element.compareTo(data[mid]) < -1){
+				end = mid ;
+			}else{
+				begin = mid +1 ;
+			}
+		}
+
+		return mid ;
 	}
 
-	public boolean insertAtEnd(int element) {
-		return false;
+	/**
+	 * This method inserts the new element at the correct position 
+	 * in the sorted array and returns the index of the newly inserted element.
+	 * @param element
+	 * @return
+	 * @throws FullArrayException 
+	 */
+	public int add( String element) throws FullArrayException {
+		
+		if( isFull()){
+			throw new FullArrayException("Array is full, cannot add more.");
+		}
+		int i = 0 ;
+		while( i >= 0 && element.compareTo(data[i]) < 0 ){
+			if( data[i] == null){
+				data[i] = element ;
+			}
+			data[ i + 1 ] = data[ i ] ;
+			i-- ;
+		}
+		data[ i +1 ] = element ;
+		count++ ;
+		return (i+1);
 	}
 
-	public boolean insertAtIndex(int element, int index) {
-		return false;
+	private boolean isFull() {
+		return ( count >= SIZE );
 	}
 
-	public int elementAtIndex(int index) {
-		return 0;
+	private boolean isEmpty() {
+		return ( count == 0  );
+	}
+	public String elementAtIndex(int index) {
+		if( index < 0 || index >= count){
+			throw new ArrayIndexOutOfBoundsException(index) ;
+		}
+		return data[ index];
+	}
+	/**
+	 * This method traverses the array till the last held element( given by count)
+	 * and returns the index, where the element was found, -1 otherwise. 
+	 * @param element
+	 * @return
+	 * @throws EmptyArrayException 
+	 */
+	public int search( String element) throws EmptyArrayException {
+		
+		if( isEmpty()){
+			throw new EmptyArrayException("Array is empty, nothing to search.") ;
+		}
+		for (int i = 0; i < count; i++) {
+			if( element.equals(data[i]))
+				return i;
+		}
+		return -1 ;
 	}
 
-	public int search(int element) {
-		return 0;
+	public List<Integer> searchAll(String element) throws EmptyArrayException {
+
+		if( isEmpty()){
+			throw new EmptyArrayException("Array is empty, nothing to search.") ;
+		}
+		List<Integer> indices = new ArrayList<Integer>() ;
+		for (int i = 0; i < count; i++) {
+			if( element.equals( data[i] ))
+				indices.add( i ) ;
+		}
+		return indices ;
 	}
 
-	public List<Integer> searchAll(int element) {
-		return null;
+	public String delete( String element) throws EmptyArrayException {
+		int index = search(element) ;
+		if( index == -1 )
+			throw new NoSuchElementException("The element " + element + " was not found.") ;
+		else
+			return deleteElementAtIndex(index) ;
 	}
 
-	public int delete(int element) {
-		return 0;
+	public String deleteElementAtIndex(int index) {
+
+		if( index < 0 || index >= count){
+			throw new ArrayIndexOutOfBoundsException("Invalid Index : " + index ) ;
+		}
+		int i = index ;
+		String deleted = elementAtIndex(index) ;
+		while( i < count ){
+			data[ i ] = data[ i + 1 ] ;
+			i-- ;
+		}
+		return deleted ;
 	}
 
-	public int deleteElementAtIndex(int index) {
-		return 0;
+	/**
+	 * This method deletes all the occurrences of the element in teh array & returns an array of deleted elements 
+	 * @param element
+	 * @return
+	 * @throws EmptyArrayException 
+	 */
+	public List<String> deleteAllOccurences(String element) throws EmptyArrayException {
+		int index ;
+		List<String> deleted = new ArrayList<String>() ;
+		int i = 0 ;
+
+		while( i < count){
+			index = search(element) ;
+
+			if( index !=-1)
+				deleted.add(deleteElementAtIndex(index)) ;
+		}
+		i-- ;
+		return deleted ;
 	}
 
-	public Integer[] deleteAllOccurences(int element) {
-		return null;
+	public String deleteFromBegin() throws EmptyArrayException {
+		if( count == 0 ){
+			throw new EmptyArrayException("Array is empty, nothing to delete!") ; 
+		}
+		return deleteElementAtIndex(0) ;
 	}
 
-	public int deleteFromBegin() {
-		return 0;
-	}
-
-	public int deleteFromEnd() {
-		return 0;
+	public String deleteFromEnd() {
+		return deleteElementAtIndex(count-1) ;
 	}
 
 	public int binarySearch(int element, int beginIndex, int endIndex) {
 		return 0;
 	}
-
-	public int[] insertionSort(int[] arr) {
-		return null;
+	
+	public void showContents(){
+		for (int i = 0; i < count; i++) {
+			System.out.print( data[ i ] + " " );
+		}
+		System.out.println();
 	}
-	
-	
 }

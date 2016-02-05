@@ -1,0 +1,12 @@
+package insertion.sort;
+
+public class MergeSort {
+
+	String[] arr = { "mary", "john", "jane" , "ana" , "peter", "heena", "josh" , "nathan", "meredith", "Derek" }; 
+	
+	public static void main(String[] args) {
+	
+
+	}
+
+}

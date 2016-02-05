@@ -1,0 +1,125 @@
+package arrays.sorted;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class SortedArray
+{
+	String[] data ;
+	int count ;
+	private static int SIZE = 10 ;
+
+	public SortedArray(){
+		data = new String[ SIZE ] ;
+		count = 0 ;
+	}
+
+	public int add( String element) {
+
+		int i = 0 ;
+		while( i >= 0 && element.compareTo(data[i]) > 0 ){
+			data[ i + 1 ] = data[ i ] ;
+			i-- ;
+		}
+		data[ i +1 ] = element ;
+		count++ ;
+		return (i+1);
+	}
+
+	@Deprecated
+	public boolean insertAtStart(int element) {
+		return false;
+	}
+	@Deprecated
+	public boolean insertAtEnd(int element) {
+		return false;
+	}
+
+	// This kind on insertion is not possible in case of a sorted array
+	@Deprecated
+	public boolean insertAtIndex(int element, int index) {
+		return false;
+	}
+
+	public String elementAtIndex(int index) {
+		return data[ index];
+	}
+	/**
+	 * This method traverses the array till the last held element( given by count)
+	 * and returns the index, where the element was found, -1 otherwise. 
+	 * @param element
+	 * @return
+	 */
+	public int search( String element) {
+		for (int i = 0; i < count; i++) {
+			if( element.equals(data[i]))
+				return i;
+		}
+		return -1 ;
+	}
+
+	public List<Integer> searchAll(String element) {
+
+		List<Integer> indices = new ArrayList<Integer>() ;
+		for (int i = 0; i < count; i++) {
+			if( element.equals( data[i] ))
+				indices.add( i ) ;
+		}
+		return indices ;
+	}
+
+	public int delete(int element) {
+		return 0;
+	}
+
+	public String deleteElementAtIndex(int index) {
+		int i = index ;
+		String deleted = elementAtIndex(index) ;
+		while( i < count ){
+			data[ i ] = data[ i + 1 ] ;
+			i-- ;
+		}
+		return deleted ;
+	}
+
+	public String[] deleteAllOccurences(String element) {
+		int index ;
+		String[] result = data ;
+		int i = 0 ;
+
+		while( i < count){
+			index = search(element) ;
+
+			if( index == -1)
+				return result ;
+			else{
+				deleteElementAtIndex(index) ;
+			}
+			i-- ;
+		}
+		return result;
+	}
+
+	public String deleteFromBegin() {
+		String deleted = elementAtIndex(0) ; 
+		deleteElementAtIndex(0) ;
+		return deleted ;
+	}
+
+	public String deleteFromEnd() {
+		String deleted = elementAtIndex(count-1) ;
+		deleteElementAtIndex(count-1) ;
+		return deleted ;
+	}
+
+	public int binarySearch(int element, int beginIndex, int endIndex) {
+		return 0;
+	}
+
+	public int[] insertionSort(int[] arr) {
+		return null;
+	}
+
+
+}

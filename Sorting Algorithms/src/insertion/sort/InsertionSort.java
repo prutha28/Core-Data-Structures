@@ -1,5 +1,10 @@
 package insertion.sort;
 
+/**
+ * 
+ * @author prutha
+ *
+ */
 public class InsertionSort {
 
 	static int[] arr = { 23,3, 7, 99 , 111, 10000, 6 } ;
