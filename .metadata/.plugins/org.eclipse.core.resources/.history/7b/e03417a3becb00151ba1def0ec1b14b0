@@ -1,0 +1,22 @@
+package insertion.sort;
+
+public class InsertionSort {
+
+	int[] arr = { 23,3, 7, 99 , 111, 10000, 6 } ;
+	
+	public static void main(String[] args) {
+		
+		print() ;
+		sort() ;
+		print() ;
+	}
+
+	private static void sort() {
+		
+	}
+
+	private static void print() {
+		
+	}
+
+}

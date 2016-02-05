@@ -69,4 +69,5 @@ public interface IArray{
 	public int binarySearch( int element, int beginIndex, int endIndex) ;
 	
 	public int[] insertionSort( int[] arr ) ;
+	public void showContents();
 }

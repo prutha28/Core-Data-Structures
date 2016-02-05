@@ -1,0 +1,11 @@
+package dynamic.arrays;
+
+public class DynamicArraysTest {
+
+	public static void main(String[] args) {
+
+		IArray arr = new DynamicArray( 5, 3 ) ;
+		
+	}
+
+}

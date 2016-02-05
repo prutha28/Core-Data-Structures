@@ -1,0 +1,15 @@
+package dynamic.arrays;
+
+public class DynamicArraysTest {
+
+	public static void main(String[] args) {
+
+		IArray arr = new DynamicArray( 5, 3 ) ;
+		arr.add( 40 ) ;
+		arr.add( 10 ) ;
+		arr.add( 78 ) ;
+		arr.insertAtEnd(21) ;
+		arr.insertAtIndex(0, 99) ;
+	}
+
+}

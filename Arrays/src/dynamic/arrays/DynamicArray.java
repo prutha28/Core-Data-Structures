@@ -10,6 +10,7 @@ public class DynamicArray implements IArray {
 	public int count ; 
 	public int data[] ;
 	public int incrementValue ;
+	public int size ;
 	public static int INITIAL_SIZE = 10 ;
 	private static final int DEFAULT_INCREMENT_VALUE = 5;
 	private static final int MULTIPLIER = 2 ;
@@ -24,37 +25,43 @@ public class DynamicArray implements IArray {
 
 	public DynamicArray( int size, int incrementValue ){
 		this.count = 0 ;
+		this.size = size ;
 		this.incrementValue = incrementValue ;
 		this.data = new int[ size ] ;
 	}
 
 	public boolean add(int element) {
-		return insertAtIndex(element, count-1) ;
+		return insertAtIndex( count, element) ;
 	}
 
 	public boolean insertAtStart(int element) {
-		return insertAtIndex(element, 0) ;
+		return insertAtIndex( 0, element ) ;
 	}
 
 	public boolean insertAtEnd(int element) {
-		return insertAtIndex(element, count-1) ;
+		return insertAtIndex( count, element ) ;
 	}
 
-	public boolean insertAtIndex(int element, int index) {
+	public boolean insertAtIndex( int index, int element) {
 		if( isFull()){
-			resize();
+			data = resize();
 		}
+
+		if( index < 0 ){
+			throw new ArrayIndexOutOfBoundsException("Invalid Index :" + index ) ;
+		}
+
 		int i = count -1 ;
 		while( i >= index ){
 			data[i+1] = data[i] ;
-			i++ ;
+			i-- ;
 		}
 		data[ index ] = element ;
 		count++ ;
 		return true;
 	}
 
-	private void resize() {
+	private int[] resize() {
 		System.out.println("Resizing ... ");
 		// Step 1: Initialize a new array with new size = old size + incr value.
 		int newData[] = new int[ INITIAL_SIZE + incrementValue] ;
@@ -70,6 +77,8 @@ public class DynamicArray implements IArray {
 		for( int j = i; j < newData.length; j++){
 			newData[ j ] = 0;
 		}
+		
+		return newData ;
 	}
 
 	public int elementAtIndex(int index) {
@@ -147,10 +156,17 @@ public class DynamicArray implements IArray {
 	}
 
 	private boolean isFull(){
-		return ( count % INITIAL_SIZE == 0 ) ; 
+		return ( count >= size && count % size == 0 ) ; 
 	}
 
 	private boolean isEmpty(){
 		return( count == 0 ? true : false ) ;
+	}
+	
+	public void showContents(){
+		for (int i = 0; i < data.length; i++) {
+			System.out.print( data[ i ] + " " );
+		}
+		System.out.println();
 	}
 }

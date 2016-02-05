@@ -1,0 +1,170 @@
+package dynamic.arrays;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class DynamicArray implements IArray {
+
+
+	// Keeps a count of the actual no of elements in the array at any given time.
+	public int count ; 
+	public int data[] ;
+	public int incrementValue ;
+	public static int INITIAL_SIZE = 10 ;
+	private static final int DEFAULT_INCREMENT_VALUE = 5;
+	private static final int MULTIPLIER = 2 ;
+
+	public DynamicArray(){
+		this(INITIAL_SIZE, DEFAULT_INCREMENT_VALUE) ;
+	}
+
+	public DynamicArray( int size ){
+		this( size, DEFAULT_INCREMENT_VALUE) ;
+	}
+
+	public DynamicArray( int size, int incrementValue ){
+		this.count = 0 ;
+		this.incrementValue = incrementValue ;
+		this.data = new int[ size ] ;
+	}
+
+	public boolean add(int element) {
+		return insertAtIndex( count, element) ;
+	}
+
+	public boolean insertAtStart(int element) {
+		return insertAtIndex( 0, element ) ;
+	}
+
+	public boolean insertAtEnd(int element) {
+		return insertAtIndex( count, element ) ;
+	}
+
+	public boolean insertAtIndex( int index, int element) {
+		if( isFull()){
+			resize();
+		}
+
+		if( index < 0 ){
+			throw new ArrayIndexOutOfBoundsException("Invalid Index :" + index ) ;
+		}
+
+		int i = count -1 ;
+		while( i >= index ){
+			data[i+1] = data[i] ;
+			i-- ;
+		}
+		data[ index ] = element ;
+		count++ ;
+		return true;
+	}
+
+	private int[] resize() {
+		System.out.println("Resizing ... ");
+		// Step 1: Initialize a new array with new size = old size + incr value.
+		int newData[] = new int[ INITIAL_SIZE + incrementValue] ;
+		// Alternately, we can do
+		// int newData[] = new int[ MULTIPLIER * INITIAL_SIZE ] ;
+		// Step 2: Copy the contents into the new array.
+		int i = 0 ;
+		while( i < count) {
+			newData[ i ] = data[ i ] ;
+			i++ ;
+		}
+		// Step 3: Make the rest 0
+		for( int j = i; j < newData.length; j++){
+			newData[ j ] = 0;
+		}
+		
+		return newData ;
+	}
+
+	public int elementAtIndex(int index) {
+		if( isEmpty()){
+			System.out.println("Array is empty.");
+			return -1 ;
+		}
+		return data[ index ];
+	}
+
+	public int search(int element) {
+		for (int i = 0; i < count; i++) {
+			if( element == data[i]){
+				return i ;
+			}
+		}
+		return -1 ;
+	}
+
+	public List<Integer> searchAll(int element) {
+		List<Integer> indices = new ArrayList<Integer>() ;
+		for (int i = 0; i < count; i++) {
+			if( data[i] == element ){
+				indices.add(i) ;
+			}
+		}
+		return indices ;
+	}
+
+	public int delete(int element) {
+		int index = search( element) ;
+		if( index == -1){
+			System.out.println("Element not found.");
+		}
+		return deleteElementAtIndex(index);
+	}
+
+	public int deleteElementAtIndex(int index) {
+		return 0;
+	}
+
+	public Integer[] deleteAllOccurences(int element) {
+		return null;
+	}
+
+	public int deleteFromBegin() {
+		int deleted ;
+		if( isEmpty()){
+			System.out.println("Array is empty, nothing to delete.") ;
+			deleted = -1 ;
+		}else{
+			deleted = data[0] ;
+			int index = 0 ;
+			while( index < count-1){
+				data[ index ] = data[ index + 1 ] ;
+				index++ ;
+			}
+			count-- ;
+		}
+		return deleted ;
+	}
+
+	public int deleteFromEnd() {
+		int deleted = data[count-1] ;
+		count--;
+		return deleted ;
+	}
+
+	public int binarySearch(int element, int beginIndex, int endIndex) {
+		return 0;
+	}
+
+	public int[] insertionSort(int[] arr) {
+		return null;
+	}
+
+	private boolean isFull(){
+		return ( count > INITIAL_SIZE && count % INITIAL_SIZE == 0 ) ; 
+	}
+
+	private boolean isEmpty(){
+		return( count == 0 ? true : false ) ;
+	}
+	
+	public void showContents(){
+		for (int i = 0; i < data.length; i++) {
+			System.out.print( data[ i ] + " " );
+		}
+		System.out.println();
+	}
+}
