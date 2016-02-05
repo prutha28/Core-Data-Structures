@@ -1,0 +1,17 @@
+package string.operations.using.stacks;
+
+import fixed.size.stacks.Stack;
+
+public class PalindromeCheck {
+
+	private String word ;
+	
+	public static void main(String[] args) {
+		new PalindromeCheck().checkForPalindrome() ;
+	}
+
+	private void checkForPalindrome() {
+		Stack palStack = new Stack() ;
+	}
+
+}

@@ -1,0 +1,23 @@
+package string.operations.using.stacks;
+
+public class StringReversal {
+
+	private String wordStack;
+	
+	public static void main(String[] args) {
+		
+		String word = "Khandeparker" ;
+		new StringReversal().pushWordOnStack( word) ;
+		System.out.println("Printing String in reverse order ...");
+		printReversed( word ) ;
+	}
+
+	private void pushWordOnStack(String word) {
+		
+	}
+
+	private static void printReversed(String word) {
+		
+	}
+
+}

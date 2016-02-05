@@ -1,0 +1,65 @@
+package arrays.sorted;
+
+import java.util.List;
+
+public class DynamicArray implements IArray {
+
+	// Keeps a count of the no of elements in the array at any given time.
+	public int count ; 
+	public boolean add(int element) {
+		return false;
+	}
+
+	public boolean insertAtStart(int element) {
+		return false;
+	}
+
+	public boolean insertAtEnd(int element) {
+		return false;
+	}
+
+	public boolean insertAtIndex(int element, int index) {
+		return false;
+	}
+
+	public int elementAtIndex(int index) {
+		return 0;
+	}
+
+	public int search(int element) {
+		return 0;
+	}
+
+	public List<Integer> searchAll(int element) {
+		return null;
+	}
+
+	public int delete(int element) {
+		return 0;
+	}
+
+	public int deleteElementAtIndex(int index) {
+		return 0;
+	}
+
+	public Integer[] deleteAllOccurences(int element) {
+		return null;
+	}
+
+	public int deleteFromBegin() {
+		return 0;
+	}
+
+	public int deleteFromEnd() {
+		return 0;
+	}
+
+	public int binarySearch(int element, int beginIndex, int endIndex) {
+		return 0;
+	}
+
+	public int[] insertionSort(int[] arr) {
+		return null;
+	}
+
+}

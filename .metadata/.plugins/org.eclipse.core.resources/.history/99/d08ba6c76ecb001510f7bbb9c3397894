@@ -1,0 +1,19 @@
+package applications.using.stacks;
+
+import fixed.size.stacks.of.strings.Stack;
+
+public class BracketCheck {
+
+	Stack line = new Stack() ;
+	
+	public static void main(String[] args) {
+		
+		String line = "[[[{}]]]" ;
+	}
+	
+	
+	public void parseString( String line){
+		
+	}
+
+}

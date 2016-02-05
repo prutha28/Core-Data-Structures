@@ -1,0 +1,126 @@
+package arrays.sorted;
+
+import java.util.List;
+
+public class DynamicArray implements IArray {
+
+	
+	// Keeps a count of the actual no of elements in the array at any given time.
+	public int count ; 
+	public int data[] ;
+	public int incrementValue ;
+	public static int INITIAL_SIZE = 10 ;
+	private static final int DEFAULT_INCREMENT_VALUE = 5;
+	
+	public DynamicArray(){
+		this(INITIAL_SIZE, DEFAULT_INCREMENT_VALUE) ;
+	}
+
+	public DynamicArray( int size ){
+		this( size, DEFAULT_INCREMENT_VALUE) ;
+	}
+
+	public DynamicArray( int size, int incrementValue ){
+		this.count = 0 ;
+		this.incrementValue = incrementValue ;
+		this.data = new int[ size ] ;
+	}
+
+	public boolean add(int element) {
+		if( isFull())
+			return false;
+		else{
+			data[count] = element ;
+			count++ ;
+			return true ;
+		}
+
+	}
+
+	public boolean insertAtStart(int element) {
+		return insertAtIndex(element, 0) ;
+	}
+
+	public boolean insertAtEnd(int element) {
+		return insertAtIndex(element, count-1) ;
+	}
+
+	public boolean insertAtIndex(int element, int index) {
+		if( isFull()){
+			System.out.println("Resizing ... ");
+			newData = new int[ INITIAL_SIZE + incrementValue] ;
+		}
+		return false;
+	}
+
+	public int elementAtIndex(int index) {
+		if( isEmpty()){
+			System.out.println("Array is empty.");
+			return -1 ;
+		}
+		return data[ index ];
+	}
+
+	public int search(int element) {
+		return 0;
+	}
+
+	public List<Integer> searchAll(int element) {
+		return null;
+	}
+
+	public int delete(int element) {
+		int index = search( element) ;
+		if( index == -1){
+			System.out.println("Element not found.");
+		}
+		return deleteElementAtIndex(index);
+	}
+
+	public int deleteElementAtIndex(int index) {
+		return 0;
+	}
+
+	public Integer[] deleteAllOccurences(int element) {
+		return null;
+	}
+
+	public int deleteFromBegin() {
+		int deleted ;
+		if( isEmpty()){
+			System.out.println("Array is empty, nothing to delete.") ;
+			deleted = -1 ;
+		}else{
+			deleted = data[0] ;
+			int index = 0 ;
+			while( index < count-1){
+				data[ index ] = data[ index + 1 ] ;
+				index++ ;
+			}
+			count-- ;
+		}
+		return deleted ;
+	}
+
+	public int deleteFromEnd() {
+		int deleted = data[count-1] ;
+		count--;
+		return deleted ;
+	}
+
+	public int binarySearch(int element, int beginIndex, int endIndex) {
+		return 0;
+	}
+
+	public int[] insertionSort(int[] arr) {
+		return null;
+	}
+
+	private boolean isFull(){
+		return ( count % DEFAULT_SIZE == 0 ) ; 
+	}
+	
+	private boolean isEmpty(){
+		return( count == 0 ? true : false ) ;
+	}
+}

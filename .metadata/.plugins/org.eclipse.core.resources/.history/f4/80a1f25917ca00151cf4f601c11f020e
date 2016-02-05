@@ -1,0 +1,13 @@
+package fixed.size.stacks;
+
+public class StackTestClass {
+
+	public static void main(String[] args) {
+
+		IStack stack = new Stack() ;
+		System.out.println("Initial Stack contents : ");
+		stack.showContents() ;
+		stack.push(100) ;
+	}
+
+}

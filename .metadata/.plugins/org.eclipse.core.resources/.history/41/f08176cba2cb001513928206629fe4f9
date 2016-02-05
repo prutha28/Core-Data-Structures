@@ -1,0 +1,66 @@
+package applications.using.stacks;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import javax.swing.text.AbstractDocument.BranchElement;
+
+import fixed.size.stacks.of.strings.Stack;
+
+public class BracketCheck {
+
+	Stack lineStack = new Stack() ;
+	List<String> openBraces = new ArrayList<String>();
+	List<String> closedBraces = new ArrayList<String>();
+	Map<String, String> bracesMap = new HashMap<String, String>() ;
+	
+	public static void main(String[] args) {
+
+//		String line = "[[[agf{}d]]]" ;
+		String line = "[[[agf{d]]" ;
+		BracketCheck bc = new BracketCheck() ;
+		bc.init() ;
+		if( bc.parseString(line)){
+			System.out.println("The sentence is balanced!");
+		}else{
+			System.out.println("The sentence is not balanced!");
+		}
+		
+	}
+
+	private void init() {
+		openBraces.add("[") ;
+		openBraces.add("{") ;
+		openBraces.add("(") ;
+
+		closedBraces.add("]");
+		closedBraces.add("}");
+		closedBraces.add(")");
+	}
+
+
+	public boolean parseString( String line){
+
+		boolean isBalanced = true ;
+
+		for (int i = 0; i < line.length(); i++) {
+			char currentChar = line.charAt(i) ;
+			if( openBraces.contains( currentChar)){
+				// If the parsed character is an open brace, we push it onto the stack
+				lineStack.push(currentChar) ;
+			}else if( closedBraces.contains(currentChar)){
+				// If the parsed character is a close brace, we compare it with the element at the top of the stack
+				if( currentChar != lineStack.pop()){
+					isBalanced = false ;
+					break ;
+				}
+			}else{
+				continue ;
+			}
+		}
+		return isBalanced;
+	}
+
+}

@@ -1,0 +1,39 @@
+package applications.using.stacks;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+import fixed.size.stacks.of.strings.Stack;
+
+public class BracketCheck {
+
+	Stack lineStack = new Stack() ;
+	List<String> openBraces = new ArrayList<String>();
+	List<String> closedBraces = new ArrayList<String>();
+
+	public static void main(String[] args) {
+		new BracketCheck().init() ;
+	}
+
+
+	private void init() {
+		String line = "[[[{}]]]" ;
+		openBraces.add("[") ;
+		openBraces.add("{") ;
+		openBraces.add("(") ;
+		
+		closedBraces.add("]");
+		closedBraces.add("}");
+		closedBraces.add(")");
+	}
+
+
+	public void parseString( String line){
+		for (int i = 0; i < line.length(); i++) {
+			if( line.charAt(i))
+		}
+
+	}
+
+}

@@ -1,4 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="arrays.IArray"/>
+<fullyQualifiedTypeName name="arrays.unsorted.Array"/>
+<fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+<fullyQualifiedTypeName name="fixed.size.stacks.IStack"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="string.operations.using.stacks.PalindromeCheck"/>
+<fullyQualifiedTypeName name="fixed.size.stacks.Stack"/>
+<fullyQualifiedTypeName name="string.operations.using.stacks.StringReversal"/>
+<fullyQualifiedTypeName name="fixed.size.stacks.of.strings.Stack"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="javax.swing.text.AbstractDocument.BranchElement"/>
+<fullyQualifiedTypeName name="applications.using.stacks.BracketCheck"/>
 </qualifiedTypeNameHistroy>
