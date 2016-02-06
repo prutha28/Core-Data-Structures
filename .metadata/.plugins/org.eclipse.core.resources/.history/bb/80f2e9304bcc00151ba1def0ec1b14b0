@@ -1,0 +1,31 @@
+package linked.lists;
+
+public class LinkedList {
+
+	Node head ; 
+	int count ;
+	
+	public LinkedList(){
+		count = 0 ;
+		head = null ;
+	}
+	
+	public LinkedList( Node head ){
+		this.head = head ;
+		this.count = 1 ;
+	}
+	
+	public Node push( int data){
+		Node newNode = new Node( data ) ;
+		
+		if( head == null){
+			head = newNode ;
+			return head ;
+		}
+		
+		newNode.next = head ;
+		head.next = newNode ;
+		return head ;
+	}
+	
+}

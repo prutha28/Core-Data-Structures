@@ -1,0 +1,41 @@
+package linked.lists;
+
+public class LinkedListTester {
+
+	public static void main(String[] args) {
+
+		LinkedList ll = new LinkedList() ;
+		ll.push(100) ;
+//		ll.print() ;
+		ll.push(10) ;
+//		ll.print() ;
+		
+		ll.insertAtN(99, 1) ;
+//		ll.print() ;
+		
+		ll.insertAtN(50, 3) ;
+//		ll.print() ;
+		ll.insertAtN(70, 4) ;
+		
+		
+		ll.recursivePrint(ll.head) ;
+		System.out.println();
+		ll.reversePrint(ll.head) ;
+		
+		System.out.println();
+		ll.appendToTail(122) ;
+		ll.appendToTail(93) ;
+		ll.push(87) ;
+		ll.recursivePrint(ll.head) ;
+		
+		System.out.println();
+		ll.deleteFromHead() ;
+		ll.recursivePrint(ll.head) ;
+		
+		System.out.println();
+		Node deleted = ll.deleteFromPos(3);
+		ll.print() ;
+		
+	}
+
+}

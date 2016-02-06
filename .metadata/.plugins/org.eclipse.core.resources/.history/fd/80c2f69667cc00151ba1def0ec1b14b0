@@ -1,0 +1,22 @@
+package linked.lists;
+
+public class LinkedListTester {
+
+	public static void main(String[] args) {
+
+		LinkedList ll = new LinkedList() ;
+		ll.push(100) ;
+		ll.print() ;
+		ll.push(10) ;
+		ll.print() ;
+		
+		ll.insertAtN(99, 1) ;
+		ll.print() ;
+		
+		ll.insertAtN(50, 3) ;
+		ll.print() ;
+		
+		ll.ReversePrint(ll.head) ;
+	}
+
+}

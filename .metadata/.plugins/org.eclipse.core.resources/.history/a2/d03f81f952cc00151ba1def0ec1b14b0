@@ -1,0 +1,79 @@
+package linked.lists;
+
+public class LinkedList {
+
+	Node head ; 
+	int count ;
+
+	public LinkedList(){
+		count = 0 ;
+		head = null ;
+	}
+
+	public LinkedList( Node head ){
+		this.head = head ;
+		this.count = 1 ;
+	}
+
+	public Node push( int data){
+		Node newNode = new Node( data ) ;
+
+		if( head == null){
+			head = newNode ;
+			return head ;
+		}
+
+		newNode.next = head ;
+		head = newNode ;
+		return head ;
+	}
+
+	public Node insertAtN( int data, int pos){
+
+		Node newNode = new Node( data) ;
+		Node current = head ;
+		Node prev = current ;
+		int index = 0 ;
+
+		if( head == null){
+			// First insertion
+			head = newNode ;
+			return head ;
+		}
+
+		while( current != null && index < pos){
+			prev = current ;
+			current = current.next ;
+			index++ ;
+		}
+
+		if( index == pos){
+			newNode.next = prev.next ;
+			prev.next = newNode ;
+		}
+		if( current == null){
+			prev.next = newNode ;
+		}
+
+		return head ;
+	}
+
+	void ReversePrint(Node current ) {
+		// This is a "method-only" submission. 
+		// You only need to complete this method. 
+		if( current.next == null){
+			System.out.print(current.data + " ") ;
+		}
+		ReversePrint(current.next) ;
+	}
+
+
+	public void print(){
+		Node current = head ;
+		while( current != null){
+			System.out.print( current.data + " ");
+			current = current.next ;
+		}
+		System.out.println();
+	}
+}

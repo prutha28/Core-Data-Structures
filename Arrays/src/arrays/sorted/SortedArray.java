@@ -1,7 +1,9 @@
 package arrays.sorted;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.NoSuchElementException;
 
 
@@ -13,9 +15,9 @@ public class SortedArray
 
 	public SortedArray(){
 		data = new String[ SIZE ] ;
-//		for (int i = 0; i < SIZE; i++) {
-//			data[ i ] = "\0" ;
-//		}
+		//		for (int i = 0; i < SIZE; i++) {
+		//			data[ i ] = "\0" ;
+		//		}
 		count = 0 ;
 	}
 
@@ -51,20 +53,24 @@ public class SortedArray
 	 * @return
 	 * @throws FullArrayException 
 	 */
-	public int add( String element) throws FullArrayException {
-		
+	public int add( String key) throws FullArrayException {
+
 		if( isFull()){
 			throw new FullArrayException("Array is full, cannot add more.");
 		}
-		int i = 0 ;
-		while( i >= 0 && element.compareTo(data[i]) < 0 ){
-			if( data[i] == null){
-				data[i] = element ;
-			}
+
+		if( count == 0 ){
+			data[0] = key ;
+			count++ ;
+			return 0 ;
+		}
+
+		int i = count -1 ;
+		while( i >= 0 && key.compareTo(data[i]) < 0 ){
 			data[ i + 1 ] = data[ i ] ;
 			i-- ;
 		}
-		data[ i +1 ] = element ;
+		data[ i +1 ] = key ;
 		count++ ;
 		return (i+1);
 	}
@@ -90,7 +96,7 @@ public class SortedArray
 	 * @throws EmptyArrayException 
 	 */
 	public int search( String element) throws EmptyArrayException {
-		
+
 		if( isEmpty()){
 			throw new EmptyArrayException("Array is empty, nothing to search.") ;
 		}
@@ -122,38 +128,45 @@ public class SortedArray
 			return deleteElementAtIndex(index) ;
 	}
 
+	/**
+	 * This method deletes whatever element is present at the given index.
+	 * @param index
+	 * @return the element being deleted
+	 */
 	public String deleteElementAtIndex(int index) {
 
 		if( index < 0 || index >= count){
 			throw new ArrayIndexOutOfBoundsException("Invalid Index : " + index ) ;
 		}
-		int i = index ;
 		String deleted = elementAtIndex(index) ;
-		while( i < count ){
-			data[ i ] = data[ i + 1 ] ;
-			i-- ;
+		while( index <= count-2 ){
+			data[ index ] = data[ index + 1 ] ;
+			data[ index + 1 ] = null ;			// Critical Step.
+			index++ ;
 		}
+		count-- ;
 		return deleted ;
 	}
 
+	
 	/**
-	 * This method deletes all the occurrences of the element in teh array & returns an array of deleted elements 
+	 * This method deletes all the occurrences of the element in the array 
 	 * @param element
-	 * @return
+	 * @return list of all the elements being deleted.
 	 * @throws EmptyArrayException 
+	 * This method works by first finding the index at which the element is present( if it is)
+	 * and then calling the delete method on that index.
+	 * Subsequently, the array is iterated as long as the element is present ( i.e. the search( element)
+	 * does not return -1)
 	 */
 	public List<String> deleteAllOccurences(String element) throws EmptyArrayException {
-		int index ;
 		List<String> deleted = new ArrayList<String>() ;
-		int i = 0 ;
 
-		while( i < count){
-			index = search(element) ;
-
-			if( index !=-1)
-				deleted.add(deleteElementAtIndex(index)) ;
+		int index = search(element);
+		while( index != -1){
+			deleted.add(deleteElementAtIndex( index )) ;
+			index = search(element);
 		}
-		i-- ;
 		return deleted ;
 	}
 
@@ -171,8 +184,13 @@ public class SortedArray
 	public int binarySearch(int element, int beginIndex, int endIndex) {
 		return 0;
 	}
-	
+
 	public void showContents(){
+		if( count == 0 ){
+			System.out.println("Empty Array");
+			return ;
+		}
+
 		for (int i = 0; i < count; i++) {
 			System.out.print( data[ i ] + " " );
 		}

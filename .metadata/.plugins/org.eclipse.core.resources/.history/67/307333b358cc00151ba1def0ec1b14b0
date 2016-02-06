@@ -1,0 +1,48 @@
+package insertion.sort;
+
+public class ZinZagArray {
+
+	public static void main(String[] args) {
+
+		int[] arr = { 5, 2, 7, 8 , -2, 25, 25}  ;
+		print(arr) ;
+		int result[] = wiggleArrangeArray( arr) ;
+		print(result) ;
+	}
+
+	
+	private static void print(int[] arr) {
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print(arr[i] + "  ");
+		}
+		System.out.println();
+	}
+	
+    static int[] wiggleArrangeArray(int[] arr) {
+        
+        int i, j ;
+        int key ;
+        // First Sort the array
+        for( j = 1 ; j < arr.length; j++)
+        {
+            key = arr[ j ] ;
+            i = j - 1 ;
+            while( i >= 0 && arr[ i ] > key){
+                arr[ i + 1] = arr[ i ] ;
+                i-- ;
+            }
+            arr[ i + 1 ] = key ;
+		}
+
+        int start = 0 ;
+        int end = arr.length - 1;
+        int[] result = new int[arr.length] ;
+        int index = 0 ;
+        
+        while( start <= end){
+        	result[index++] = arr[end--] ;
+        	result[index++] = arr[start++] ;
+        }
+        return result ;
+    }
+}
