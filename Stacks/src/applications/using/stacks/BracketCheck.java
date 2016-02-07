@@ -74,6 +74,9 @@ public class BracketCheck {
 			isBalanced = false ;
 		}
 		return isBalanced;
+		
+		// Or simply
+//		return lineStack.isEmpty() ;
 	}
 
 }

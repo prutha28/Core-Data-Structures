@@ -229,4 +229,14 @@ public class LinkedList {
 		}
 		return count ;
 	}
+	
+	public int front(){
+		if( head == null )
+			return -1 ;
+		return this.head.data ;
+	}
+	
+	public Node fetchHead(){
+		return this.head ;
+	}
 }

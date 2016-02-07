@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 elements to &apos;Stacks/src/stacks.using.linked.lists&apos;&#x0A;- Original project: &apos;Stacks&apos;&#x0A;- Destination element: &apos;Stacks/src/stacks.using.linked.lists&apos;&#x0A;- Original elements:&#x0A;     fixed.size.stacks.Stack.java&#x0A;     fixed.size.stacks.StackTestClass.java&#x0A;     fixed.size.stacks.IStack.java" description="Copy compilation units" destination="/src&lt;stacks.using.linked.lists" element1="/src&lt;fixed.size.stacks{Stack.java" element2="/src&lt;fixed.size.stacks{StackTestClass.java" element3="/src&lt;fixed.size.stacks{IStack.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1454829982771" units="3" version="1.0"/>
+</session>

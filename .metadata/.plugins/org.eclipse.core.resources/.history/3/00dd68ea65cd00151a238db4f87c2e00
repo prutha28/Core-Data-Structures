@@ -1,0 +1,17 @@
+package heap;
+
+public class Heap implements IHeap{
+
+	public int parent(int i) {
+		return 0;
+	}
+
+	public int left(int i) {
+		return 0;
+	}
+
+	public int right(int i) {
+		return 0;
+	}
+
+}
