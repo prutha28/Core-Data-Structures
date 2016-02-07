@@ -239,5 +239,4 @@ public class LinkedList {
 	public Node fetchHead(){
 		return this.head ;
 	}
-	
 }

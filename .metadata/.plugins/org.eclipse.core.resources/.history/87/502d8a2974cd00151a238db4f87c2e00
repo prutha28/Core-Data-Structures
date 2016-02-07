@@ -49,10 +49,10 @@ public class LinkedListUtils {
 		while( current != null ){
 			if( count == index)
 				return current.data ;
+			
 			current = current.next ;
 			count++ ;
 		}
 		return -1 ;
 	}
-	 
 }
