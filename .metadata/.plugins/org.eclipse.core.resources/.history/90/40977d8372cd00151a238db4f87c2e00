@@ -1,0 +1,22 @@
+package linked.lists;
+
+public class LinkedListUtils {
+
+	LinkedList ll ;
+	
+	public LinkedListUtils( LinkedList ll){
+		this.ll = ll ;
+	}
+	
+	public int countOccurences( int element ){
+		Node current = ll.head ;
+		int count = 0 ;
+		if( current == null)
+			return 0;
+		
+		while( current != null){
+			
+			current = current.next ;
+		}
+	}
+}

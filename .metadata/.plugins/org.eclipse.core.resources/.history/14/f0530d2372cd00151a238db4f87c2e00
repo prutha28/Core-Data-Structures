@@ -1,0 +1,12 @@
+package linked.lists;
+
+public class LinkedListUtils {
+
+	LinkedList ll ;
+	
+	public LinkedListUtils( LinkedList ll){
+		this.ll = ll ;
+	}
+	
+	
+}
