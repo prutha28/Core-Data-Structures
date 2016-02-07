@@ -54,20 +54,5 @@ public class LinkedListUtils {
 		}
 		return -1 ;
 	}
-	
-	public int getNthfromEnd( int index){
-		return getNth(ll.count() - index + 1) ;
-	}
-	
-	
-	public void deleteList(){
-		Node current = ll.head ;
-		Node temp = ll.head.next ;
-		
-		while( current.next != null){
-			temp = current.next ;
-			current.data = -1 ;
-			current = temp ;
-		}
-	}
+	 
 }

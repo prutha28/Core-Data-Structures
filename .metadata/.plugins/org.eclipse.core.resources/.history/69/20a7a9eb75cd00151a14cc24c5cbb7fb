@@ -56,7 +56,12 @@ public class LinkedListUtils {
 	}
 	
 	public int getNthfromEnd( int index){
-		return getNth(ll.count() - index + 1) ;
+		Node current = ll.head ;
+		if( current == null )
+			return -1 ;
+		
+		int count = 0 ;
+		
 	}
 	
 	
@@ -65,9 +70,7 @@ public class LinkedListUtils {
 		Node temp = ll.head.next ;
 		
 		while( current.next != null){
-			temp = current.next ;
-			current.data = -1 ;
-			current = temp ;
+			
 		}
 	}
 }
