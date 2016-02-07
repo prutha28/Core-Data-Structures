@@ -1,0 +1,36 @@
+package stacks.using.dynamic.arrays;
+
+import dynamic.arrays.DynamicArray;
+
+public class Stack implements IStack {
+
+	DynamicArray da ;
+	
+	public Stack(){
+	}
+	
+	public void push(int element) {
+	}
+
+	public int pop() {
+	}
+
+	public int top() {
+	}
+
+	public int size() {
+	}
+
+	public void showContents() {
+		System.out.println("The Stack Contents from top to bottom.");
+	}
+
+	public boolean isEmpty() {
+		return false;
+	}
+
+	public boolean isFull() {
+		return false;
+	}
+
+}

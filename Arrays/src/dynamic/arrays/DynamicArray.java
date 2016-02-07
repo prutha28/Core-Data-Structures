@@ -10,7 +10,7 @@ public class DynamicArray implements IArray {
 	public int count ; 
 	public int data[] ;
 	public int incrementValue ;
-	public int size ;
+	public int size ; // Custom Size if any specified
 	public static int INITIAL_SIZE = 10 ;
 	private static final int DEFAULT_INCREMENT_VALUE = 5;
 	private static final int MULTIPLIER = 2 ;
@@ -64,7 +64,7 @@ public class DynamicArray implements IArray {
 	private int[] resize() {
 		System.out.println("Resizing ... ");
 		// Step 1: Initialize a new array with new size = old size + incr value.
-		int newData[] = new int[ INITIAL_SIZE + incrementValue] ;
+		int newData[] = new int[ data.length + incrementValue] ; // Critical !!! not INITIAL_SIZE + incrementValue
 		// Alternately, we can do
 		// int newData[] = new int[ MULTIPLIER * INITIAL_SIZE ] ;
 		// Step 2: Copy the contents into the new array.
@@ -77,7 +77,7 @@ public class DynamicArray implements IArray {
 		for( int j = i; j < newData.length; j++){
 			newData[ j ] = 0;
 		}
-		
+		this.size = newData.length ; // Critical!
 		return newData ;
 	}
 
