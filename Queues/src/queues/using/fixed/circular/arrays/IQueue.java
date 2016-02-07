@@ -9,9 +9,9 @@ public interface IQueue {
 	public int dequeue() throws QueueEmptyException ;
 	
 	// peek
-	public int front() ;
+	public int front() throws QueueEmptyException ;
 	
-	public int end() ;
+	public int end() throws QueueEmptyException ;
 	
 	public int size() ;
 	
