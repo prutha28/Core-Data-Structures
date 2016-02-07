@@ -1,0 +1,13 @@
+package queues.using.arrays;
+
+public class QueueTest {
+
+	public static void main(String[] args) {
+		
+		Queue q = new Queue() ;
+		
+		System.out.println("Is the queue empty? " + q.isEmpty());
+		
+	}
+
+}

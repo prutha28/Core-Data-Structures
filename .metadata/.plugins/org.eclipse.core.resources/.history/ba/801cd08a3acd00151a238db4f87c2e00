@@ -1,0 +1,9 @@
+package queues.using.arrays;
+
+public interface IQueue {
+
+	public void enqueue( int element ) ;
+	
+	public int dequeue() ;
+	
+}

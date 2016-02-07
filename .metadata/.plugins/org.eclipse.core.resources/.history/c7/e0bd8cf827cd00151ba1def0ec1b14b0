@@ -1,0 +1,211 @@
+package linked.lists;
+
+public class LinkedList {
+
+	Node head ; 
+	int count ;
+
+	public LinkedList(){
+		count = 0 ;
+		head = null ;
+	}
+
+	public LinkedList( Node head ){
+		this.head = head ;
+		this.count = 1 ;
+	}
+
+	// Inserts data node at the beginning of the linked list.
+	public Node push( int data){
+		Node newNode = new Node( data ) ;
+
+		if( head == null){
+			head = newNode ;
+			return head ;
+		}
+
+		newNode.next = head ;
+		head = newNode ;
+		return head ;
+	}
+
+
+	// Inserts data node at the Nth position of the linked list.
+	public Node insertAtN( int data, int pos){
+
+		Node newNode = new Node( data) ;
+		Node current = head ;
+		Node prev = current ;
+		int index = 0 ;
+
+		//		if( pos > this.count){
+		//			throw new ArrayIndexOutOfBoundsException() ;
+		//		}
+		if( head == null){
+			// First insertion
+			head = newNode ;
+			return head ;
+		}
+
+		while( current != null && index < pos){
+			prev = current ;
+			current = current.next ;
+			index++ ;
+		}
+
+		if( index == pos){
+			newNode.next = prev.next ;
+			prev.next = newNode ;
+			count++ ;
+		}
+		if( current == null){
+			prev.next = newNode ;
+		}
+
+		return head ;
+	}
+
+	// Inserts data node at the tail of the linked list.
+	public void appendToTail( int data){
+
+		Node newNode = new Node( data) ;
+		if( head == null){
+			head = newNode ;
+		}
+
+		Node current = head ;
+		while( current.next != null){
+			current = current.next ;
+		}	
+		current.next = newNode ;
+	}
+
+
+	// Removes the node at the head of the linked list.
+	// Returns the value at the deleted Node.
+	public int deleteFromHead(){
+		if( head == null)
+			return -1 ;
+
+		Node deleted = head ;
+		head = head.next ;
+		return deleted.data ;
+	}
+
+	// Removes the node at the tail of the linked list & 
+	// returns the deleted node.
+	public int deleteFromTail(){
+		Node current = head ;
+		Node prev = head ;
+		int deleted = -1 ;
+
+		if( current == null ){
+			return deleted ;
+		}
+		while( current.next != null ){
+			prev = current ; 
+			current = current.next ;
+		}
+		deleted = current.data ;
+		current.data = -1 ;
+		prev.next = null ;
+		return deleted ;
+	}
+
+	// Deletes the node at the specified position( starts form 0)
+	// & returns the value at the deleted node.
+	public int deleteFromPos( int position ){
+		int count = 0 ;
+		int deleted = -1 ;
+
+		if( head == null )
+			return deleted ;
+
+		Node current = head ;
+		Node prev = current ;
+
+		if( position == 0 ){
+			deleted = head.data ;
+			head = head.next ;
+		}
+		while( count < position && current != null){
+			prev = current ;
+			current = current.next ;
+			count++ ;
+		}
+		// At this point, the current points to the node to be deleted
+		// and prev points one node before it.
+		// we therefore need to make  
+		// prev.next <- current.next & current.next <- null
+		if( position == count ){
+			deleted = current.data ;
+			prev = current.next ;
+			current.next = null ;
+		}
+		return deleted ;
+	}
+
+	/**
+	 * This method traverses the linked list to find data & returns the index at which it is found.
+	 * @param data
+	 * @return
+	 */
+	public int search( Node node){
+		int index = -1 ;
+		Node current = head ;
+		
+		if( current == null){
+			return index ;
+		}
+		
+		while( current != null){
+			index++ ;
+			if( current.data == node.data)
+				return index ;
+			current = current.next ;
+		}
+	}
+
+
+
+	public void print(){
+		Node current = head ;
+		while( current != null){
+			System.out.print( current.data + " ");
+			current = current.next ;
+		}
+		System.out.println();
+	}
+
+	public void recursivePrint( Node current ){
+		if( current == null ){
+			return ;
+		}
+		System.out.print(current.data + "  ");
+		recursivePrint(current.next) ;
+	}
+
+
+	public void reversePrint( Node current){
+
+		if( current == null)
+			return ;
+		reversePrint(current.next) ;
+		System.out.print(current.data + "  ");
+
+	}
+
+	public int count(){
+		int count = 0 ;
+		if( head == null )
+			return 0 ;
+		else{
+			Node current = head ;
+			while( current != null){
+				current = current.next ;
+				count++ ;
+			}
+		}
+		return count ;
+	}
+}

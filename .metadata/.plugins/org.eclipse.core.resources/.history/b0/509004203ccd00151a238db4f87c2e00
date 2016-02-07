@@ -1,0 +1,68 @@
+package queues.using.arrays;
+/**
+ * 
+ * @author prutha
+ * 
+ *
+ * QUEUES USING FIXED SIZE ARRAYS.
+ *
+ * front, rear = -1
+ * ------------------------------------------
+ * | | | | | | | | | | |
+ * ------------------------------------------
+ * 0 1 2 3 4 5 6 7 8 9
+ *
+ * front = 0 rear = 4
+ * ------------------------------------------
+ * | 2 | 5 | 6 | 8 | | | | | | |
+ * ------------------------------------------
+ * 0 1 2 3 4 5 6 7 8 9
+ *
+ * Initially front, rear both will be -1.
+ * We add elements to the rear of the queue.
+ * and remove from front.
+ *
+ * Front is the index of element to be removed next.
+ * Rear is the index at which you will insert the element.
+ *
+ */
+
+public class Queue implements IQueue {
+
+	/**
+	 * 
+	 */
+
+
+	public void enqueue(int element) {
+
+	}
+
+	public int dequeue() {
+	}
+
+	public int front() {
+		return 0;
+	}
+
+	public int end() {
+		return 0;
+	}
+
+	public boolean isEmpty() {
+		return false;
+	}
+
+	public int count() {
+		return 0;
+	}
+
+	public int size() {
+		return 0;
+	}
+
+	public int isFull() {
+		return 0;
+	}
+
+}

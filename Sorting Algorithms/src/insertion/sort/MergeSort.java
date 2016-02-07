@@ -2,7 +2,9 @@ package insertion.sort;
 
 public class MergeSort {
 
-	static String[] arr = { "mary", "john", "jane" , "ana" , "peter", "heena", "cristina" , "nathan", "meredith", "Derek" }; 
+//	static String[] arr = { "mary", "john", "jane" , "ana" , "peter", "heena", "cristina" , "nathan", "meredith", "Derek" }; 
+	
+	static int[] arr = { 45, 87, 2, 1, 34, -1, 9, 2, 65 } ;
 	
 	public static void main(String[] args) {
 		
@@ -15,11 +17,11 @@ public class MergeSort {
 	}
 
 	
-	private static String[] mergesort( String[] arr, int begin, int end ) {
+	private static int[] mergesort( int[] arr, int begin, int end ) {
 
-		String[] left ; 
-		String[] right ;
-		String[] result = null ;
+		int[] left ; 
+		int[] right ;
+		int[] result = null ;
 		
 		// BASE case
 		if( begin > end)
@@ -34,10 +36,20 @@ public class MergeSort {
 	}
 
 
-//	private static String[] merge(String[] left, String[] right) {
-//
-//	
-//	}
+	private static int[] merge(int[] left, int[] right) {
+		
+		int result[] = null ;
+		int i = 0 ; 
+		int j = 0 ;
+		int k = 0 ;
+		
+		while( i < left.length) {
+			
+		}
+		
+		return result ;
+	
+	}
 
 
 	private static void print() {

@@ -15,6 +15,7 @@ public class LinkedList {
 		this.count = 1 ;
 	}
 
+	// Inserts data node at the beginning of the linked list.
 	public Node push( int data){
 		Node newNode = new Node( data ) ;
 
@@ -28,6 +29,8 @@ public class LinkedList {
 		return head ;
 	}
 
+
+	// Inserts data node at the Nth position of the linked list.
 	public Node insertAtN( int data, int pos){
 
 		Node newNode = new Node( data) ;
@@ -62,7 +65,7 @@ public class LinkedList {
 		return head ;
 	}
 
-
+	// Inserts data node at the tail of the linked list.
 	public void appendToTail( int data){
 
 		Node newNode = new Node( data) ;
@@ -78,46 +81,114 @@ public class LinkedList {
 	}
 
 
-	public Node deleteFromHead(){
+	// Removes the node at the head of the linked list.
+	// Returns the value at the deleted Node.
+	public int deleteFromHead(){
 		if( head == null)
-			return null ;
-		
+			return -1 ;
+
 		Node deleted = head ;
 		head = head.next ;
-		return deleted ;
+		return deleted.data ;
 	}
 
-	public void deleteFromTail(){
+	// Removes the node at the tail of the linked list & 
+	// returns the deleted node.
+	public int deleteFromTail(){
 		Node current = head ;
 		Node prev = head ;
-		
+		int deleted = -1 ;
+
 		if( current == null ){
-			return ;
+			return deleted ;
 		}
-		while( current != null ){
+		while( current.next != null ){
 			prev = current ; 
 			current = current.next ;
 		}
+		deleted = current.data ;
+		current.data = -1 ;
+		prev.next = null ;
+		return deleted ;
 	}
 
-	public void deleteFromPos( int position ){
-		int count = 1 ;
+	// Deletes the node at the specified position( starts form 0)
+	// & returns the value at the deleted node.
+	public int deleteFromPos( int position ){
+		int count = 0 ;
+		int deleted = -1 ;
+
 		if( head == null )
-			return ;
-		
+			return deleted ;
+
 		Node current = head ;
 		Node prev = current ;
-		while( position > count && current != null){
+
+		if( position == 0 ){
+			deleted = head.data ;
+			head = head.next ;
+		}
+		while( count < position && current != null){
 			prev = current ;
 			current = current.next ;
 			count++ ;
 		}
-		
+		// At this point, the current points to the node to be deleted
+		// and prev points one node before it.
+		// we therefore need to make  
+		// prev.next <- current.next & current.next <- null
 		if( position == count ){
+			deleted = current.data ;
 			prev = current.next ;
+			current.next = null ;
+		}
+		return deleted ;
+	}
+
+	/**
+	 * This method traverses the linked list to find data & returns the index at which it is found.
+	 * @param data
+	 * @return
+	 */
+	public int search( int nodeValue){
+		int index = 0 ;
+		Node current = head ;
+		
+		if( current == null){
+			return -1 ;
 		}
 		
+		while( current != null){
+			if( current.data == nodeValue)
+				return index ;
+			index++ ;
+			current = current.next ;
+		}
+		// Reached end of the linked list & yet element was not found.
+		if( current == null){
+			index = -1;
+		}
+		return index ;
 	}
+
+	
+	public boolean isFound( int data){
+		Node current = head ;
+		if( head == null ){
+			return false ;
+		}
+		
+		while( current != null){
+			if( current.data == data ){
+				return true ;
+			}
+			current = current.next;
+		}
+		// This is the case when end of the linked list is reached.
+		return false ;
+	}
+
+
 	public void print(){
 		Node current = head ;
 		while( current != null){

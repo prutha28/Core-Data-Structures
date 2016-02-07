@@ -2,8 +2,6 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="arrays.IArray"/>
 <fullyQualifiedTypeName name="arrays.unsorted.Array"/>
-<fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
 <fullyQualifiedTypeName name="fixed.size.stacks.IStack"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
@@ -11,9 +9,18 @@
 <fullyQualifiedTypeName name="fixed.size.stacks.Stack"/>
 <fullyQualifiedTypeName name="string.operations.using.stacks.StringReversal"/>
 <fullyQualifiedTypeName name="fixed.size.stacks.of.strings.Stack"/>
-<fullyQualifiedTypeName name="java.util.HashMap"/>
-<fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="javax.swing.text.AbstractDocument.BranchElement"/>
 <fullyQualifiedTypeName name="applications.using.stacks.BracketCheck"/>
+<fullyQualifiedTypeName name="insertion.sort.InsertionSort"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="arrays.sorted.EmptyArrayException"/>
+<fullyQualifiedTypeName name="arrays.sorted.SortedArray"/>
+<fullyQualifiedTypeName name="linked.lists.LinkedList"/>
+<fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+<fullyQualifiedTypeName name="linked.lists.Node"/>
+<fullyQualifiedTypeName name="java.util.NoSuchElementException"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,10 @@
+
+public class SpiralMatrix {
+
+	int[][] box = new int[ 2 ][ 3 ] ;
+
+	public static void main(String[] args) {
+		
+	}
+
+}

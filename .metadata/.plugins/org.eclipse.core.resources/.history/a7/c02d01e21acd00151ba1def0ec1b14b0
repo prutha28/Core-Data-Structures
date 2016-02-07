@@ -1,0 +1,9 @@
+package n.steps;
+
+public class NStepProblem {
+
+	public static void main(String[] args) {
+
+	}
+
+}

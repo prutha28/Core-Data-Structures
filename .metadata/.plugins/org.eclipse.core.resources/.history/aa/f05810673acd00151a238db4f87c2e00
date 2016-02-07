@@ -1,0 +1,5 @@
+package queues.using.arrays;
+
+public interface IQueue {
+
+}

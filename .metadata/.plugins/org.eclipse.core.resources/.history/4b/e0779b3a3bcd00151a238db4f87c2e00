@@ -1,0 +1,43 @@
+package queues.using.arrays;
+/**
+ * 
+ * @author prutha
+ *
+ */
+public class Queue implements IQueue {
+
+	/**
+	 * 
+	 */
+	public void enqueue(int element) {
+
+	}
+
+	public int dequeue() {
+	}
+
+	public int front() {
+		return 0;
+	}
+
+	public int end() {
+		return 0;
+	}
+
+	public boolean isEmpty() {
+		return false;
+	}
+
+	public int count() {
+		return 0;
+	}
+
+	public int size() {
+		return 0;
+	}
+
+	public int isFull() {
+		return 0;
+	}
+
+}
