@@ -153,20 +153,20 @@ public class LinkedListUtils {
 	}
 
 
-//	public Node removeDuplicates( Node head ){
-//
-//		Node prev = this.insertSort(head) ;
-//		Node current = prev.next;
-//
-//		// Empty List
-//		if( prev == null)
-//			return null ;
-//
-//		while( current != null){
-//			if( prev.data == current.data){
-//				prev.next = current.next ;
-//				current.next = null ;
-//			}
-//		}
-//	}
+	public Node removeDuplicates( Node head ){
+
+		Node prev = this.insertSort(head) ;
+		Node current = prev.next;
+
+		// Empty List
+		if( prev == null)
+			return null ;
+
+		while( current != null){
+			if( prev.data == current.data){
+				prev.next = current.next ;
+				current.next = null ;
+			}
+		}
+	}
 }
