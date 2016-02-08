@@ -1,6 +1,6 @@
 package stacks.using.linked.lists;
 
-import singly.linked.lists.LinkedList;
+import linked.lists.LinkedList;
 
 /**
  * 

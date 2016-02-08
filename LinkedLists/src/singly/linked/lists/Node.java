@@ -1,0 +1,16 @@
+package singly.linked.lists;
+
+public class Node {
+
+	int data ;
+	Node next ;
+	
+	public Node(){
+		this( -1) ;
+	}
+	
+	public Node( int data ){
+		this.data = data ;
+	}
+}
+
