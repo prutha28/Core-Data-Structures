@@ -17,7 +17,6 @@
 <fullyQualifiedTypeName name="arrays.sorted.EmptyArrayException"/>
 <fullyQualifiedTypeName name="arrays.sorted.SortedArray"/>
 <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
-<fullyQualifiedTypeName name="linked.lists.Node"/>
 <fullyQualifiedTypeName name="java.util.NoSuchElementException"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
@@ -28,5 +27,7 @@
 <fullyQualifiedTypeName name="queues.using.fixed.circular.arrays.QueueFullException"/>
 <fullyQualifiedTypeName name="stacks.using.linked.lists.Stack"/>
 <fullyQualifiedTypeName name="dynamic.arrays.DynamicArray"/>
+<fullyQualifiedTypeName name="linked.lists.Node"/>
+<fullyQualifiedTypeName name="linked.lists.LinkedListUtils"/>
 <fullyQualifiedTypeName name="linked.lists.LinkedList"/>
 </qualifiedTypeNameHistroy>

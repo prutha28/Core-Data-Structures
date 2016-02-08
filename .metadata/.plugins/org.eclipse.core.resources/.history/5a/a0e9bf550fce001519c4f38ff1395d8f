@@ -1,0 +1,16 @@
+package maximumContiguousSum;
+
+public class MaximumContiguousSum {
+
+	int arr[]  ;
+	int start  ;
+	int end  ; 
+	
+	public MaximumContiguousSum(){
+		arr[]  = { -1, 6, 5, -9, 8 , 2, -4 } ;
+		start = 0 ;
+		end = 0 ;
+	}
+	
+	
+}

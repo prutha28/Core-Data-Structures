@@ -58,5 +58,22 @@ public class LinkedListTester {
 		}else{
 			System.out.println("The number 30 is not found.");
 		}
+		
+		ll.print() ;
+		
+		LinkedListUtils utils = new LinkedListUtils(ll) ;
+		LinkedList result = new LinkedList() ;
+		
+		result.head = utils.insertSort(ll.head) ;
+		result.print() ;
+		
+		result.head = utils.sortedInsert( result.head, 88) ;
+		result.head = utils.sortedInsert( result.head, 40) ;
+		result.head = utils.sortedInsert( result.head, 21) ;
+		result.head = utils.sortedInsert( result.head, 5) ;
+		result.head = utils.sortedInsert( result.head, 10) ;
+		result.print() ;
+		
+		
 	}
 }

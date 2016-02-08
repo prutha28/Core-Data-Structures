@@ -1,0 +1,130 @@
+package linked.lists;
+
+public class LinkedListUtils {
+
+	LinkedList ll ;
+
+	public LinkedListUtils( LinkedList ll){
+		this.ll = ll ;
+	}
+
+	// Iterative
+	public int countOccurences( int element ){
+		Node current = ll.head ;
+		int count = 0 ;
+
+		if( current == null)
+			return 0;
+
+		while( current != null){
+			if( current.data == element)  
+				count++;
+			current = current.next ;
+		}
+		return count ;
+	}
+
+	// Recursive
+	public int countOccurences( Node current, int element ){
+
+		if( current == null)
+			return 0 ;
+
+		if( current.data == element)
+			return (1 + countOccurences(current.next, element)) ;
+		else
+			return countOccurences(current.next, element) ;
+	}	
+
+	/**
+	 * @return the element at the nth position from the beginning, -1 if the element is not found. 
+	 */
+	public int getNth( int index ){
+		Node current = ll.head ;
+		if( current == null )
+			return -1 ;
+
+		int count = 0 ;
+
+		while( current != null ){
+			if( count == index)
+				return current.data ;
+			current = current.next ;
+			count++ ;
+		}
+		return -1 ;
+	}
+
+	public int getNthfromEnd( int index){
+		return getNth(ll.count() - index + 1) ;
+	}
+
+
+	public void deleteList(){
+		Node current = ll.head ;
+		Node temp = ll.head.next ;
+
+		while( current.next != null){
+			temp = current.next ;
+			current.data = -1 ;
+			current = temp ;
+		}
+	}
+
+	/**
+	 * Given a linked list that is already sorted, insert a new node into it 
+	 * such that the list is still sorted. 
+	 *  
+	 * @param data to be inserted.
+	 * @return the head pointer
+	 */
+	public Node sortedInsert( int data ){
+
+		Node newNode = new Node(data) ;
+		if( ll.head == null){
+			// Empty List
+			ll.head = newNode ;
+			return ll.head ;
+		}else if( ll.head.next == null){
+			// Single element list
+
+		}
+
+		// Non Empty List
+		Node current = ll.head ;
+		Node prev = current ;
+
+		while( current != null && current.data < newNode.data){
+			prev = current ;
+			current = current.next ;
+		}
+
+		if( current.data >= newNode.data){
+			prev.next = newNode ;
+		}
+		// end of the list is reached
+		else if( current == null){
+			prev.next = newNode ;
+		}
+
+		return ll.head ;
+	}
+
+	/**
+	 * Given the reference to a linked list ( unsorted), reaarange the nodes 
+	 * so that they are sorted.
+	 * @param head
+	 */
+	public Node insertSort( Node head){
+
+		Node resultHead = null ;
+		Node current = head ;
+
+		while( current != null ){
+			resultHead = sortedInsert(current.data) ;
+			current = current.next ;
+		}
+
+		return resultHead ;
+	}
+}
