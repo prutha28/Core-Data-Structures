@@ -1,0 +1,21 @@
+package set;
+
+public class SetTest {
+
+	public static void main(String[] args) {
+
+		Set s = new Set() ;
+		try{
+			s.add(100) ;
+			s.add(100) ;
+			s.add(100) ;
+			s.add(100) ;
+			s.add(100) ;
+			s.add(100) ;
+			s.add(100) ;
+		}catch(ElementNotInsertedException e){
+			System.out.println("The element is already present in the set.");
+		}
+	}
+
+}

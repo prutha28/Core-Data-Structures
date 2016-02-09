@@ -1,0 +1,17 @@
+package set;
+
+public class SetTest {
+
+	public static void main(String[] args) throws ElementNotInsertedException {
+
+		Set s = new Set() ;
+		s.add(100) ;
+		s.add(100) ;
+		s.add(100) ;
+		s.add(100) ;
+		s.add(100) ;
+		s.add(100) ;
+		s.add(100) ;
+	}
+
+}

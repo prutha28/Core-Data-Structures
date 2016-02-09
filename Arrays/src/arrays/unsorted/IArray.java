@@ -2,17 +2,15 @@ package arrays.unsorted;
 
 import java.util.List;
 
-
 /** 
-
-	inthis stores an array of elements of the specified type int.
+	Stores an array of elements of the specified type int.
 
 **/
 
 public interface IArray{
 
 	/**
-	 * inthis method inserts the element at the end of the array.
+	 * In this method inserts the element at the end of the array.
 	 * 
 	 * @param element
 	 * @return true if the element was inserted successfully

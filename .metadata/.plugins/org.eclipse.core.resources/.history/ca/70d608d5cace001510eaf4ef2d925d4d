@@ -1,0 +1,5 @@
+npackage set;
+
+public class ElementNotInsertedException extends Exception {
+
+}

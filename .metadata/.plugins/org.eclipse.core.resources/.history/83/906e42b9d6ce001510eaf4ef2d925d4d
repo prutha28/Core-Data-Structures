@@ -1,0 +1,35 @@
+package set;
+
+import java.util.NoSuchElementException;
+
+public class Set implements ISet {
+
+	public boolean insert(int element) {
+		return false;
+	}
+
+	public void add(int element) throws ElementNotInsertedException {
+
+	}
+
+	public int delete(int element) {
+		return 0;
+	}
+
+	public void remove(int element) throws NoSuchElementException {
+
+	}
+
+	public boolean search(int element) {
+		return false;
+	}
+
+	public void find(int element) throws NoSuchElementException {
+
+	}
+
+	public int size() {
+		return 0;
+	}
+
+}

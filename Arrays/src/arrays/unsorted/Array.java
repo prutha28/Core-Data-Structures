@@ -33,7 +33,6 @@ public class Array implements IArray
 		return insertAtEnd(element) ;
 	}
 
-	@Override
 	public boolean insertAtStart(int element) {
 		return insertAtIndex(element, 0) ;
 	}
@@ -68,6 +67,13 @@ public class Array implements IArray
 		return data[index];
 	}
 
+
+	/**
+	 * This method searches the element in the set.  
+	 * @param element
+	 * @return the index where the element was found, -1 otherwise.
+	 */
+	
 	public int search(int element) {
 		int i = 0 ;
 		while( i < count ){
@@ -179,5 +185,9 @@ public class Array implements IArray
 			System.out.print( data[ i ] + " ");
 		}
 		System.out.println();
+	}
+
+	public int size() {
+		return this.count ;
 	}
 }

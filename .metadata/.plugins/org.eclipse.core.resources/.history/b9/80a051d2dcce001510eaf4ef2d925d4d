@@ -1,0 +1,35 @@
+package set;
+
+public class SetTest {
+
+	public static void main(String[] args) {
+
+		Set s = new Set() ;
+		try{
+			
+			// INSERTIONS
+			s.add(100) ;
+			s.add(200) ;
+			s.add(300) ;
+			s.add(600) ;
+			s.add(800) ;
+			s.add(900) ;
+			s.add(700) ;
+			s.add(550) ;
+			s.add(400) ;
+			s.add(990) ;
+			s.showContents() ;
+//			s.add(990) ;
+			
+			// DELETIONS
+			s.delete(100) ;
+			s.showContents() ;
+//			s.remove(60) ;
+//			s.showContents() ;
+			// SEARCHING
+			
+		}catch(ElementNotInsertedException e){
+			System.out.println("The element is already present in the set.");
+		}
+	}
+}
