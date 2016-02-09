@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Node.java&apos; to &apos;Trees/src/binary.search.trees&apos;&#x0A;- Original project: &apos;Trees&apos;&#x0A;- Destination element: &apos;Trees/src/binary.search.trees&apos;&#x0A;- Original element: &apos;binary.trees.Node.java&apos;" description="Copy compilation unit" destination="/src&lt;binary.search.trees" element1="/src&lt;binary.trees{Node.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1454989760064" units="1" version="1.0"/>
+</session>

@@ -2,19 +2,13 @@ package maximumContiguousSum;
 
 public class MaximumContiguousSum {
 
-	int arr[]  = { -1, 6, 5, -9, 8 , 2, -4 } ;
-	int start  ;
-	int end  ; 
+	static int arr[]  = { -1, 6, 5, -9, 8 , 2, -4 } ;
 
 	public static void main( String[] args){
 
-		System.out.println(new MaximumContiguousSum().maxSum()) ;
+//		System.out.println(new MaximumContiguousSum().maxSum(0, 0, arr.length -1)) ;
 	}
 
-	public MaximumContiguousSum(){
-		start = 0 ;
-		end = 0 ;
-	}
 
 	//	public int maxSum( int i ){
 	//		
@@ -33,22 +27,18 @@ public class MaximumContiguousSum {
 	//	}
 
 
-	public int maxSum(){
-		int i = 0 ;
-		int sum = arr[0] ;
-		while( i < arr.length-1) {
-			if(sum + arr[i+1] >= arr[ i+1 ]){
-				end = i ;
-				sum =sum + arr[i+1] ;
-			}else{
-				start = i ;
-				end = i ;
-				sum = arr[ i + 1] ;
-			}
-			i++ ;
-		}
-		return sum ;
-	}
+//	public int maxSum(int sum , int start, int end){
+//		if( end == 0)
+//			return arr[0] ;
+//		else{
+//			if( arr[end] > arr[end] + maxSum(start, end-1)){
+//				maxSum(arr[end], end, end) ;
+//			}else{
+//				 arr[end] + maxSum(start, end-1) ;
+//			}
+//			end++ ;
+//		}
+//	}
 
 
 

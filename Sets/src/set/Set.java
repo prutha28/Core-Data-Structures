@@ -112,4 +112,18 @@ public class Set{
 	public void showContents() {
 		data.showContents() ;
 	}
+	/**
+	 * 
+	 * @return the elements contained in the set as an array.
+	 */
+	public int[] elements(){
+		
+		int result[] = new int[data.size()] ;
+		
+		for ( int i = 0; i < data.size(); i++) {
+			result[i] = data.elementAtIndex(i) ;
+		}
+		
+		return result ;
+	}
 }

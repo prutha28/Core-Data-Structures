@@ -1,0 +1,7 @@
+package binary.trees;
+
+public interface IBinaryTree {
+
+	
+	
+}
