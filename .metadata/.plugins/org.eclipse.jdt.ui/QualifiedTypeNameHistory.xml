@@ -30,4 +30,6 @@
 <fullyQualifiedTypeName name="linked.lists.Node"/>
 <fullyQualifiedTypeName name="linked.lists.LinkedListUtils"/>
 <fullyQualifiedTypeName name="linked.lists.LinkedList"/>
+<fullyQualifiedTypeName name="maximumContiguousSum.MaximumContiguousSum"/>
+<fullyQualifiedTypeName name="counting.sort.CountSort"/>
 </qualifiedTypeNameHistroy>

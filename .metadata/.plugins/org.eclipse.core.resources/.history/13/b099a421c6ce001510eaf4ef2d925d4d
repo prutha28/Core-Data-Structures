@@ -1,0 +1,37 @@
+package hackerRank;
+import java.util.Scanner;
+
+public class FunnyString {
+
+    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in) ;
+//        int T = sc.nextInt() ;
+//        if(!( T > 0 && T <= 10)){
+//           return ; 
+//        }
+//        
+//        for( int i = 1; i <= T; i++){
+//            String s = sc.nextLine() ;
+        	String s = "ivvkxq" ;
+            if( !s.isEmpty() && isFunny(s)) 
+                System.out.println("Funny");
+            else
+                System.out.println("Not Funny") ;
+//        }
+    }
+    
+    
+    
+    public static boolean isFunny(String s ){
+        int i = 0 ; // Start of the String
+        int j = s.length() - 1 ; // End of the String
+        boolean isFunny = true ;
+        
+        while( i < j ){
+            isFunny = isFunny && ((Math.abs(s.charAt(i+1) - s.charAt(i)))  == (Math.abs(s.charAt(j) - s.charAt(j-1)))) ;
+            i++ ;
+            j-- ;
+        }
+        return isFunny ;
+    }
+}

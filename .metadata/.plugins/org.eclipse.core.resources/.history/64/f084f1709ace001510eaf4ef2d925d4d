@@ -1,0 +1,49 @@
+import java.util.HashMap;
+import java.util.Map;
+
+
+public class Panagram {
+
+
+	public static void main(String[] args) {
+
+		String s = " " ;
+		
+		parseString(s) ;
+		if( isPanagram(s))
+			System.out.println("panagram");
+		else
+			System.out.println();
+	}
+
+	private static void parseString(String s) {
+
+		int i = 0 ;
+		Map<Character, Integer> letterCountMap = new HashMap<Character, Integer>( 26) ;
+		letterCountMap = buildMap( letterCountMap) ;
+		String str = s.toLowerCase() ;
+		
+		while( i < str.length()){	
+			char currentChar = str.charAt(i) ;
+			if( currentChar != ' '){
+				letterCountMap.put(currentChar, 1) ;
+			}
+			i++ ;
+		}
+	}
+
+	private static Map<Character, Integer> buildMap(
+			Map<Character, Integer> letterCountMap) {
+		
+		
+		return letterCountMap ;
+	}
+
+	private static boolean isPanagram(String s) {
+
+		
+		
+		return false;
+	}
+
+}

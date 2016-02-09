@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;Panagram.java&apos; to &apos;Java Practice/src/hackerRank&apos;&#x0A;- Original project: &apos;Java Practice&apos;&#x0A;- Destination element: &apos;Java Practice/src/hackerRank&apos;&#x0A;- Original element: &apos;Panagram.java&apos;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;hackerRank" element1="/src&lt;{Panagram.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1454977405250" units="1" version="1.0"/>
+</session>

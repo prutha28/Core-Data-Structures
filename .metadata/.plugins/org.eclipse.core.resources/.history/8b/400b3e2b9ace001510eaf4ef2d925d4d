@@ -1,0 +1,32 @@
+
+public class Panagram {
+
+
+	public static void main(String[] args) {
+
+		String s = " " ;
+		
+		parseString(s) ;
+		if( isPanagram(s))
+			System.out.println("panagram");
+		else
+			System.out.println();
+	}
+
+	private static void parseString(String s) {
+
+		int i = 0 ;
+		String str = s.replace(" ","") ;
+		while( i < str.length()){
+			
+		}
+	}
+
+	private static boolean isPanagram(String s) {
+
+		
+		
+		return false;
+	}
+
+}
