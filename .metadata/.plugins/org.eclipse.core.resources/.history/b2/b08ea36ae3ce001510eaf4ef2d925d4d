@@ -24,10 +24,7 @@ public class SetTest {
 			//			s.add(990) ;
 
 			// DELETIONS
-			s.delete(400) ;
-			s.delete(900) ;
-			s.delete(800) ;
-			s.delete(700) ;
+			s.delete(100) ;
 			System.out.println("Contents after deleting 100 :");
 			s.showContents() ;
 			//			s.remove(60) ;
@@ -44,6 +41,10 @@ public class SetTest {
 			Set otherSet = new Set() ;
 			otherSet.add(10) ;
 			otherSet.add(100) ;
+			otherSet.add(111) ;
+			otherSet.add(222) ;
+			otherSet.add(333) ;
+			otherSet.add(44) ;
 			otherSet.add(600) ;
 
 			System.out.println("First set: ");

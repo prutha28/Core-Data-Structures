@@ -23,9 +23,9 @@ public class Set{
 	}
 
 	public Set( int[] data){
-		this.data = new Array() ;
+		this.data = new Array(data.length) ;
 		for (int i = 0; i < data.length; i++) {
-			this.data.insertAtIndex(data[i], i) ;
+			
 		}
 	}
 

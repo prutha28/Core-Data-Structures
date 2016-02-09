@@ -8,8 +8,7 @@ public class SetUtils {
 		
 		int elements[] = s2.elements() ;
 		while( i< elements.length){
-			if( !s1.search(elements[i]))
-				result.add(elements[i]) ;
+			result.add(elements[i]) ;
 			i++ ;
 		}
 		
@@ -18,14 +17,14 @@ public class SetUtils {
 	
 	
 	public Set intersection( Set s1, Set s2) throws ElementNotInsertedException{
-		Set result = new Set() ;
+		Set result = s1 ;
 		int s2Elements[] = s2.elements() ;
 		
 		int i = 0 ; // iterates over set 2
 		
 		while( i < s2Elements.length){
-			if( s1.search(s2Elements[i])){
-				result.add(s2Elements[i]) ;
+			if( !s1.search(s2Elements[i])){
+				result.delete(s2Elements[i]) ;
 			}
 			i++ ;
 		}

@@ -22,13 +22,6 @@ public class Set{
 		data = new Array() ;
 	}
 
-	public Set( int[] data){
-		this.data = new Array() ;
-		for (int i = 0; i < data.length; i++) {
-			this.data.insertAtIndex(data[i], i) ;
-		}
-	}
-
 
 	public boolean insert( int element ) {
 		if( this.search(element)){

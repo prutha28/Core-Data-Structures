@@ -1,7 +1,5 @@
 package set;
 
-import javax.print.attribute.standard.MediaSize.Other;
-
 public class SetTest {
 
 	public static void main(String[] args) {
@@ -24,10 +22,7 @@ public class SetTest {
 			//			s.add(990) ;
 
 			// DELETIONS
-			s.delete(400) ;
-			s.delete(900) ;
-			s.delete(800) ;
-			s.delete(700) ;
+			s.delete(100) ;
 			System.out.println("Contents after deleting 100 :");
 			s.showContents() ;
 			//			s.remove(60) ;
@@ -40,18 +35,15 @@ public class SetTest {
 
 			// Set Utils.
 			System.out.println("---------------------------------------------");
-			
 			Set otherSet = new Set() ;
 			otherSet.add(10) ;
 			otherSet.add(100) ;
+			otherSet.add(111) ;
+			otherSet.add(222) ;
+			otherSet.add(333) ;
+			otherSet.add(44) ;
 			otherSet.add(600) ;
 
-			System.out.println("First set: ");
-			s.showContents() ;
-			System.out.println("Second set: ");
-			otherSet.showContents() ;
-			System.out.println();
-			
 			SetUtils utils = new SetUtils() ;
 			System.out.println("The intersection of the 2 sets is ");
 			Set intersection = utils.intersection(s, otherSet) ;

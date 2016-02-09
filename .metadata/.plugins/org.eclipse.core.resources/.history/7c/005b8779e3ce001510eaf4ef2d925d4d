@@ -44,6 +44,10 @@ public class SetTest {
 			Set otherSet = new Set() ;
 			otherSet.add(10) ;
 			otherSet.add(100) ;
+			otherSet.add(111) ;
+			otherSet.add(222) ;
+			otherSet.add(333) ;
+			otherSet.add(44) ;
 			otherSet.add(600) ;
 
 			System.out.println("First set: ");
