@@ -78,7 +78,7 @@ public class BinarySearchRecursive {
 
 		// 2 Base condition for finding the middle occurence
 
-		if( (start == end) && (x == a[start])){ // Tricky
+		if( (start == end) && (x == a[start])){
 			return start ;
 		}
 
@@ -125,10 +125,10 @@ public class BinarySearchRecursive {
 		if( start > end)
 			return -1 ;
 
-		// 2 Base condition for finding the first occurrence
+		// 2 Base condition for finding the first occurence
 
 		if( (x == a[start])){
-			return start ;				// Tricky
+			return start ;
 		}
 
 		int mid = (start + end ) /2 ;
