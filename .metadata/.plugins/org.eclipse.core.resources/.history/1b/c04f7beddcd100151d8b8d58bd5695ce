@@ -1,0 +1,6 @@
+package hackerrank.zappos;
+
+public interface x {
+
+	final int x ;
+}

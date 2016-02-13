@@ -1,0 +1,17 @@
+package binary.trees;
+
+public class BinaryTree implements IBinaryTree{
+
+	public void insert(Node data) {
+		
+	}
+
+	public boolean search(int data) {
+		return false;
+	}
+
+	public int delete(int data) {
+		return 0;
+	}
+
+}

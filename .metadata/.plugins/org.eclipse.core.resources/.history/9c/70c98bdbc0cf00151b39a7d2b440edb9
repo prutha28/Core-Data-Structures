@@ -1,0 +1,23 @@
+package hackerRank;
+
+import java.util.Map;
+
+//https://www.hackerrank.com/challenges/make-it-anagram
+
+public class MakeItAnagram {
+
+	static Map<String, Integer> s1Map ;
+	static Map<String, Integer> s2Map ;
+	
+	public static void main(String[] args) {
+		String s1 = "abcd" ;
+		String s2 = "abcc" ;
+		
+		
+		
+		
+	}
+
+	
+	
+}

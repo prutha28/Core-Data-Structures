@@ -1,0 +1,9 @@
+package hackerrank.zappos;
+
+public enum MyEnum {
+
+	
+	MyEnum(){
+		
+	}
+}

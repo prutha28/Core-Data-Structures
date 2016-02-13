@@ -1,0 +1,15 @@
+package hackerRank;
+
+public class Frog {
+	
+	public static void main(String[] args) {
+	
+
+	}
+	
+	static int solution(int A[], int N, int X, int D) {
+		int positionArray[] = new int[A.length] ;
+		
+	}
+
+}

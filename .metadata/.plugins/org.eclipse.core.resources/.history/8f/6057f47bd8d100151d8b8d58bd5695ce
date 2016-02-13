@@ -1,0 +1,14 @@
+package hackerrank.zappos;
+
+public class MyClass {
+
+	private int number ;
+	
+	public static void main(String... args) {
+		System.out.println(getStringValue(number));
+	}
+
+	private static String getStringValue(Integer number){
+		return String.valueOf(number) ;
+	}
+}

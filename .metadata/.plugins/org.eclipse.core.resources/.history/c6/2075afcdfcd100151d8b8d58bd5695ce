@@ -1,0 +1,28 @@
+package hackerRank;
+
+public class Frog {
+	
+	public static void main(String[] args) {
+	
+
+	}
+	
+	static int solution(int A[], int N, int X, int D) {
+		
+		// Index is position, element is time
+		int positionArray[] = new int[ X ] ;
+		
+		for (int i = 0; i < positionArray.length; i++) {
+			positionArray[i] = -1 ; //sentinel
+		}
+		
+		for (int i = 0; i < A.length; i++) {
+			if( ) 
+		}
+	}
+
+	private static int findMaxValueOfTime(int[] a) {
+		return 0;
+	}
+
+}

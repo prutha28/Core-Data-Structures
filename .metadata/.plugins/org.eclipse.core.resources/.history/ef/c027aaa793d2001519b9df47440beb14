@@ -1,0 +1,6 @@
+package hackerrank.sabre;
+
+public interface x {
+
+	int x = 0 ;
+}

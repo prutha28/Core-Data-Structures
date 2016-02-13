@@ -1,0 +1,39 @@
+package hackerRank;
+
+import java.util.HashMap;
+import java.util.Map;
+
+//https://www.hackerrank.com/challenges/make-it-anagram
+
+public class MakeItAnagram {
+
+	static Map<Character, Integer> s1Map ;
+	static Map<Character, Integer> s2Map ;
+	
+	public static void main(String[] args) {
+		String s1 = "abcd" ;
+		String s2 = "abcc" ;
+		
+		s1Map = formMapFor(s1) ;
+		s2Map = formMapFor(s2) ;
+		
+	}
+
+	private static Map<Character, Integer> formMapFor(String s) {
+		
+		Map<Character, Integer> map = new HashMap<Character, Integer>() ;
+		int i = 0 ;
+		while( i < s.length()){
+			Integer countValue = map.get(s.charAt(i)) ;
+			if( countValue == null ) {
+				
+			}
+			map.put(s.charAt(i),  ) ;
+			i++ ;
+		}
+		return map ;
+	}
+
+	
+	
+}

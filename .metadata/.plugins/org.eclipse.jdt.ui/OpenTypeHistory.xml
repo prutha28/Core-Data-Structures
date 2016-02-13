@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
 <typeInfo handle="=Queues/src&lt;queues.using.fixed.circular.arrays{IQueue.java[IQueue" modifiers="513" timestamp="1454812866000"/>
+<typeInfo handle="=Sets/src&lt;set{ISet.java[ISet" modifiers="513" timestamp="1454980638000"/>
+<typeInfo handle="=Arrays/\/usr\/lib\/jvm\/java-7-openjdk-amd64\/jre\/lib\/rt.jar&lt;java.util(SortedMap.class[SortedMap" modifiers="1537" timestamp="1453347731000"/>
 </typeInfoHistroy>

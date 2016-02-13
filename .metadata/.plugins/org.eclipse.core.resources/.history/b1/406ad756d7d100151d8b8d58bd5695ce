@@ -1,0 +1,14 @@
+package hackerrank.zappos;
+
+public class TestThread {
+
+	void startThread(){
+		Thread thread = new Thread(new MyRunnable()) ;
+	}
+	
+	public static void main(String[] args) {
+
+		new 
+	}
+
+}

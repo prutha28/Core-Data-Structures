@@ -1,0 +1,11 @@
+package hackerRank;
+
+//https://www.hackerrank.com/challenges/palindrome-index
+
+public class IndexToRemoveToMakePalindrome {
+
+	public static void main(String[] args) {
+
+	}
+
+}

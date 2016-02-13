@@ -1,0 +1,30 @@
+package hackerRank;
+
+//https://www.hackerrank.com/challenges/palindrome-index
+
+public class IndexToRemoveToMakePalindrome {
+
+	public static void main(String[] args) {
+		
+	}
+
+	public static boolean isPalindrome( String s){
+		boolean isPalindrome = true ;
+		int i = 0  ;
+		int end = s.length() ;
+		while( i < end){
+			if( s.charAt(i) != s.charAt(end-1)){
+				isPalindrome = false ;
+				return isPalindrome ;
+			}
+			i++ ;
+			end-- ;
+		}
+		if( isPalindrome ){
+			palindromes.add(s.substring(i, j+1)) ;	
+		}
+		return isPalindrome ;
+	}
+	
+	
+}

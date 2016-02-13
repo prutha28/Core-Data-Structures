@@ -1,0 +1,45 @@
+package hackerRank;
+
+import java.util.Scanner;
+
+public class SherlockArrayProblem {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner( System.in) ;
+		int T = sc.nextInt() ;
+
+		for( int i = 1; i <= T; i++){
+			int size = sc.nextInt() ;
+			int arr[] = new int[size] ;
+			for( int j = 0; j < size; j++){
+				arr[j] = sc.nextInt() ;
+			}
+			if(test(arr)){
+				System.out.println("YES") ;
+			}else{
+				System.out.println("NO") ;
+			}
+		}
+	}
+
+
+	private static boolean test( int[] arr){
+		boolean flag = false ;
+		for( int index = 0 ; index < arr.length; index++){
+			flag = (sum(arr, 0, index-1) == sum(arr,index+1, arr.length-1) ) ;
+			if( flag == true){
+				return true ;
+			}
+		}
+		return false ;
+	}
+
+	private static int sum(int[] arr, int start, int end){
+		int sum = 0 ;
+
+		for( int i = start; i <=end; i++){
+			sum = sum + arr[i] ;
+		}
+		return sum ;
+	}
+}

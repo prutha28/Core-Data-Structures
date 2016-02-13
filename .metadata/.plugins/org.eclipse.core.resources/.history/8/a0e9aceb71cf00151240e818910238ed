@@ -1,0 +1,19 @@
+
+public class NumberModuloCheck {
+
+	static int a, b, c, d ;
+	
+	public static void main(String[] args) {
+		check() ;
+	}
+
+	private static void check() {
+		if((((c-a) % b) == 0) ||  
+			(((d-b) % a) == 0)){
+			
+		}
+	}
+	
+	
+
+}

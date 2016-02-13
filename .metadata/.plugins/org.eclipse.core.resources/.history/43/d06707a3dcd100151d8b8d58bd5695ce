@@ -1,0 +1,29 @@
+package hackerrank.zappos;
+
+public class exception {
+
+	public static void main(String[] args) {
+
+		x() ;
+
+	}
+
+
+	static void x(){
+//		try{
+//
+//			int j = 0 ;
+//			for (int i = 0; i < 100; i++){
+//				j=j++ ;
+//			}
+//			System.out.println(j);
+//			
+//		}catch(NullPointerException e){
+//			System.out.println("a");
+//		}
+//		finally{
+//			System.out.println("c");
+//		}
+	}
+
+}

@@ -1,0 +1,36 @@
+package hackerRank;
+
+//https://www.hackerrank.com/challenges/palindrome-index
+
+public class IndexToRemoveToMakePalindrome {
+
+	static String s = "madama" ;
+
+	public static void main(String[] args) {
+		System.out.println("The index of character to be removed is " + isPalindrome(s, 0, s.length()-1));
+		
+	}
+
+	public static int isPalindrome( String s, int start, int end){
+		
+		while( start < end){
+			if( s.charAt( start ) != s.charAt(end )){
+				if (isPalindrome(s, start, end-1) == -1){
+					// remove char at end
+					return end ;
+				}
+				else{
+					// remove char at start
+					return start ;
+				}
+			}
+			start++ ;
+			end-- ;
+		}
+		return -1 ; // if its already a palindrome.
+	}
+
+	
+	
+
+}
