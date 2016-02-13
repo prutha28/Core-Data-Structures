@@ -1,0 +1,70 @@
+package binary.search.recursive;
+
+public class BinarySearchRecursive {
+
+	static int A[] = { 3, 3, 3, 6, 112, 112, 112} ; 
+
+	public static void main(String[] args) {
+
+		int start = 0 ;
+		int end = A.length - 1 ;
+
+		int x = 8 ;
+		int index = BSearch_first(A, x, start, end) ;
+//		System.out.println( x + " was found at index :" + index);
+
+		x = 112 ;
+		index = BSearch_first(A, x, start, end) ;
+		System.out.println( x + " was found at index :" + index);
+
+//		x = 10 ;
+//		index = BSearch_first(A, x, start, end) ;
+//		System.out.println( x + " was found at index :" + index);
+
+		x = 3 ;
+//		index = BSearch_first(A, x, start, end) ;
+//		System.out.println( x + " was found first at index :" + index);
+
+	}
+
+
+	private static int BSearch_first(int[] a, int x, int start, int end) {
+
+		// Base conditions
+		// 1
+		
+		if( start > end)
+			return -1 ;
+		
+		// 2 
+		
+		if( (start == end) && (x == a[start])){
+			return start ;
+		}
+		
+		
+		int mid = (start + end ) /2 ;
+
+		if( x <= A[ mid]){
+
+			return BSearch_first(a, x, start, mid -1) ;
+
+		}else if( x > A[mid]){
+
+			return BSearch_first(a, x, mid +1, end ) ;
+
+		}
+		
+		else if ( x == A[mid]){
+
+			return mid ;
+
+		}
+		
+		else{
+			
+			return -1 ;
+		}
+	}
+
+}
