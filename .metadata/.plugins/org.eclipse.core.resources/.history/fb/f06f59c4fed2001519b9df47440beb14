@@ -36,7 +36,7 @@ public class MergeSort {
 		}
 		else if( begin < end){
 
-			int mid = ( end + begin ) /2 ;
+			int mid = ( end - begin ) /2 ;
 			left = mergesort(arr, begin, mid) ;
 			right = mergesort(arr, mid + 1 , end) ;
 			result = merge( left, right ) ;

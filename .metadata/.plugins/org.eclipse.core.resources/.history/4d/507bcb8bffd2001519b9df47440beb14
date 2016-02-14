@@ -26,7 +26,7 @@ public class MergeSort {
 
 		// BASE case
 		if( begin > end) 
-			return null ;
+			return result ;
 
 		// BASE Case
 		else if( begin == end){

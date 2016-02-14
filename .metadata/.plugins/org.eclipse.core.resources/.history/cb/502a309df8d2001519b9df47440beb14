@@ -2,7 +2,7 @@ package counting.sort;
 /**
  * ASSUMPTIONS :
  * 
- *  Each value is a non-negative integer value whose maximum value is atmost k.
+ * Each value is a non-negative integer value whose maximum value is atmost k.
  * 
  *  Counting sort is a stable sort: if two items have the same key as each other, 
  *  they should have the same relative position in the output as they did in the input.
@@ -39,12 +39,12 @@ public class CountSort {
 
 		// B is the output array
 		int B[] = new int[ A.length] ;
-
+		
 		for (int i = 0; i < B.length; i++) {
 			B[Count[A[i]] - 1] = A[i] ;				// Tricky! Dont forget the -1 in the index
 			Count[A[i]] = Count[A[i]] - 1;
 		}
-
+		
 		for (int i = 0; i < B.length; i++) {
 			System.out.print(B[i] + " ");
 		}
