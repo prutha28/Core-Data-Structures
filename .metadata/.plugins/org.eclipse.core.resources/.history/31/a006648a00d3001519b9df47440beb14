@@ -2,9 +2,9 @@ package insertion.sort;
 
 public class MergeSort {
 
-	static String[] arr = { "mary", "john", "jane" , "ana" , "peter", "heena", "cristina" , "nathan", "meredith", "Derek", "prutha", "peter" }; 
+		static String[] arr = { "mary", "john", "jane" , "ana" , "peter", "heena", "cristina" , "nathan", "meredith", "Derek", "prutha", "peter" }; 
 
-	//	static int[] arr = { 45, 87, 2, 1, 34, -1, 9, 2, 65 } ;
+//	static int[] arr = { 45, 87, 2, 1, 34, -1, 9, 2, 65 } ;
 	//	static int[] arr = { 6, 9, 2, 1, 5, 8, -1, 8, 0, 0 , 11, 1 } ;
 
 	public static void main(String[] args) {
