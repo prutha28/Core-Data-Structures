@@ -31,7 +31,7 @@ public class CountSort {
 		int B[] = new int[ A.length] ;
 		
 		for (int i = 0; i < B.length; i++) {
-			B[Count[A[i]] - 1] = A[i] ;				// Tricky! Dont forget the -1 in teh index
+			B[Count[A[i]] - 1] = A[i] ;				// Tricky! Dont forget the -1 in the index
 			Count[A[i]] = Count[A[i]] - 1;
 		}
 		

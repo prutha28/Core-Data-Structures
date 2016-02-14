@@ -76,7 +76,7 @@ public class BinarySearchRecursive {
 		if( start > end)
 			return -1 ;
 
-		// 2 Base condition for finding the middle occurence
+		// 2 Base condition for finding the middle occurrence
 
 		if( (start == end) && (x == a[start])){ // Tricky
 			return start ;
