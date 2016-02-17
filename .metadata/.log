@@ -1228,3 +1228,18 @@ org.eclipse.jdi.TimeoutException: Timeout occurred while waiting for packet 9986
 	at org.eclipse.debug.internal.core.commands.StepCommand.isExecutable(StepCommand.java:43)
 	at org.eclipse.debug.core.commands.AbstractDebugCommand$UpdateJob.run(AbstractDebugCommand.java:100)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2016-02-16 21:08:22.418 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.7.0_95
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 2 2016-02-17 03:22:26.821
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2016-02-17 03:22:26.821
+!MESSAGE The project description file (.project) for 'DP' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2016-02-17 03:22:26.821
+!MESSAGE The project description file (.project) for 'Searching' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2016-02-17 03:22:26.821
+!MESSAGE The project description file (.project) for 'Sorting Algorithms' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
