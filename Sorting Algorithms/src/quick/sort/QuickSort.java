@@ -2,44 +2,63 @@ package quick.sort;
 
 public class QuickSort {
 
+	static int[] A = { 2, 6, 5, 9, 8, 7, 4 } ;
+
 	public static void main(String[] args) {
 
-		int[] arr = { 23,3, 7, 99 , 111, 10000, 6 } ;
-		print( arr ) ;
-		qsort( arr, 0 , arr.length - 1) ;
-		print( arr ) ;
+		//		int[] arr = { 23,3, 7, 99 , 111, 10000, 6 } ;
+		print( A ) ;
+		qsort( 0 , A.length - 1) ;
+		print( A ) ;
 	}
 
-	private static int[] qsort( int[] A, int p, int r ) {
-		
-		if( p > r)
+	private static int[] qsort( int p, int r ) {
+
+		if( p == r){
+			int[] result = new int[1] ;
+			result[0] = A[p] ;
+			return result ;
+		}
+
+		else if( p < r){
+			int q = partition( p, r ) ;	// index of pivot
+			int left[] = qsort( p, q-1) ;	
+			int right[] = qsort( q+1, r) ;
+			return concat( left, A[q], right) ;
+		}else{
 			return null ;
-		
-		int q = partition( A, p, r ) ;	// index of pivot
-		int left[] = qsort( A, p, q-1) ;	
-		int right[] = qsort(A, q+1, r) ;
-		return concat( left, A[q], right) ;
+		}
 	}
 
 	private static int[] concat(int[] left, int pivot, int[] right) {
-		int result[] = new int[ left.length + 1 + right.length ] ;
+
+		int result[] ;
+
+		if( left == null && right != null){
+			result = new int[ 1 + right.length ] ;
+		}else if( left != null && right == null){
+			result = new int[ 1 + left.length ] ;
+		}
+		else{
+			result = new int[ left.length + 1 + right.length ] ;
+		}
 
 		int i = 0  ; // Iterates over the left side
 		int j = 0  ; // Iterates over the right side
 		int k = 0  ; // Iterates over the result
-		
+
 		while( k < result.length){
-			
-			while( i < left.length){
+
+			while( left!= null && i < left.length){
 				result[ k ] = left[ i ] ;
 				k++ ;
 				i++ ;
 			}
 			result[k] = pivot ;
 			k++ ;
-			
-			while( j < left.length){
-				result[ k ] = left[ j ] ;
+
+			while( right != null && j < right.length){
+				result[ k ] = right[ j ] ;
 				j++ ;
 				k++ ;
 			}
@@ -58,13 +77,13 @@ public class QuickSort {
 	 * @param r
 	 * @return
 	 */
-	private static int partition(int[] A, int p, int r) {
-		
+	private static int partition( int p, int r) {
+
 		int x = A[r] ;
 		int i = p -1 ;
 		int j = i +1 ;
 		int temp ;
-		
+
 		while( A[j] < x){
 			i = i + 1 ;
 			// Swap A[i] & A[j]
@@ -73,10 +92,10 @@ public class QuickSort {
 			A[j] = temp ;
 			j++ ;
 		}
-		// Finally swap A[i+1] with x
+		// Finally swap A[i+1] with x i.e. A[r]
 		temp = A[i+1] ;
-		A[i+1] = x ;
-		x = temp ;
+		A[i+1] = A[r] ;
+		A[r] = temp ;
 		return (i+1); // index of the pivot
 	}
 

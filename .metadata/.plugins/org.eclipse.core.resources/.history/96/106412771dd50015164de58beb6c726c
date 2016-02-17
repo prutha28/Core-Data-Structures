@@ -1,0 +1,5 @@
+package hashing.using.arrays;
+
+public interface IHash {
+
+}

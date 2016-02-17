@@ -1,0 +1,47 @@
+package hashing.using.arrays;
+
+import java.util.List;
+import java.util.Set;
+
+public class Hash<K, V> implements IHash<K, V>{
+
+	public boolean put(K key, V value) {
+		return false;
+	}
+
+	public boolean get(K key) {
+		return false;
+	}
+
+	public V remove(K key) {
+		return null;
+	}
+
+	public Set<K> keySet() {
+		return null;
+	}
+
+	public List<V> values() {
+		return null;
+	}
+
+	public int size() {
+		return 0;
+	}
+
+	public boolean isEmpty() {
+		return ( size() == 0 ? true : false );
+	}
+
+	public boolean containsKey(K key) {
+		return false;
+	}
+
+	public boolean containsValue(V value) {
+		return false;
+	}
+	
+	private int hashcode(int key){
+		 
+	}
+}
