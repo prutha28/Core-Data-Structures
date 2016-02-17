@@ -1,0 +1,44 @@
+package hackerrank.inf;
+
+public class Q3 {
+
+	public static void main(String[] args) {
+		int A[] = { 1, 2,3 ,4, 5, 6, 7, 8, 9, 10} ;
+		plusMult(A) ;
+	}
+
+
+	static String plusMult(int[] A) {
+        
+        int i = 0 ; // Iterates over even indices
+        int Re = A[0] ;
+        
+        while( i < A.length){
+        	i = i + 2 ;
+        	Re = ( Re * A[i]) ;
+        	i = i + 2 ;
+        	Re = ((Re) + A[i]) ;  
+        }
+        
+        int j = 1 ; // Iterates over odd indices
+        int Ro = A[1] ;
+        
+        while( j < A.length){
+        	j = j + 2 ;
+        	Ro = ( Ro * A[j]) ;
+        	j = j + 2 ;
+        	Ro = ((Ro) + A[j]) ;  
+        }
+        
+        
+        if( Re > Ro){
+            return "EVEN" ;
+        }else if( Re < Ro){
+            return "ODD" ;
+        }else{
+            return "NEUTRAL" ;
+        }
+
+
+	}
+}

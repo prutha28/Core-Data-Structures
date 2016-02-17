@@ -1,0 +1,12 @@
+package Strings;
+
+public class StringUniqueCharacters {
+
+	public static void main(String[] args) {
+
+		String s = "prutha~!@#$%^&*" ;
+		int letters[] = new int[128] ;
+		
+	}
+
+}

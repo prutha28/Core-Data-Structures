@@ -1,0 +1,33 @@
+package hackerrank.inf;
+
+public class Q3 {
+
+	public static void main(String[] args) {
+		int A[] = { 1, 2,3 ,4, 5, 6, 7, 8, 9, 10} ;
+		plusMult(A) ;
+	}
+
+
+	static String plusMult(int[] A) {
+		
+		int Re = A[0] ;
+        int Ro = A[1] ;
+        
+        int i = 0 ;
+        while( i < A.length){
+            
+        }
+        
+		
+		
+        if( Re > Ro){
+            return "EVEN" ;
+        }else if( Re < Ro){
+            return "ODD" ;
+        }else{
+            return "NEUTRAL" ;
+        }
+
+
+	}
+}

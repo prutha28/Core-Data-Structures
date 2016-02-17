@@ -1,0 +1,23 @@
+package hackerrank.inf;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Q2 {
+
+	static long minarea(int[] x, int[] y, int k) {
+		
+		// X & y are pairs of coordinates
+		if( x.length != y.length)
+			return -1 ;
+		
+		static List<Integer, Integer> coordinates = new ArrayList<Integer, Integer>() ;
+
+	}
+
+
+	public static void main(String[] args) {
+
+	}
+
+}

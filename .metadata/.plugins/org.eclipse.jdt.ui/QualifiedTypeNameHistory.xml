@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="arrays.IArray"/>
-<fullyQualifiedTypeName name="java.lang.reflect.Array"/>
-<fullyQualifiedTypeName name="fixed.size.stacks.IStack"/>
-<fullyQualifiedTypeName name="string.operations.using.stacks.PalindromeCheck"/>
 <fullyQualifiedTypeName name="fixed.size.stacks.Stack"/>
 <fullyQualifiedTypeName name="string.operations.using.stacks.StringReversal"/>
 <fullyQualifiedTypeName name="fixed.size.stacks.of.strings.Stack"/>
 <fullyQualifiedTypeName name="javax.swing.text.AbstractDocument.BranchElement"/>
 <fullyQualifiedTypeName name="applications.using.stacks.BracketCheck"/>
 <fullyQualifiedTypeName name="insertion.sort.InsertionSort"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="arrays.sorted.EmptyArrayException"/>
 <fullyQualifiedTypeName name="arrays.sorted.SortedArray"/>
@@ -36,17 +31,12 @@
 <fullyQualifiedTypeName name="binary.trees.IBinaryTree"/>
 <fullyQualifiedTypeName name="hackerRank.IndexToRemoveToMakePalindrome"/>
 <fullyQualifiedTypeName name="hackerrank.zappos.MakePalindrome"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.Collection"/>
-<fullyQualifiedTypeName name="javax.swing.text.html.HTMLDocument.Iterator"/>
-<fullyQualifiedTypeName name="java.util.HashMap"/>
-<fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="java.io.BufferedWriter"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="java.io.FileWriter"/>
 <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
 <fullyQualifiedTypeName name="hackerrank.zappos.TestThread"/>
-<fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="hackerrank.zappos.DBConnection"/>
 <fullyQualifiedTypeName name="java.lang.AutoCloseable"/>
 <fullyQualifiedTypeName name="java.lang.Exception"/>
@@ -54,8 +44,20 @@
 <fullyQualifiedTypeName name="hackerrank.zappos.MyEnum"/>
 <fullyQualifiedTypeName name="hackerrank.zappos.EnumTest"/>
 <fullyQualifiedTypeName name="hackerrank.zappos.MyClass"/>
-<fullyQualifiedTypeName name="java.util.HashSet"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
 <fullyQualifiedTypeName name="javax.crypto.spec.PSource"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="hackerrank.inf.Q1"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="javax.swing.text.html.HTMLDocument.Iterator"/>
+<fullyQualifiedTypeName name="java.util.Map.Entry"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.HashSet"/>
+<fullyQualifiedTypeName name="java.util.SortedSet"/>
+<fullyQualifiedTypeName name="java.util.TreeSet"/>
 </qualifiedTypeNameHistroy>

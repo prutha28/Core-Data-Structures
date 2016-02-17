@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="21" version="2.0">
+<workbench progressCount="15" version="2.0">
 <workbenchAdvisor/>
 <window height="715" maximized="true" width="1018" x="65" y="24">
 <fastViewData fastViewLocation="1024"/>
@@ -14,14 +14,14 @@
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="156" y="30"/>
 <coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="316" y="30"/>
 <coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="88" y="30"/>
-<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="88" y="30"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="314" y="30"/>
 <coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="226" y="30"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="232" y="30"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditorNoSource" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -30,26 +30,10 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-<part id="2"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MergeSort.java" partName="MergeSort.java" path="/home/prutha/Desktop/Data Structures/Sorting Algorithms/src/insertion/sort/MergeSort.java" title="MergeSort.java" tooltip="Sorting Algorithms/src/insertion/sort/MergeSort.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Sorting Algorithms/src/insertion/sort/MergeSort.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1777" selectionTopPixel="945"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BinarySearch.java" partName="BinarySearch.java" path="/home/prutha/Desktop/Data Structures/Searching/src/binary/search/iterative/BinarySearch.java" title="BinarySearch.java" tooltip="Searching/src/binary/search/iterative/BinarySearch.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Searching/src/binary/search/iterative/BinarySearch.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1149" selectionTopPixel="524"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StringBasics.java" partName="StringBasics.java" path="/home/prutha/Desktop/Data Structures/cracking Coding/src/Strings/StringBasics.java" title="StringBasics.java" tooltip="cracking Coding/src/Strings/StringBasics.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/cracking Coding/src/Strings/StringBasics.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="239" selectionTopPixel="0"/>
-</editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
@@ -64,8 +48,9 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
+<category IMemento.internal.id="Warnings (37 items)"/>
 <category IMemento.internal.id="Errors"/>
-<category IMemento.internal.id="Warnings (41 items)"/>
+<category IMemento.internal.id="Warnings"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="261" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -135,7 +120,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.debug.ui.DebugPerspective">
+<perspectives activePart="org.eclipse.ui.console.ConsoleView" activePerspective="org.eclipse.debug.ui.DebugPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.ui.internal.ide.application.ResourcePerspective" id="org.eclipse.ui.resourcePerspective" label="Resource"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -405,173 +390,14 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory>
-<editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Sorting Algorithms/src/insertion/sort/MergeSort.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Searching/src/binary/search/iterative/BinarySearch.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/cracking Coding/src/Strings/StringBasics.java"/>
-</editors>
-<item historyLabel="MergeSort.java" index="0">
-<position info="not_deleted" x="901" y="0"/>
-</item>
-<item historyLabel="MergeSort.java" index="0">
-<position info="not_deleted" x="935" y="0"/>
-</item>
-<item historyLabel="MergeSort.java" index="0">
-<position info="not_deleted" x="1010" y="0"/>
-</item>
-<item historyLabel="MergeSort.java" index="0">
-<position info="not_deleted" x="657" y="0"/>
-</item>
-<item historyLabel="MergeSort.java" index="0">
-<position info="not_deleted" x="692" y="0"/>
-</item>
-<item historyLabel="MergeSort.java" index="0">
-<position info="not_deleted" x="745" y="0"/>
-</item>
-<item historyLabel="MergeSort.java" index="0">
-<position info="not_deleted" x="1052" y="0"/>
-</item>
-<item historyLabel="MergeSort.java" index="0">
-<position info="not_deleted" x="692" y="0"/>
-</item>
-<item historyLabel="MergeSort.java" index="0">
-<position info="not_deleted" x="771" y="0"/>
-</item>
-<item historyLabel="MergeSort.java" index="0">
-<position info="not_deleted" x="921" y="0"/>
-</item>
-<item historyLabel="MergeSort.java" index="0">
-<position info="not_deleted" x="475" y="0"/>
-</item>
-<item historyLabel="MergeSort.java" index="0">
-<position info="not_deleted" x="1057" y="0"/>
-</item>
-<item historyLabel="MergeSort.java" index="0">
-<position info="not_deleted" x="935" y="0"/>
-</item>
-<item historyLabel="MergeSort.java" index="0">
-<position info="not_deleted" x="974" y="0"/>
-</item>
-<item historyLabel="MergeSort.java" index="0">
-<position info="not_deleted" x="1017" y="0"/>
-</item>
-<item historyLabel="MergeSort.java" index="0">
-<position info="not_deleted" x="1057" y="0"/>
-</item>
-<item historyLabel="MergeSort.java" index="0">
-<position info="not_deleted" x="935" y="0"/>
-</item>
-<item historyLabel="MergeSort.java" index="0">
-<position info="not_deleted" x="692" y="0"/>
-</item>
-<item historyLabel="MergeSort.java" index="0">
-<position info="not_deleted" x="974" y="0"/>
-</item>
-<item historyLabel="MergeSort.java" index="0">
-<position info="not_deleted" x="1057" y="0"/>
-</item>
-<item historyLabel="MergeSort.java" index="0">
-<position info="not_deleted" x="935" y="0"/>
-</item>
-<item historyLabel="MergeSort.java" index="0">
-<position info="not_deleted" x="974" y="0"/>
-</item>
-<item historyLabel="MergeSort.java" index="0">
-<position info="not_deleted" x="1017" y="0"/>
-</item>
-<item historyLabel="MergeSort.java" index="0">
-<position info="not_deleted" x="1057" y="0"/>
-</item>
-<item historyLabel="MergeSort.java" index="0">
-<position info="not_deleted" x="974" y="0"/>
-</item>
-<item historyLabel="MergeSort.java" index="0">
-<position info="not_deleted" x="1017" y="0"/>
-</item>
-<item historyLabel="MergeSort.java" index="0">
-<position info="not_deleted" x="1057" y="0"/>
-</item>
-<item historyLabel="MergeSort.java" index="0">
-<position info="not_deleted" x="475" y="0"/>
-</item>
-<item historyLabel="MergeSort.java" index="0">
-<position info="not_deleted" x="520" y="0"/>
-</item>
-<item historyLabel="MergeSort.java" index="0">
-<position info="not_deleted" x="532" y="0"/>
-</item>
-<item historyLabel="MergeSort.java" index="0">
-<position info="not_deleted" x="0" y="1777"/>
-</item>
-<item historyLabel="BinarySearch.java" index="1">
-<position info="not_deleted" x="1149" y="0"/>
-</item>
-<item historyLabel="MergeSort.java" index="0">
-<position info="not_deleted" x="1777" y="0"/>
-</item>
-<item historyLabel="StringBasics.java" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="StringBasics.java" index="2">
-<position info="not_deleted" x="131" y="0"/>
-</item>
-<item historyLabel="StringBasics.java" index="2">
-<position/>
-</item>
-<item historyLabel="StringBasics.java" index="2">
-<position/>
-</item>
-<item historyLabel="StringBasics.java" index="2">
-<position info="not_deleted" x="165" y="0"/>
-</item>
-<item historyLabel="StringBasics.java" index="2">
-<position info="not_deleted" x="188" y="0"/>
-</item>
-<item historyLabel="StringBasics.java" index="2">
-<position info="not_deleted" x="209" y="0"/>
-</item>
-<item historyLabel="StringBasics.java" index="2">
-<position info="not_deleted" x="217" y="0"/>
-</item>
-<item historyLabel="StringBasics.java" index="2">
-<position info="not_deleted" x="220" y="0"/>
-</item>
-<item historyLabel="StringBasics.java" index="2">
-<position info="not_deleted" x="221" y="0"/>
-</item>
-<item historyLabel="StringBasics.java" index="2">
-<position info="not_deleted" x="224" y="11"/>
-</item>
-<item historyLabel="StringBasics.java" index="2">
-<position info="not_deleted" x="221" y="0"/>
-</item>
-<item historyLabel="StringBasics.java" index="2">
-<position info="not_deleted" x="89" y="0"/>
-</item>
-<item historyLabel="StringBasics.java" index="2">
-<position info="not_deleted" x="224" y="11"/>
-</item>
-<item historyLabel="StringBasics.java" index="2">
-<position info="not_deleted" x="195" y="0"/>
-</item>
-<item historyLabel="StringBasics.java" index="2">
-<position info="not_deleted" x="245" y="0"/>
-</item>
-<item active="true" historyLabel="StringBasics.java" index="2">
-<position info="not_deleted" x="221" y="0"/>
-</item>
-</navigationHistory>
+<navigationHistory/>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="left"/>
-</trimArea>
 <trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="org.eclipse.debug.internal.ui.OutlineFolderView"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
 </trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
@@ -581,11 +407,43 @@
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
 <trimItem IMemento.internal.id="org.eclipse.debug.internal.ui.ConsoleFolderView"/>
-<trimItem IMemento.internal.id="bottom"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="TreeMap.class" tooltip="java.util.TreeMap">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Arrays/\/usr\/lib\/jvm\/java-7-openjdk-amd64\/jre\/lib\/rt.jar&lt;java.util(TreeMap.class"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Q2.java" tooltip="Java Practice/src/hackerrank/inf/Q2.java">
+<persistable path="/Java Practice/src/hackerrank/inf/Q2.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Q3.java" tooltip="Java Practice/src/hackerrank/inf/Q3.java">
+<persistable path="/Java Practice/src/hackerrank/inf/Q3.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Q1.java" tooltip="Java Practice/src/hackerrank/inf/Q1.java">
+<persistable path="/Java Practice/src/hackerrank/inf/Q1.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HalloweenCake.java" tooltip="Java Practice/src/hackerrank/zap/HalloweenCake.java">
+<persistable path="/Java Practice/src/hackerrank/zap/HalloweenCake.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StringCompression.java" tooltip="cracking Coding/src/Strings/StringCompression.java">
+<persistable path="/cracking Coding/src/Strings/StringCompression.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Heap.java" tooltip="Heaps/src/heap/Heap.java">
+<persistable path="/Heaps/src/heap/Heap.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AreStringsPermutation.java" tooltip="cracking Coding/src/Strings/AreStringsPermutation.java">
+<persistable path="/cracking Coding/src/Strings/AreStringsPermutation.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StringUniqueCharacters.java" tooltip="cracking Coding/src/Strings/StringUniqueCharacters.java">
+<persistable path="/cracking Coding/src/Strings/StringUniqueCharacters.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="InsertionSort.java" tooltip="Sorting Algorithms/src/insertion/sort/InsertionSort.java">
+<persistable path="/Sorting Algorithms/src/insertion/sort/InsertionSort.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="QuickSort.java" tooltip="Sorting Algorithms/src/quick/sort/QuickSort.java">
+<persistable path="/Sorting Algorithms/src/quick/sort/QuickSort.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StringBasics.java" tooltip="cracking Coding/src/Strings/StringBasics.java">
 <persistable path="/cracking Coding/src/Strings/StringBasics.java"/>
 </file>
@@ -597,39 +455,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MergeSort.java" tooltip="Sorting Algorithms/src/insertion/sort/MergeSort.java">
 <persistable path="/Sorting Algorithms/src/insertion/sort/MergeSort.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Frog.java" tooltip="Java Practice/src/hackerRank/Frog.java">
-<persistable path="/Java Practice/src/hackerRank/Frog.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="InsertionSort.java" tooltip="Sorting Algorithms/src/insertion/sort/InsertionSort.java">
-<persistable path="/Sorting Algorithms/src/insertion/sort/InsertionSort.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SelectionSort.java" tooltip="Sorting Algorithms/src/selection/sort/SelectionSort.java">
-<persistable path="/Sorting Algorithms/src/selection/sort/SelectionSort.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CountSort.java" tooltip="Sorting Algorithms/src/counting/sort/CountSort.java">
-<persistable path="/Sorting Algorithms/src/counting/sort/CountSort.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BinarySearchRecursive.java" tooltip="Searching/src/binary/search/recursive/BinarySearchRecursive.java">
-<persistable path="/Searching/src/binary/search/recursive/BinarySearchRecursive.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LinearSearch.java" tooltip="Searching/src/linear/search/iterative/LinearSearch.java">
-<persistable path="/Searching/src/linear/search/iterative/LinearSearch.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DollarsIcecream.java" tooltip="Java Practice/src/hackerRank/DollarsIcecream.java">
-<persistable path="/Java Practice/src/hackerRank/DollarsIcecream.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SherlockArrayProblem.java" tooltip="Java Practice/src/hackerRank/SherlockArrayProblem.java">
-<persistable path="/Java Practice/src/hackerRank/SherlockArrayProblem.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BracketCheck.java" tooltip="Stacks/src/applications/using/stacks/BracketCheck.java">
-<persistable path="/Stacks/src/applications/using/stacks/BracketCheck.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="x.java" tooltip="Java Practice/src/hackerrank/zappos/x.java">
-<persistable path="/Java Practice/src/hackerrank/zappos/x.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EnumTest.java" tooltip="Java Practice/src/hackerrank/zappos/EnumTest.java">
-<persistable path="/Java Practice/src/hackerrank/zappos/EnumTest.java"/>
 </file>
 </mruList>
 </workbench>

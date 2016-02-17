@@ -2,11 +2,11 @@ package heap;
 
 public class Heap implements IHeap{
 
-	int heapArray[] ;
+	int heapArray[] = {  21, 4, 5, 8, 1, 3, 5, 89}  ;
 	int heapLength ; 
 	
-	public Heap(){
-		
+	public Heap(){ 
+		heapLength = heapArray.length ;
 	}
 	
 	public int parent(int i) {

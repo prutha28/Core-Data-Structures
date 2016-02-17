@@ -1,0 +1,26 @@
+package Strings;
+
+public class AreStringsPermutation {
+
+	public static void main(String[] args) {
+
+		String s = "Prutha" ;
+		String t = "Arputha" ;
+		
+		if( isAPermutationOf(s, t)){
+			System.out.println("YES");
+		}else{
+			System.out.println("NO");
+		}
+
+	}
+	
+	public static boolean isAPermutationOf( String s, String t){
+		
+		if( s.length() != t.length())
+			return false ;
+		
+		
+	}
+
+}

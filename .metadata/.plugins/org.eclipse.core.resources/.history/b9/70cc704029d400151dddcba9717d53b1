@@ -1,0 +1,19 @@
+package Strings;
+
+public class AreStringsPermutation {
+
+	public static void main(String[] args) {
+
+		String s = "Prutha" ;
+		String t = "Arputha" ;
+		
+		
+		if( s.isAPermutationOf(t)){
+			System.out.println("YES");
+		}else{
+			System.out.println("NO");
+		}
+
+	}
+
+}
