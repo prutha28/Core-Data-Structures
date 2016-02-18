@@ -14,6 +14,7 @@ public class QuickSort {
 
 	private static int[] qsort( int p, int r ) {
 
+		// BASE CASES : Tricky!
 		if( p == r){
 			int[] result = new int[1] ;
 			result[0] = A[p] ;

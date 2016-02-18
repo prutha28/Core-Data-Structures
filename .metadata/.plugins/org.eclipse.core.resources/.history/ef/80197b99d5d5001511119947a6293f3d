@@ -1,0 +1,45 @@
+package maximumContiguousSum;
+
+public class MaximumContiguousSum {
+
+	static int arr[]  = { -1, 6, 5, -9, 8 , 2, -4 } ;
+
+	public static void main( String[] args){
+
+		System.out.println(new MaximumContiguousSum().maxSum( 0, arr.length -1)) ;
+	}
+
+
+//	public int maxSum( int i ){
+//
+//
+//		while( i < arr.length) {
+//			if( maxSum(i-1) + arr[i] >= arr[ i ]){
+//				end = i ;
+//				return (maxSum(i-1) + arr[i++]) ;
+//			}else{
+//				start = i ;
+//				end = i ;
+//				return arr[i++] ;
+//			}
+//		}
+//
+//	}
+
+
+	public int maxSum(int sum , int start, int end){
+		if( end == 0)
+			return arr[0] ;
+		else{
+			if( arr[end] > arr[end] + maxSum(start, end-1)){
+				maxSum(arr[end], end, end) ;
+			}else{
+				arr[end] + maxSum(start, end-1) ;
+			}
+			end++ ;
+		}
+	}
+
+
+
+}

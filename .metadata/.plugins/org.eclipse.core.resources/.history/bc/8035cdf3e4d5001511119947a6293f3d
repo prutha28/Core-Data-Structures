@@ -1,0 +1,17 @@
+package maximumContiguousSum;
+
+public class MaximumContiguousSum {
+
+	public static void main( String[] args){
+		
+		int arr[]  = { -1, 6, 5, -9, 8 , 2, -4 } ;
+		System.out.println(new MaximumContiguousSum().maxSum( arr)) ;
+	}
+
+
+	public int maxSum( int[] A ){
+		
+		if( )
+	}
+
+}

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="15" version="2.0">
+<workbench progressCount="18" version="2.0">
 <workbenchAdvisor/>
-<window height="715" maximized="true" width="1018" x="65" y="24">
+<window height="706" maximized="true" width="1032" x="216" y="24">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="329"/>
@@ -12,28 +12,34 @@
 <coolItem id="additions" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.debug.ui.launch.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="156" y="30"/>
-<coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="316" y="30"/>
+<coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="40" y="30"/>
 <coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="88" y="30"/>
-<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="314" y="30"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="226" y="30"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="88" y="30"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="124" y="30"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="232" y="30"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditorNoSource" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
-<page aggregateWorkingSetId="Aggregate for window 1454361384212" focus="true" label="Workspace - Debug">
+<page aggregateWorkingSetId="Aggregate for window 1454361384212" focus="true" label="Workspace - Java">
 <editors>
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Heap.java" partName="Heap.java" path="/home/prutha/Desktop/Data Structures/Heaps/src/heap/Heap.java" title="Heap.java" tooltip="Heaps/src/heap/Heap.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Heaps/src/heap/Heap.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="149" selectionTopPixel="0"/>
+</editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
@@ -47,11 +53,6 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Warnings (37 items)"/>
-<category IMemento.internal.id="Errors"/>
-<category IMemento.internal.id="Warnings"/>
-</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="261" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -120,7 +121,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.ui.console.ConsoleView" activePerspective="org.eclipse.debug.ui.DebugPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.ui.internal.ide.application.ResourcePerspective" id="org.eclipse.ui.resourcePerspective" label="Resource"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -330,26 +331,18 @@
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.debug.ui.DebugView"/>
 <fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.7494199" ratioLeft="969" ratioRight="324" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.7494199" ratioLeft="969" ratioRight="324" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.6305031" ratioLeft="401" ratioRight="235" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.6305031" ratioLeft="401" ratioRight="235" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
 <page content="org.eclipse.jdt.junit.ResultView" label="JUnit"/>
@@ -360,8 +353,7 @@
 <page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.debug.ui.DisplayView" label="LabelNotFound"/>
 <page content="org.eclipse.search.SearchResultView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
@@ -372,15 +364,11 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.13023256" ratioLeft="56" ratioRight="374" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
-<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.7494199" ratioLeft="969" ratioRight="324" relationship="2" relative="org.eclipse.ui.editorss">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.7494199" ratioLeft="969" ratioRight="324" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.4996133" ratioLeft="646" ratioRight="647" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.4996133" ratioLeft="646" ratioRight="647" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
@@ -390,15 +378,172 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Sorting Algorithms/src/quick/sort/QuickSort.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Sorting Algorithms/src/merge/sort/MergeSort.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hashes/src/hashing/using/arrays/Hash.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hashes/src/hashing/using/arrays/IHash.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Trees/src/binary/trees/TopView.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Heaps/src/heap/Heap.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DP/src/maximumContiguousSum/MaximumContiguousSum.java"/>
+</editors>
+<item historyLabel="QuickSort.java" index="0">
+<position info="not_deleted" x="483" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="0">
+<position info="not_deleted" x="323" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="0">
+<position info="not_deleted" x="415" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="0">
+<position info="not_deleted" x="434" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="0">
+<position info="not_deleted" x="1695" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="0">
+<position info="not_deleted" x="1712" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="0">
+<position info="not_deleted" x="1729" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="0">
+<position info="not_deleted" x="1760" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="0">
+<position info="not_deleted" x="1924" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="0">
+<position info="not_deleted" x="1942" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="0">
+<position info="not_deleted" x="1960" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="0">
+<position info="not_deleted" x="1976" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="0">
+<position info="not_deleted" x="434" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="0">
+<position info="not_deleted" x="483" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="0">
+<position info="not_deleted" x="323" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="0">
+<position info="not_deleted" x="415" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="0">
+<position info="not_deleted" x="599" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="0">
+<position info="not_deleted" x="483" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="0">
+<position info="not_deleted" x="517" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="0">
+<position info="not_deleted" x="323" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="0">
+<position info="not_deleted" x="338" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="0">
+<position info="not_deleted" x="369" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="0">
+<position info="not_deleted" x="391" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="0">
+<position info="not_deleted" x="517" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="0">
+<position info="not_deleted" x="551" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="0">
+<position info="not_deleted" x="879" y="67"/>
+</item>
+<item historyLabel="QuickSort.java" index="0">
+<position info="not_deleted" x="1759" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="0">
+<position info="not_deleted" x="323" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="0">
+<position info="not_deleted" x="441" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="0">
+<position info="not_deleted" x="946" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="0">
+<position info="not_deleted" x="878" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="0">
+<position info="not_deleted" x="833" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="0">
+<position info="not_deleted" x="789" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="0">
+<position info="not_deleted" x="710" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="0">
+<position info="not_deleted" x="748" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="0">
+<position info="not_deleted" x="790" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="0">
+<position info="not_deleted" x="948" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="0">
+<position info="not_deleted" x="994" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="0">
+<position info="not_deleted" x="1041" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="0">
+<position info="not_deleted" x="1085" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="0">
+<position info="not_deleted" x="623" y="0"/>
+</item>
+<item historyLabel="MergeSort.java" index="1">
+<position info="not_deleted" x="970" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="0">
+<position info="not_deleted" x="320" y="0"/>
+</item>
+<item historyLabel="MergeSort.java" index="1">
+<position info="not_deleted" x="970" y="0"/>
+</item>
+<item historyLabel="Hash.java" index="2">
+<position info="not_deleted" x="837" y="0"/>
+</item>
+<item historyLabel="IHash.java" index="3">
+<position info="not_deleted" x="420" y="0"/>
+</item>
+<item historyLabel="TopView.java" index="4">
+<position info="not_deleted" x="238" y="0"/>
+</item>
+<item historyLabel="Heap.java" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="MaximumContiguousSum.java" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item active="true" historyLabel="Heap.java" index="5">
+<position info="not_deleted" x="149" y="0"/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -406,11 +551,31 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
-<trimItem IMemento.internal.id="org.eclipse.debug.internal.ui.ConsoleFolderView"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Heap.java" tooltip="Heaps/src/heap/Heap.java">
+<persistable path="/Heaps/src/heap/Heap.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MergeSort.java" tooltip="Sorting Algorithms/src/merge/sort/MergeSort.java">
+<persistable path="/Sorting Algorithms/src/merge/sort/MergeSort.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="QuickSort.java" tooltip="Sorting Algorithms/src/quick/sort/QuickSort.java">
+<persistable path="/Sorting Algorithms/src/quick/sort/QuickSort.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Hash.java" tooltip="Hashes/src/hashing/using/arrays/Hash.java">
+<persistable path="/Hashes/src/hashing/using/arrays/Hash.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IHash.java" tooltip="Hashes/src/hashing/using/arrays/IHash.java">
+<persistable path="/Hashes/src/hashing/using/arrays/IHash.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IHash.java" tooltip="Hashes/src/IHash.java">
+<persistable path="/Hashes/src/IHash.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TopView.java" tooltip="Trees/src/binary/trees/TopView.java">
+<persistable path="/Trees/src/binary/trees/TopView.java"/>
+</file>
 <file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="TreeMap.class" tooltip="java.util.TreeMap">
 <persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Arrays/\/usr\/lib\/jvm\/java-7-openjdk-amd64\/jre\/lib\/rt.jar&lt;java.util(TreeMap.class"/>
 </file>
@@ -429,32 +594,8 @@
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StringCompression.java" tooltip="cracking Coding/src/Strings/StringCompression.java">
 <persistable path="/cracking Coding/src/Strings/StringCompression.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Heap.java" tooltip="Heaps/src/heap/Heap.java">
-<persistable path="/Heaps/src/heap/Heap.java"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AreStringsPermutation.java" tooltip="cracking Coding/src/Strings/AreStringsPermutation.java">
 <persistable path="/cracking Coding/src/Strings/AreStringsPermutation.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StringUniqueCharacters.java" tooltip="cracking Coding/src/Strings/StringUniqueCharacters.java">
-<persistable path="/cracking Coding/src/Strings/StringUniqueCharacters.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="InsertionSort.java" tooltip="Sorting Algorithms/src/insertion/sort/InsertionSort.java">
-<persistable path="/Sorting Algorithms/src/insertion/sort/InsertionSort.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="QuickSort.java" tooltip="Sorting Algorithms/src/quick/sort/QuickSort.java">
-<persistable path="/Sorting Algorithms/src/quick/sort/QuickSort.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StringBasics.java" tooltip="cracking Coding/src/Strings/StringBasics.java">
-<persistable path="/cracking Coding/src/Strings/StringBasics.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BinarySearch.java" tooltip="Searching/src/binary/search/iterative/BinarySearch.java">
-<persistable path="/Searching/src/binary/search/iterative/BinarySearch.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BubbleSort.java" tooltip="Sorting Algorithms/src/insertion/sort/BubbleSort.java">
-<persistable path="/Sorting Algorithms/src/insertion/sort/BubbleSort.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MergeSort.java" tooltip="Sorting Algorithms/src/insertion/sort/MergeSort.java">
-<persistable path="/Sorting Algorithms/src/insertion/sort/MergeSort.java"/>
 </file>
 </mruList>
 </workbench>
