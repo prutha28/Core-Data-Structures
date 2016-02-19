@@ -53,7 +53,7 @@ public class LinkedListTester {
 		ll.appendToTail(100) ;
 		ll.appendToTail(50) ;
 		ll.appendToTail(50) ;
-		System.out.println("\nBefore removing duplicates");
+		System.out.println("Before removing duplicates");
 		ll.print() ;
 		System.out.println("After removing duplicates");
 		ll.head = utils.removeDuplicatesUnsorted(ll.head) ;

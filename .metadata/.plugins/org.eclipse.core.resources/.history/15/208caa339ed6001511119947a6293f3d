@@ -5,7 +5,6 @@ public class LinkedListTester {
 	public static void main(String[] args) {
 
 		LinkedList ll = new LinkedList() ;
-		LinkedListUtils utils = new LinkedListUtils(ll) ;
 		
 		System.out.println("----------------------------INSERTIONS----------------------------------");
 		System.out.println("Pushing 100");
@@ -46,17 +45,8 @@ public class LinkedListTester {
 //		System.out.println("After deleting the element " + ll.deleteFromPos(3) + " from the position 3" );
 //		ll.print() ;
 		
-//		System.out.println();
-//		System.out.println("After deleting the element " + ll.deleteFromTail() + " from the tail" );
-//		ll.print() ;
-		
-		ll.appendToTail(100) ;
-		ll.appendToTail(50) ;
-		ll.appendToTail(50) ;
-		System.out.println("\nBefore removing duplicates");
-		ll.print() ;
-		System.out.println("After removing duplicates");
-		ll.head = utils.removeDuplicatesUnsorted(ll.head) ;
+		System.out.println();
+		System.out.println("After deleting the element " + ll.deleteFromTail() + " from the tail" );
 		ll.print() ;
 		
 		System.out.println("----------------------------SEARCHING----------------------------------");
@@ -71,6 +61,7 @@ public class LinkedListTester {
 		
 		ll.print() ;
 		
+		LinkedListUtils utils = new LinkedListUtils(ll) ;
 		LinkedList result = new LinkedList() ;
 		
 		result.head = utils.insertSort(ll.head) ;
@@ -84,8 +75,8 @@ public class LinkedListTester {
 		result.print() ;
 		
 		System.out.println("After removing duplicates");
-//		result.head = utils.removeDuplicates(result.head) ;
-//		result.print() ;
+		result.head = utils.removeDuplicates(result.head) ;
+		result.print() ;
 		
 		
 	}

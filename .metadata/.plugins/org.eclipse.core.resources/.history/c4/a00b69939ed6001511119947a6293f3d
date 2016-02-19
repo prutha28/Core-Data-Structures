@@ -193,9 +193,9 @@ public class LinkedListUtils {
 			int key = current.data ;
 
 			if( elementPresentMap != null){
-				if( elementPresentMap.get(key) == Boolean.TRUE){
+				if( elementPresentMap.get(key)){
 					// Element is already present
-//					elementPresentMap.put(key, false) ;
+					elementPresentMap.put(key, false) ;
 					prev.next = current.next ;
 					current.next = null ;
 				}
