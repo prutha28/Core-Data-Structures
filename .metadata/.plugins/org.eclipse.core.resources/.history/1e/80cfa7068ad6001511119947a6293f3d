@@ -1,0 +1,31 @@
+package dp;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+public class AllSubsets {
+
+	public static void main(String[] args) {
+
+	}
+	
+	
+	public Set<Integer> subsets( Set<Integer> set ){
+		
+		int n = set.size() ;
+		
+		if( n == 0 )
+			return null ;
+		
+		else if( n >= 1){
+			List<Integer> currentElement  = new ArrayList<Integer>() ;
+			HashSet<Integer> newSet = new HashSet<Integer>(currentElement) ;
+			return subsets(new HashSet)
+		}
+		return null;
+		
+	}
+
+}

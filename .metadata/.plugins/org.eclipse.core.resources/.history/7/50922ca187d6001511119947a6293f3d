@@ -1,0 +1,21 @@
+package dp;
+
+import java.util.List;
+import java.util.Set;
+
+public class AllSubsets {
+
+	public static void main(String[] args) {
+
+	}
+	
+	
+	public List<Integer> subsets( Set<Integer> set ){
+		
+		
+		
+		return null;
+		
+	}
+
+}
