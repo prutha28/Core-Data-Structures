@@ -1,0 +1,62 @@
+package binary.search.trees;
+
+import binary.trees.Node;
+
+public class BinarySearchTrees implements IBinarySearchTree {
+
+	public Node insert(Node root, Node newNode) {
+
+		if ( root == null){
+			root = newNode ;
+		}
+		else if( newNode.data <= root.data){
+			root.left = insert(root, newNode) ;
+		}else{
+			root.right = insert(root, newNode) ;
+		}
+
+		return root ;
+	}
+
+	public boolean search(Node root, int data) {
+
+		if( root == null)
+			return false ;
+
+		if( root.data == data )
+			return true ;
+
+		else if( data < root.data)
+			return search(root.left, data) ;
+
+		else 
+			return search(root.right, data) ;
+
+	}
+
+	public Node delete(Node root, int data) {
+		
+		Node prev = root ;
+		
+		if( root == null)
+			return null ;
+		
+		else if( data < root.data){
+			root.left = delete(root, data) ;
+		}else if( data > root.data){
+			root.right = delete(root, data) ;
+		}else{
+			
+		}
+		return null ;
+	}
+
+
+	public int size( Node root){
+
+		if( root == null)
+			return 0 ;
+
+		return ( 1 + size( root.left) + size(root.right) );
+	}
+}

@@ -8,4 +8,6 @@ public interface IBinaryTree {
 	
 	public int delete( Node root, int data ) ;
 	
+	public int size( Node root ) ;
+	
 }

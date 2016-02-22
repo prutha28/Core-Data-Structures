@@ -1,0 +1,11 @@
+
+public class Cordinate {
+
+	int xCordinate ;
+	int yCordinate ;
+	
+	public Cordinate(int xCordinate, int yCordinate) {
+		this.xCordinate = xCordinate ;
+		this.yCordinate = yCordinate ;
+	}
+}

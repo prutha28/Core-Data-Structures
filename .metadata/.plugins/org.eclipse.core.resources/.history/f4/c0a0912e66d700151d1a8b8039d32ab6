@@ -1,0 +1,53 @@
+
+	// you can also use imports, for example:
+	   import java.util.*;
+	   import java.math.*;
+
+	// you can write to stdout for debugging purposes, e.g.
+	// System.out.println("this is a debug message");
+
+public class PostFix {
+
+
+	class Codility {
+	    private static final int maxLimit = (int)Math.pow(2,12);
+	    public int solution(String S) {
+	        List<Integer> arr = new ArrayList<Integer>();
+	        if(S.length() == 0) {
+	            return -1;
+	        }
+	        for(int i = 0; i < S.length(); i++) {
+	            //System.out.println(S.charAt(i));
+	            if(S.charAt(i) == '*' || S.charAt(i) == '+'){
+	                //System.out.println(arr.size());
+	                if(arr.size() < 2) {
+	                    return -1;
+	                } else {
+	                    int ans = 0;
+	                    int a = arr.get(arr.size()-1);
+	                    int b = arr.get(arr.size()-2);
+	                    arr.remove(arr.size()-1);
+	                    arr.remove(arr.size()-1);
+	                    if(S.charAt(i) == '*'){
+	                        ans = a*b;
+	                    }  else {
+	                        ans  = a+b;
+	                    }
+	                   
+	                    if(ans < maxLimit){
+	                        arr.add(ans);
+	                    } else {
+	                        return -1;
+	                    }
+	                }
+	               
+	            } else {
+	                arr.add(Character.getNumericValue(S.charAt(i)));
+	            }
+	        }
+	        return arr.get(0);
+	    }
+	}
+	}
+
+}

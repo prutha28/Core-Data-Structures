@@ -1,0 +1,23 @@
+
+public class Cordinate {
+
+	int xCordinate ;
+	int yCordinate ;
+	
+	public Cordinate() {
+		this(0,0) ;
+	}
+	
+	public Cordinate(int xCordinate, int yCordinate) {
+		this.xCordinate = xCordinate ;
+		this.yCordinate = yCordinate ;
+	}
+	
+	public String toString(){
+		return "(" + 
+				xCordinate + 
+				", " + 
+				yCordinate + 
+				")"; 
+	}
+}

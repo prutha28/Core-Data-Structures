@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="18" version="2.0">
+<workbench progressCount="15" version="2.0">
 <workbenchAdvisor/>
-<window height="706" maximized="true" width="1032" x="216" y="24">
+<window height="677" maximized="true" width="1026" x="216" y="24">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="329"/>
@@ -12,10 +12,10 @@
 <coolItem id="additions" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.debug.ui.launch.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="156" y="30"/>
-<coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="316" y="30"/>
+<coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="40" y="30"/>
 <coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="88" y="30"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="88" y="30"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="226" y="30"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="124" y="30"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="232" y="30"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
@@ -25,7 +25,7 @@
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
-<page aggregateWorkingSetId="Aggregate for window 1454361384212" focus="true" label="Workspace - Debug">
+<page aggregateWorkingSetId="Aggregate for window 1454361384212" focus="true" label="Workspace - Java">
 <editors>
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
@@ -39,51 +39,41 @@
 <part id="5"/>
 <part id="6"/>
 <part id="7"/>
-<part id="8"/>
-<part id="9"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MagicIndexinArray.java" partName="MagicIndexinArray.java" path="/home/prutha/Desktop/Data Structures/cracking Coding/src/dp/MagicIndexinArray.java" title="MagicIndexinArray.java" tooltip="cracking Coding/src/dp/MagicIndexinArray.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/cracking Coding/src/dp/MagicIndexinArray.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="513" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SecondLargestInArray.java" partName="SecondLargestInArray.java" path="/home/prutha/Desktop/Data Structures/Java Practice/src/SecondLargestInArray.java" title="SecondLargestInArray.java" tooltip="Java Practice/src/SecondLargestInArray.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Java Practice/src/SecondLargestInArray.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="176" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AllSubsets.java" partName="AllSubsets.java" path="/home/prutha/Desktop/Data Structures/cracking Coding/src/dp/AllSubsets.java" title="AllSubsets.java" tooltip="cracking Coding/src/dp/AllSubsets.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/cracking Coding/src/dp/AllSubsets.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="975" selectionTopPixel="452"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AllPermutations.java" partName="AllPermutations.java" path="/home/prutha/Desktop/Data Structures/Java Practice/src/AllPermutations.java" title="AllPermutations.java" tooltip="Java Practice/src/AllPermutations.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Java Practice/src/AllPermutations.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="847" selectionOffset="0" selectionTopPixel="66"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.ClassFileEditor" name="HashMap.class" partName="HashMap.class" path="/tmp/HashMap.class7125801128896017467.class" title="HashMap.class" tooltip="java.util.HashMap" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=Arrays/\/usr\/lib\/jvm\/java-7-openjdk-amd64\/jre\/lib\/rt.jar&lt;java.util(HashMap.class"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StringCompression.java" partName="StringCompression.java" path="/home/prutha/Desktop/Data Structures/cracking Coding/src/Strings/StringCompression.java" title="StringCompression.java" tooltip="cracking Coding/src/Strings/StringCompression.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/cracking Coding/src/Strings/StringCompression.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1113" selectionTopPixel="357"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GemsProblem.java" partName="GemsProblem.java" path="/home/prutha/Desktop/Data Structures/Java Practice/src/hackerRank/GemsProblem.java" title="GemsProblem.java" tooltip="Java Practice/src/hackerRank/GemsProblem.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Java Practice/src/hackerRank/GemsProblem.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="208" selectionOffset="506" selectionTopPixel="118"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BinarySearchTrees.java" partName="BinarySearchTrees.java" path="/home/prutha/Desktop/Data Structures/Trees/src/binary/search/trees/BinarySearchTrees.java" title="BinarySearchTrees.java" tooltip="Trees/src/binary/search/trees/BinarySearchTrees.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Trees/src/binary/search/trees/BinarySearchTrees.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1023" selectionTopPixel="765"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Anagram.java" partName="Anagram.java" path="/home/prutha/Desktop/Data Structures/Java Practice/src/hackerRank/Anagram.java" title="Anagram.java" tooltip="Java Practice/src/hackerRank/Anagram.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Java Practice/src/hackerRank/Anagram.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="211" selectionOffset="289" selectionTopPixel="424"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BSTNode.java" partName="BSTNode.java" path="/home/prutha/Desktop/Data Structures/Trees/src/binary/search/trees/BSTNode.java" title="BSTNode.java" tooltip="Trees/src/binary/search/trees/BSTNode.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Trees/src/binary/search/trees/BSTNode.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="50" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MakeItAnagram.java" partName="MakeItAnagram.java" path="/home/prutha/Desktop/Data Structures/Java Practice/src/hackerRank/MakeItAnagram.java" title="MakeItAnagram.java" tooltip="Java Practice/src/hackerRank/MakeItAnagram.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Java Practice/src/hackerRank/MakeItAnagram.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="869" selectionTopPixel="442"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IBinarySearchTree.java" partName="IBinarySearchTree.java" path="/home/prutha/Desktop/Data Structures/Trees/src/binary/search/trees/IBinarySearchTree.java" title="IBinarySearchTree.java" tooltip="Trees/src/binary/search/trees/IBinarySearchTree.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Trees/src/binary/search/trees/IBinarySearchTree.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="145" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GenerateAllPermutations.java" partName="GenerateAllPermutations.java" path="/home/prutha/Desktop/Data Structures/cracking Coding/src/dp/GenerateAllPermutations.java" title="GenerateAllPermutations.java" tooltip="cracking Coding/src/dp/GenerateAllPermutations.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/cracking Coding/src/dp/GenerateAllPermutations.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="95" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IBinaryTree.java" partName="IBinaryTree.java" path="/home/prutha/Desktop/Data Structures/Trees/src/binary/trees/IBinaryTree.java" title="IBinaryTree.java" tooltip="Trees/src/binary/trees/IBinaryTree.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Trees/src/binary/trees/IBinaryTree.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="175" selectionOffset="56" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LongestCommonSubsequence.java" partName="LongestCommonSubsequence.java" path="/home/prutha/Desktop/Data Structures/Algorithms/DP/src/LongestCommonSubsequence.java" title="LongestCommonSubsequence.java" tooltip="DP/src/LongestCommonSubsequence.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DP/src/LongestCommonSubsequence.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="941" selectionTopPixel="527"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LinkedListUtils.java" partName="LinkedListUtils.java" path="/home/prutha/Desktop/Data Structures/LinkedLists/src/singly/linked/lists/LinkedListUtils.java" title="LinkedListUtils.java" tooltip="LinkedLists/src/singly/linked/lists/LinkedListUtils.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LinkedLists/src/singly/linked/lists/LinkedListUtils.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4210" selectionTopPixel="3383"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LinkedListTester.java" partName="LinkedListTester.java" path="/home/prutha/Desktop/Data Structures/LinkedLists/src/singly/linked/lists/LinkedListTester.java" title="LinkedListTester.java" tooltip="LinkedLists/src/singly/linked/lists/LinkedListTester.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LinkedLists/src/singly/linked/lists/LinkedListTester.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2779" selectionTopPixel="1309"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SummaryRanges.java" partName="SummaryRanges.java" path="/home/prutha/Desktop/Data Structures/Java Practice/src/SummaryRanges.java" title="SummaryRanges.java" tooltip="Java Practice/src/SummaryRanges.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Java Practice/src/SummaryRanges.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="297" selectionTopPixel="67"/>
 </editor>
 </editors>
 <views>
@@ -99,9 +89,8 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (39 items)"/>
-<category IMemento.internal.id="Warnings"/>
 <category IMemento.internal.id="Errors"/>
+<category IMemento.internal.id="Warnings"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="261" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -115,7 +104,7 @@
 <viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
-<viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="">
+<viewState group_libraries="1" layout="2" linkWithEditor="1" rootMode="1" workingSetName="">
 <customFilters userDefinedPatternsEnabled="false">
 <xmlDefinedFilters>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.LibraryFilter" isEnabled="false"/>
@@ -171,7 +160,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.debug.ui.DebugPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.ui.internal.ide.application.ResourcePerspective" id="org.eclipse.ui.resourcePerspective" label="Resource"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -398,7 +387,7 @@
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.4701258" ratioLeft="299" ratioRight="337" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.6871069" ratioLeft="437" ratioRight="199" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
@@ -443,155 +432,164 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LinkedLists/src/singly/linked/lists/LinkedListUtils.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LinkedLists/src/singly/linked/lists/LinkedListTester.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Heaps/src/heap/MaxHeap.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Heaps/src/heap/HeapTest.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Heaps/src/heap/Heap.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Trees/src/binary/search/trees/BinarySearchTrees.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Trees/src/binary/search/trees/IBinarySearchTree.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Trees/src/binary/trees/IBinaryTree.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Trees/src/binary/search/trees/BSTNode.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Java Practice/src/SummaryRanges.java"/>
 </editors>
-<item historyLabel="LinkedListUtils.java" index="0">
-<position info="not_deleted" x="3825" y="0"/>
+<item historyLabel="MaxHeap.java" index="0">
+<position info="not_deleted" x="1603" y="0"/>
 </item>
-<item historyLabel="LinkedListUtils.java" index="0">
-<position info="not_deleted" x="3854" y="0"/>
+<item historyLabel="MaxHeap.java" index="0">
+<position info="not_deleted" x="1633" y="0"/>
 </item>
-<item historyLabel="LinkedListUtils.java" index="0">
-<position info="not_deleted" x="3889" y="0"/>
+<item historyLabel="MaxHeap.java" index="0">
+<position info="not_deleted" x="1676" y="0"/>
 </item>
-<item historyLabel="LinkedListUtils.java" index="0">
-<position info="not_deleted" x="4126" y="0"/>
+<item historyLabel="MaxHeap.java" index="0">
+<position info="not_deleted" x="1712" y="0"/>
 </item>
-<item historyLabel="LinkedListUtils.java" index="0">
-<position info="not_deleted" x="4177" y="0"/>
+<item historyLabel="MaxHeap.java" index="0">
+<position info="not_deleted" x="1578" y="0"/>
 </item>
-<item historyLabel="LinkedListUtils.java" index="0">
-<position info="not_deleted" x="3778" y="0"/>
+<item historyLabel="MaxHeap.java" index="0">
+<position info="not_deleted" x="1603" y="0"/>
 </item>
-<item historyLabel="LinkedListUtils.java" index="0">
-<position info="not_deleted" x="3805" y="0"/>
+<item historyLabel="MaxHeap.java" index="0">
+<position info="not_deleted" x="1633" y="0"/>
 </item>
-<item historyLabel="LinkedListUtils.java" index="0">
-<position info="not_deleted" x="3825" y="0"/>
+<item historyLabel="MaxHeap.java" index="0">
+<position info="not_deleted" x="1676" y="0"/>
 </item>
-<item historyLabel="LinkedListUtils.java" index="0">
-<position info="not_deleted" x="3854" y="0"/>
+<item historyLabel="MaxHeap.java" index="0">
+<position info="not_deleted" x="1712" y="0"/>
 </item>
-<item historyLabel="LinkedListUtils.java" index="0">
-<position info="not_deleted" x="3889" y="0"/>
+<item historyLabel="MaxHeap.java" index="0">
+<position info="not_deleted" x="1578" y="0"/>
 </item>
-<item historyLabel="LinkedListUtils.java" index="0">
-<position info="not_deleted" x="4126" y="0"/>
+<item historyLabel="MaxHeap.java" index="0">
+<position info="not_deleted" x="1603" y="0"/>
 </item>
-<item historyLabel="LinkedListUtils.java" index="0">
-<position info="not_deleted" x="4177" y="0"/>
+<item historyLabel="MaxHeap.java" index="0">
+<position info="not_deleted" x="1633" y="0"/>
 </item>
-<item historyLabel="LinkedListUtils.java" index="0">
-<position info="not_deleted" x="3778" y="0"/>
+<item historyLabel="MaxHeap.java" index="0">
+<position info="not_deleted" x="1676" y="0"/>
 </item>
-<item historyLabel="LinkedListUtils.java" index="0">
-<position info="not_deleted" x="3805" y="0"/>
+<item historyLabel="MaxHeap.java" index="0">
+<position info="not_deleted" x="1712" y="0"/>
 </item>
-<item historyLabel="LinkedListUtils.java" index="0">
-<position info="not_deleted" x="3825" y="0"/>
+<item historyLabel="MaxHeap.java" index="0">
+<position info="not_deleted" x="1578" y="0"/>
 </item>
-<item historyLabel="LinkedListUtils.java" index="0">
-<position info="not_deleted" x="3854" y="0"/>
+<item historyLabel="MaxHeap.java" index="0">
+<position info="not_deleted" x="1735" y="0"/>
 </item>
-<item historyLabel="LinkedListUtils.java" index="0">
-<position info="not_deleted" x="3889" y="0"/>
+<item historyLabel="HeapTest.java" index="1">
+<position info="not_deleted" x="599" y="0"/>
 </item>
-<item historyLabel="LinkedListUtils.java" index="0">
-<position info="not_deleted" x="4126" y="0"/>
+<item historyLabel="HeapTest.java" index="1">
+<position info="not_deleted" x="309" y="0"/>
 </item>
-<item historyLabel="LinkedListUtils.java" index="0">
-<position info="not_deleted" x="4177" y="0"/>
+<item historyLabel="MaxHeap.java" index="0">
+<position info="not_deleted" x="967" y="12"/>
 </item>
-<item historyLabel="LinkedListUtils.java" index="0">
-<position info="not_deleted" x="3778" y="0"/>
+<item historyLabel="MaxHeap.java" index="0">
+<position info="not_deleted" x="1798" y="12"/>
 </item>
-<item historyLabel="LinkedListUtils.java" index="0">
-<position info="not_deleted" x="3805" y="0"/>
+<item historyLabel="MaxHeap.java" index="0">
+<position info="not_deleted" x="1135" y="0"/>
 </item>
-<item historyLabel="LinkedListUtils.java" index="0">
-<position info="not_deleted" x="3825" y="0"/>
+<item historyLabel="HeapTest.java" index="1">
+<position info="not_deleted" x="510" y="0"/>
 </item>
-<item historyLabel="LinkedListUtils.java" index="0">
-<position info="not_deleted" x="3854" y="0"/>
+<item historyLabel="MaxHeap.java" index="0">
+<position info="not_deleted" x="1135" y="0"/>
 </item>
-<item historyLabel="LinkedListUtils.java" index="0">
-<position info="not_deleted" x="3889" y="0"/>
+<item historyLabel="Heap.java" index="2">
+<position info="not_deleted" x="395" y="4"/>
 </item>
-<item historyLabel="LinkedListUtils.java" index="0">
-<position info="not_deleted" x="4020" y="0"/>
+<item historyLabel="BinarySearchTrees.java" index="3">
+<position info="not_deleted" x="1468" y="0"/>
 </item>
-<item historyLabel="LinkedListUtils.java" index="0">
-<position info="not_deleted" x="4052" y="0"/>
+<item historyLabel="BinarySearchTrees.java" index="3">
+<position info="not_deleted" x="1416" y="0"/>
 </item>
-<item historyLabel="LinkedListUtils.java" index="0">
-<position info="not_deleted" x="4079" y="0"/>
+<item historyLabel="BinarySearchTrees.java" index="3">
+<position info="not_deleted" x="1286" y="0"/>
 </item>
-<item historyLabel="LinkedListUtils.java" index="0">
-<position info="not_deleted" x="4177" y="0"/>
+<item historyLabel="BinarySearchTrees.java" index="3">
+<position info="not_deleted" x="1248" y="0"/>
 </item>
-<item historyLabel="LinkedListUtils.java" index="0">
-<position info="not_deleted" x="3778" y="0"/>
+<item historyLabel="BinarySearchTrees.java" index="3">
+<position info="not_deleted" x="1254" y="0"/>
 </item>
-<item historyLabel="LinkedListUtils.java" index="0">
-<position info="not_deleted" x="4210" y="0"/>
+<item historyLabel="BinarySearchTrees.java" index="3">
+<position info="not_deleted" x="625" y="0"/>
 </item>
-<item historyLabel="LinkedListTester.java" index="1">
-<position info="not_deleted" x="1887" y="0"/>
+<item historyLabel="BinarySearchTrees.java" index="3">
+<position info="not_deleted" x="844" y="6"/>
 </item>
-<item historyLabel="LinkedListTester.java" index="1">
-<position info="not_deleted" x="1941" y="0"/>
+<item historyLabel="BinarySearchTrees.java" index="3">
+<position info="not_deleted" x="1023" y="0"/>
 </item>
-<item historyLabel="LinkedListTester.java" index="1">
-<position info="not_deleted" x="1959" y="0"/>
+<item historyLabel="IBinarySearchTree.java" index="4">
+<position info="not_deleted" x="133" y="11"/>
 </item>
-<item historyLabel="LinkedListTester.java" index="1">
-<position info="not_deleted" x="2056" y="0"/>
+<item historyLabel="IBinaryTree.java" index="5">
+<position info="not_deleted" x="56" y="175"/>
 </item>
-<item historyLabel="LinkedListTester.java" index="1">
-<position info="not_deleted" x="2134" y="0"/>
+<item historyLabel="BSTNode.java" index="6">
+<position info="not_deleted" x="50" y="0"/>
 </item>
-<item historyLabel="LinkedListTester.java" index="1">
-<position info="not_deleted" x="2213" y="0"/>
+<item historyLabel="BinarySearchTrees.java" index="3">
+<position info="not_deleted" x="1023" y="0"/>
 </item>
-<item historyLabel="LinkedListTester.java" index="1">
-<position info="not_deleted" x="2295" y="0"/>
+<item historyLabel="IBinarySearchTree.java" index="4">
+<position info="not_deleted" x="146" y="0"/>
 </item>
-<item historyLabel="LinkedListTester.java" index="1">
-<position info="not_deleted" x="2356" y="0"/>
+<item historyLabel="BinarySearchTrees.java" index="3">
+<position info="not_deleted" x="1023" y="0"/>
 </item>
-<item historyLabel="LinkedListTester.java" index="1">
-<position info="not_deleted" x="2374" y="0"/>
+<item historyLabel="BSTNode.java" index="6">
+<position info="not_deleted" x="50" y="0"/>
 </item>
-<item historyLabel="LinkedListTester.java" index="1">
-<position info="not_deleted" x="2418" y="0"/>
+<item historyLabel="IBinarySearchTree.java" index="4">
+<position info="not_deleted" x="146" y="0"/>
 </item>
-<item historyLabel="LinkedListTester.java" index="1">
-<position info="not_deleted" x="2462" y="0"/>
+<item historyLabel="BSTNode.java" index="6">
+<position info="not_deleted" x="50" y="0"/>
 </item>
-<item historyLabel="LinkedListTester.java" index="1">
-<position info="not_deleted" x="2484" y="0"/>
+<item historyLabel="IBinarySearchTree.java" index="4">
+<position info="not_deleted" x="145" y="0"/>
 </item>
-<item historyLabel="LinkedListTester.java" index="1">
-<position info="not_deleted" x="2539" y="0"/>
+<item historyLabel="SummaryRanges.java" index="7">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="LinkedListTester.java" index="1">
-<position info="not_deleted" x="2594" y="0"/>
+<item historyLabel="SummaryRanges.java" index="7">
+<position info="not_deleted" x="38" y="0"/>
 </item>
-<item historyLabel="LinkedListTester.java" index="1">
-<position info="not_deleted" x="2649" y="0"/>
+<item historyLabel="SummaryRanges.java" index="7">
+<position info="not_deleted" x="159" y="0"/>
 </item>
-<item historyLabel="LinkedListTester.java" index="1">
-<position info="not_deleted" x="2703" y="0"/>
+<item historyLabel="SummaryRanges.java" index="7">
+<position info="not_deleted" x="181" y="0"/>
 </item>
-<item historyLabel="LinkedListTester.java" index="1">
-<position info="not_deleted" x="2758" y="0"/>
+<item historyLabel="SummaryRanges.java" index="7">
+<position info="not_deleted" x="261" y="0"/>
 </item>
-<item historyLabel="LinkedListTester.java" index="1">
-<position info="not_deleted" x="2780" y="0"/>
+<item historyLabel="SummaryRanges.java" index="7">
+<position info="not_deleted" x="358" y="0"/>
 </item>
-<item active="true" historyLabel="LinkedListTester.java" index="1">
-<position info="not_deleted" x="2914" y="0"/>
+<item historyLabel="SummaryRanges.java" index="7">
+<position info="not_deleted" x="294" y="0"/>
+</item>
+<item active="true" historyLabel="SummaryRanges.java" index="7">
+<position info="not_deleted" x="341" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -599,12 +597,6 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="left"/>
-</trimArea>
-<trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -612,56 +604,54 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
-<trimItem IMemento.internal.id="bottom"/>
-<trimItem IMemento.internal.id="org.eclipse.debug.internal.ui.ConsoleFolderView"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LinkedListTester.java" tooltip="LinkedLists/src/singly/linked/lists/LinkedListTester.java">
-<persistable path="/LinkedLists/src/singly/linked/lists/LinkedListTester.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SummaryRanges.java" tooltip="Java Practice/src/SummaryRanges.java">
+<persistable path="/Java Practice/src/SummaryRanges.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LinkedListUtils.java" tooltip="LinkedLists/src/singly/linked/lists/LinkedListUtils.java">
-<persistable path="/LinkedLists/src/singly/linked/lists/LinkedListUtils.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HeapTest.java" tooltip="Heaps/src/heap/HeapTest.java">
+<persistable path="/Heaps/src/heap/HeapTest.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LongestCommonSubsequence.java" tooltip="DP/src/LongestCommonSubsequence.java">
-<persistable path="/DP/src/LongestCommonSubsequence.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MaxHeap.java" tooltip="Heaps/src/heap/MaxHeap.java">
+<persistable path="/Heaps/src/heap/MaxHeap.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GenerateAllPermutations.java" tooltip="cracking Coding/src/dp/GenerateAllPermutations.java">
-<persistable path="/cracking Coding/src/dp/GenerateAllPermutations.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Heap.java" tooltip="Heaps/src/heap/Heap.java">
+<persistable path="/Heaps/src/heap/Heap.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MakeItAnagram.java" tooltip="Java Practice/src/hackerRank/MakeItAnagram.java">
-<persistable path="/Java Practice/src/hackerRank/MakeItAnagram.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Anagram.java" tooltip="Java Practice/src/hackerRank/Anagram.java">
-<persistable path="/Java Practice/src/hackerRank/Anagram.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GemsProblem.java" tooltip="Java Practice/src/hackerRank/GemsProblem.java">
-<persistable path="/Java Practice/src/hackerRank/GemsProblem.java"/>
-</file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="HashMap.class" tooltip="java.util.HashMap">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Arrays/\/usr\/lib\/jvm\/java-7-openjdk-amd64\/jre\/lib\/rt.jar&lt;java.util(HashMap.class"/>
-</file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditorNoSource" name="Set.class" tooltip="java.util.Set">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=cracking Coding/\/usr\/lib\/jvm\/java-7-openjdk-amd64\/jre\/lib\/rt.jar&lt;java.util(Set.class"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AllSubsets.java" tooltip="cracking Coding/src/dp/AllSubsets.java">
-<persistable path="/cracking Coding/src/dp/AllSubsets.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MagicIndexinArray.java" tooltip="cracking Coding/src/dp/MagicIndexinArray.java">
-<persistable path="/cracking Coding/src/dp/MagicIndexinArray.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Node.java" tooltip="Trees/src/binary/trees/Node.java">
-<persistable path="/Trees/src/binary/trees/Node.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BinarySearchTrees.java" tooltip="Trees/src/binary/search/trees/BinarySearchTrees.java">
-<persistable path="/Trees/src/binary/search/trees/BinarySearchTrees.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IBinaryTree.java" tooltip="Trees/src/binary/trees/IBinaryTree.java">
+<persistable path="/Trees/src/binary/trees/IBinaryTree.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IBinarySearchTree.java" tooltip="Trees/src/binary/search/trees/IBinarySearchTree.java">
 <persistable path="/Trees/src/binary/search/trees/IBinarySearchTree.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MaximizeSubarraySum.java" tooltip="Java Practice/src/hackerRank/MaximizeSubarraySum.java">
-<persistable path="/Java Practice/src/hackerRank/MaximizeSubarraySum.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Node.java" tooltip="Trees/src/binary/search/trees/Node.java">
+<persistable path="/Trees/src/binary/search/trees/Node.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BinarySearchTrees.java" tooltip="Trees/src/binary/search/trees/BinarySearchTrees.java">
+<persistable path="/Trees/src/binary/search/trees/BinarySearchTrees.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MergingSortedArrays_11_1.java" tooltip="cracking Coding/src/searching/and/sorting/MergingSortedArrays_11_1.java">
+<persistable path="/cracking Coding/src/searching/and/sorting/MergingSortedArrays_11_1.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StringCompression.java" tooltip="cracking Coding/src/Strings/StringCompression.java">
+<persistable path="/cracking Coding/src/Strings/StringCompression.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AllPermutations.java" tooltip="Java Practice/src/AllPermutations.java">
+<persistable path="/Java Practice/src/AllPermutations.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SecondLargestInArray.java" tooltip="Java Practice/src/SecondLargestInArray.java">
+<persistable path="/Java Practice/src/SecondLargestInArray.java"/>
+</file>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditorNoSource" name="String.class" tooltip="java.lang.String">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Java Practice/\/usr\/lib\/jvm\/java-7-openjdk-amd64\/jre\/lib\/rt.jar&lt;java.lang(String.class"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StackMachine.java" tooltip="Java Practice/src/StackMachine.java">
+<persistable path="/Java Practice/src/StackMachine.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LeastCommonInArray.java" tooltip="Java Practice/src/LeastCommonInArray.java">
+<persistable path="/Java Practice/src/LeastCommonInArray.java"/>
 </file>
 </mruList>
 </workbench>

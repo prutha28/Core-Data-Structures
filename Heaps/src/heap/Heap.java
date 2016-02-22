@@ -1,12 +1,19 @@
 package heap;
 
+import java.util.Arrays;
+
 public class Heap implements IHeap{
 
-	int heapArray[] = {  21, 4, 5, 8, 1, 3, 5, 89}  ;
-	int heapSize ; 
+	int heapArray[] ;
+	int heapSize ; // no of elements in the heap. not necessarily equal to heapArray.length. 
 	
 	public Heap(){ 
-		heapSize = heapArray.length ;
+		heapSize = 0 ;
+	}
+	
+	public Heap(int arr[]){ 
+		heapArray = Arrays.copyOf(arr, arr.length) ;
+		heapSize = arr.length ;
 	}
 	
 	public int parent(int i) {

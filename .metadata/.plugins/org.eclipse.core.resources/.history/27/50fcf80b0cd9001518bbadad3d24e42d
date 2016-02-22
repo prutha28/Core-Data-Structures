@@ -1,0 +1,13 @@
+
+public class LongestPalindrome {
+
+	public static void main(String[] args) {
+
+		String s = "madam" ;
+		findLongestPalindrome(s) ;
+	}
+
+	private static void findLongestPalindrome( String s) {
+		
+	}
+}

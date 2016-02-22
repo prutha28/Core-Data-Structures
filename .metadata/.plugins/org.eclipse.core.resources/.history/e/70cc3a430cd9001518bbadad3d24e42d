@@ -1,0 +1,24 @@
+
+public class LongestPalindrome {
+
+	public static void main(String[] args) {
+
+		String s = "madam" ;
+		findLongestPalindrome(s) ;
+	}
+
+	private static void findLongestPalindrome( String s) {
+		
+		int i ;
+		int j ;
+
+		for (int k = 0; k < s.length(); k++) {
+			i = k ;
+			j = k ;
+			
+			while( s.charAt(i) == s.charAt(j)){
+				
+			}
+		}
+	}
+}

@@ -13,8 +13,9 @@
 		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="A" key="selection"/>
+		<item value="top" key="selection"/>
 		<list key="findhistory">
+			<item value="top"/>
 			<item value="A"/>
 			<item value="int"/>
 			<item value="characterCountMap"/>

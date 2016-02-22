@@ -1,0 +1,69 @@
+import java.util.Stack;
+
+
+public class StackMachine {
+
+	public static void main(String[] args) {
+
+	}
+
+
+	public int solution(String S) {
+		// write your code in Java SE 8
+
+		Stack<Character> opsStack = new Stack<Character>() ;
+		char[] ca = S.toCharArray() ;
+
+		int i = 0 ;
+		Integer element1 = null  ;
+		Integer element2 = null ;
+
+		while( i < ca.length){
+
+			if(( ca[i] == '*') || ( ca[i] == '+')) {
+
+				String result ;
+				int r ;
+
+				if( !opsStack.isEmpty()){
+					element1 = Character.getNumericValue(opsStack.pop()) ; 
+				}else{
+					System.out.println("Invalid Character in the string.") ;
+				}
+				if( !opsStack.isEmpty()){
+					element2 = Character.getNumericValue(opsStack.pop()) ;
+				}else{
+					System.out.println("Invalid Character in the string.") ;
+				}
+
+				if( element1!= null && element2!= null){
+
+					if(ca[i] == '+'){
+						r = element1.intValue() + element2.intValue() ;
+						result = new Integer(r).toString() ;
+						opsStack.push(result.toCharArray()[0]) ;
+					}else{
+						r = element1.intValue() + element2.intValue() ;
+						result = new Integer(r).toString() ;
+						opsStack.push(result.toCharArray()[0]) ;
+					}
+				}
+			}else if( Character.isDigit(ca[i])){
+				opsStack.push(ca[i]) ;   
+			}else{
+				System.out.println("Invalid Character in the string.") ;
+				throw new IllegalArgumentException() ;
+			}
+
+			i++ ;
+		}
+
+		if( opsStack.isEmpty()){
+			throw new Exception("Stack is empty!") ;
+			return 0;
+		}else{
+			return opsStack.peek() ;
+		}
+	}
+
+}

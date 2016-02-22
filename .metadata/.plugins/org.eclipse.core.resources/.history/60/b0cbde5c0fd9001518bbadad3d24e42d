@@ -1,0 +1,6 @@
+
+public class Cordinate {
+
+	int xCordinate ;
+	int yCordinate ;
+}

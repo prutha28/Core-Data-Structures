@@ -1,0 +1,70 @@
+import java.util.Stack;
+
+
+public class StackMachine {
+
+	public static void main(String[] args) {
+		System.out.println(solution("13+62*7+*"));
+	}
+
+
+	public int solution(String S) {
+		// write your code in Java SE 8
+
+		Stack<Character> opsStack = new Stack<Character>() ;
+		char[] ca = S.toCharArray() ;
+
+		int i = 0 ;
+		Integer element1 = null  ;
+		Integer element2 = null ;
+
+		while( i < ca.length){
+
+			if(( ca[i] == '*') || ( ca[i] == '+')) {
+
+				String result ;
+				int r ;
+
+				if( !opsStack.isEmpty()){
+					element1 = Character.getNumericValue(opsStack.pop()) ; 
+				}else{
+					System.out.println("Stack is empty.") ;
+					break ;
+				}
+				if( !opsStack.isEmpty()){
+					element2 = Character.getNumericValue(opsStack.pop()) ;
+				}else{
+					System.out.println("Stack is empty.") ;
+					break ;
+				}
+
+				if( element1!= null && element2!= null){
+
+					if(ca[i] == '+'){
+						r = element1.intValue() + element2.intValue() ;
+						result = new Integer(r).toString() ;
+						opsStack.push(result.toCharArray()[0]) ;
+					}else{
+						r = element1.intValue() + element2.intValue() ;
+						result = new Integer(r).toString() ;
+						opsStack.push(result.toCharArray()[0]) ;
+					}
+				}
+			}else if( Character.isDigit(ca[i])){
+				opsStack.push(ca[i]) ;   
+			}else{
+				// System.out.println("Stack is empty.") ;
+				throw new IllegalArgumentException() ;
+			}
+
+			i++ ;
+		}
+		if( opsStack.isEmpty()){
+			// 			System.out.println("Stack is empty.") ;
+			return -1;
+		}else{
+			return opsStack.peek() ;
+		}
+
+	}
+}

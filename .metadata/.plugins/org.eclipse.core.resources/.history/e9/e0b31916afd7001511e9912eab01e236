@@ -1,0 +1,25 @@
+package Strings;
+
+public class StringCompression {
+
+	public static void main(String[] args) {
+
+		String s = "aaabbbbccad" ;
+		String result = compress(s) ;
+		
+		if( result.length() < s.length() ){
+			System.out.println(result);
+		}else{
+			System.out.println(s);
+		}
+	}
+
+	private static String compress(String s) {
+		
+		for( char c : s.toCharArray()){
+			
+			
+		}
+	}
+
+}

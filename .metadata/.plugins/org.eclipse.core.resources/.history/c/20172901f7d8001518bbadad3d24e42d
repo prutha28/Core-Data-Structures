@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+
+public class LongestCommonSubstring {
+
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner( System.in) ;
+		int T = sc.nextInt() ;
+		sc.nextLine() ;
+		int i = 1 ;
+
+		while( i <= T){
+			String s1 = sc.nextLine() ;
+			String s2 = sc.nextLine() ;
+
+			if( hasSubstring(s1, s2) > 0 )
+				System.out.println("YES") ;
+			else
+				System.out.println("NO") ;
+			i++ ;
+		}
+	}
+
+	public static int hasSubstring( String a, String b){
+	     
+        int indexA = a.length() ;
+        int indexB = b.length() ;
+        
+        if( indexA < 0 || indexB <0 )
+            return 0 ;
+        
+        if( a.charAt(indexA) == b.charAt(indexB)){
+            return ( 1+ hasSubstring(a.substring(0,--indexA), b.substring(0,--indexB))) ;
+        }else{
+            return 0 ;
+        }
+    }
+}

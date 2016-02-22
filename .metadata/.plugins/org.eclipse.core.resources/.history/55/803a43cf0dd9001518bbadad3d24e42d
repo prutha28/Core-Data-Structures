@@ -1,0 +1,13 @@
+
+public class LongestCommonSubsequence_DP {
+
+	public static void main(String[] args) {
+
+	}
+
+	public static void LCS( String a, String b){
+		
+		int m = a.length() ;
+		int n = b.length() ;
+	}
+}

@@ -4,15 +4,34 @@ import binary.trees.Node;
 
 public class BinarySearchTrees implements IBinarySearchTree {
 
+
+	/**
+	 *  This method looks up the entire binary tree for an appropriate 
+	 *  position for inserting the data.
+	 *  It then returns the root ( may or may not have been modified)
+	 *  
+	 *  Each call to insert function returns the reference 
+	 *  to the newly created node.
+	 */
 	public Node insert(Node root, Node newNode) {
-		
-		if( newNode.data <= root.data){
-			
+
+		if ( root == null){
+			root = newNode ;
 		}
-		search(root, newNode.data) ;
-		
-		return null;
+		else if( newNode.data <= root.data){
+			root.left = insert(root, newNode) ;
+		}else{
+			root.right = insert(root, newNode) ;
+		}
+
+		return root ;
 	}
+
+	/**
+	 *  This method looks up the entire binary tree for the data.
+	 *  It does so by first looking at the root, then recursively 
+	 *  looking at the left & right subtrees. 
+	 */
 
 	public boolean search(Node root, int data) {
 
@@ -30,16 +49,31 @@ public class BinarySearchTrees implements IBinarySearchTree {
 
 	}
 
-	public int delete(Node root, int data) {
-		return 0;
+	public BSTNode delete(BSTNode root, int data) {
+
+		BSTNode prev = root ;
+
+		if( root == null)
+			return null ;
+
+		else if( data < root.data){
+			root.left = delete(root.left, data) ;
+		}else if( data > root.data){
+			root.right = delete(root.right, data) ;
+		}else if( root.data == data){
+			// Node to be deleted is found.
+			//			if( )
+		}
+		return null ;
 	}
-	
-	
+
+
 	public int size( Node root){
-		
+
 		if( root == null)
 			return 0 ;
-		
+
 		return ( 1 + size( root.left) + size(root.right) );
 	}
+
 }

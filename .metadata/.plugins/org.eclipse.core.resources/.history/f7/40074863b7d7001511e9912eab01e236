@@ -1,0 +1,33 @@
+package searching.and.sorting;
+
+public class MergingSortedArrays_11_1 {
+
+	static int a[] = new int[12] ;
+	static int b[] = {2, 5, 8, 19, 29, 50} ;
+	
+	public static void main(String[] args) {
+
+		a[0] = 3 ;
+		a[1] = 5 ;
+		a[2] = 17 ;
+		a[3] = 48 ;
+		a[4] = 58 ;
+		a[5] = 76 ;
+		
+		sortedMerge() ;
+		
+	}
+
+	/**
+	 * Given 2 arrays 'a' and 'b' which are already sorted,
+	 * merge b into a, so that the resulting array is already sorted.
+	 * @param a
+	 * @param b
+	 * @return
+	 */
+	public static void sortedMerge(){
+		
+	}
+	
+	
+}
