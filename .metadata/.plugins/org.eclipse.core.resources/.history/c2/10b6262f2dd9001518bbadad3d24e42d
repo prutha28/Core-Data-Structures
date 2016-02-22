@@ -3,8 +3,8 @@
 
 public class LongestCommonSubsequence_DP {
 
-	static String s1 = "prha" ;
-	static String s2 = "sparh" ;
+	static String s1 = "prutha" ;
+	static String s2 = "sparshk" ;
 
 	public static void main(String[] args) {
 		LCS( s1, s2) ;
@@ -19,6 +19,7 @@ public class LongestCommonSubsequence_DP {
 		int L[][] = new int[ m +1 ][n + 1] ;
 		Cordinate[][] c = new Cordinate[m+1][n+1] ; 
 
+		//				
 		//		for (int j = 0; j < c[0].length; j++) {
 		//			L[0][j] = 0 ;
 		//			c[0][j] = new Cordinate() ;
@@ -90,17 +91,18 @@ public class LongestCommonSubsequence_DP {
 	public static String buildLCSFromCoordinateMatrix( Cordinate[][] c){
 
 		StringBuilder sb = new StringBuilder() ;
-		int nrow = c.length -1;	// max index for row
-		int ncol = c[0].length -1 ; // max index for columns
-		while ((nrow > 0 )) {
-			if( c[nrow][ncol].direction.equals("D")){
-				sb.append(s2.charAt(ncol-1)) ;	// TRICKY! // ncol-1 because the length of the size of the matrix is 1 + string's length ( m+1) 
+		int i = c.length-1 ;
+		int j ;
+		while ((i > 0 )) {
+			j = c[i].length-1;
+			if( c[i][j].direction.equals("D")){
+				//				if( max(s1.length(), s2.length()) == 1)
+				//					sb.append(s1.charAt(i-1)) ; // i-1 because the length of the size of the matrix is 1 + string's length ( m+1)
+				//				else
+				sb.append(s2.charAt(j-1)) ;
 			}
-			int row_old = nrow ;		// TRICKY! Store the old values for rows and cols
-			int col_old = ncol ;
-			nrow = c[row_old][col_old].xCordinate ;
-			ncol = c[ row_old][col_old].yCordinate ;
-			System.out.println(nrow + "," + ncol);
+			i = c[i][j].xCordinate ;
+			j = c[i][j].yCordinate ;
 		}
 
 		return reverse(sb.toString()) ;

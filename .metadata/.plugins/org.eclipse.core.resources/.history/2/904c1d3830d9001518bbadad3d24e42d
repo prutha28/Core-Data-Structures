@@ -19,6 +19,7 @@ public class LongestCommonSubsequence_DP {
 		int L[][] = new int[ m +1 ][n + 1] ;
 		Cordinate[][] c = new Cordinate[m+1][n+1] ; 
 
+		//				
 		//		for (int j = 0; j < c[0].length; j++) {
 		//			L[0][j] = 0 ;
 		//			c[0][j] = new Cordinate() ;
