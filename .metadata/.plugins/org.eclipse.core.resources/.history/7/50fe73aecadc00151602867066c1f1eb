@@ -1,0 +1,26 @@
+package hackerRank;
+
+
+/**
+ * Given a string, determine if any anagram of the string is a palindrome.
+ * @author prutha
+ *
+ */
+public class IsAnyAnagramPalindrome {
+
+	public static void main( String args[]){
+		
+		String s = "dmaam" ;
+
+		if( isPalindrome(s)){
+			System.out.println("YES");
+		}else{
+			System.out.println("NO");
+		}
+	}
+	
+	public static boolean isPalindrome( String s){
+		
+	}
+}
+
