@@ -4,7 +4,7 @@
 		<item value="330" key="DIALOG_WIDTH"/>
 		<item value="232" key="DIALOG_Y_ORIGIN"/>
 		<item value="680" key="DIALOG_X_ORIGIN"/>
-		<item value="428" key="DIALOG_HEIGHT"/>
+		<item value="456" key="DIALOG_HEIGHT"/>
 		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
@@ -13,8 +13,9 @@
 		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="top" key="selection"/>
+		<item value="BSTNode" key="selection"/>
 		<list key="findhistory">
+			<item value="Node"/>
 			<item value="top"/>
 			<item value="A"/>
 			<item value="int"/>
@@ -23,6 +24,7 @@
 			<item value="T"/>
 		</list>
 		<list key="replacehistory">
+			<item value="BSTNode"/>
 			<item value="String"/>
 			<item value="elementOccurencesInRockMap"/>
 			<item value="int"/>

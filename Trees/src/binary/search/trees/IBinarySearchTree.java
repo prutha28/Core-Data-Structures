@@ -1,15 +1,13 @@
 package binary.search.trees;
 
-import binary.trees.IBinaryTree;
-import binary.trees.Node;
 
-public interface IBinarySearchTree extends IBinaryTree{
+public interface IBinarySearchTree{
 
-	public Node insert( Node root, Node newNode) ;
+	public BSTNode insert( BSTNode root, int data ) ;
 
-	public boolean search(Node root, int data ) ;
+	public boolean search(BSTNode root, int data ) ;
 
-	public int delete( Node root, int data ) ;
+	public BSTNode delete( BSTNode root, int data ) ;
 
-	public int size( Node root ) ;
+	public int size( BSTNode root ) ;
 }

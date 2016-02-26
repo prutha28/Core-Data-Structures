@@ -1,10 +1,9 @@
 package binary.search.trees;
 
-import binary.trees.Node;
 
 public class BinarySearchTrees implements IBinarySearchTree {
 
-
+	BSTNode root = null ;
 	/**
 	 *  This method looks up the entire binary tree for an appropriate 
 	 *  position for inserting the data.
@@ -13,15 +12,18 @@ public class BinarySearchTrees implements IBinarySearchTree {
 	 *  Each call to insert function returns the reference 
 	 *  to the newly created node.
 	 */
-	public Node insert(Node root, Node newNode) {
+
+	public BSTNode insert(BSTNode root, int data ) {
+
+		BSTNode newNode = new BSTNode(data) ;
 
 		if ( root == null){
 			root = newNode ;
 		}
 		else if( newNode.data <= root.data){
-			root.left = insert(root, newNode) ;
+			root.left = insert(root.left, data) ;
 		}else{
-			root.right = insert(root, newNode) ;
+			root.right = insert(root.right, data) ;
 		}
 
 		return root ;
@@ -33,7 +35,7 @@ public class BinarySearchTrees implements IBinarySearchTree {
 	 *  looking at the left & right subtrees. 
 	 */
 
-	public boolean search(Node root, int data) {
+	public boolean search(BSTNode root, int data) {
 
 		if( root == null)
 			return false ;
@@ -68,7 +70,7 @@ public class BinarySearchTrees implements IBinarySearchTree {
 	}
 
 
-	public int size( Node root){
+	public int size( BSTNode root){
 
 		if( root == null)
 			return 0 ;
@@ -76,4 +78,61 @@ public class BinarySearchTrees implements IBinarySearchTree {
 		return ( 1 + size( root.left) + size(root.right) );
 	}
 
+	public int minValue( BSTNode root){
+		BSTNode current = root ;
+
+		while( current.left != null){
+			current = current.left ;
+		}
+
+		return current.data ;
+	}
+
+	public int maxValue( BSTNode root){
+		BSTNode current = root ;
+
+		while( current.right != null){
+			current = current.right ;
+		}
+
+		return current.data ;
+	}
+
+	public int minValue_rec( BSTNode root){
+
+		if( root == null)
+			return 0;
+
+		if( root.left == null && root.right == null)
+			return root.data ;
+
+		else
+			return minValue_rec(root.left) ;
+	}
+
+	// Traversals
+	public void inorderTraversal( BSTNode root){
+
+		if( root == null)
+			return ;
+		inorderTraversal(root.left) ;
+		System.out.print(root.data + " ");
+		inorderTraversal(root.right) ;
+	}
+
+	public void preorderTraversal( BSTNode root){
+		if( root == null)
+			return ;
+		System.out.print(root.data + " ");
+		inorderTraversal(root.left) ;
+		inorderTraversal(root.right) ;
+	}
+
+	public void postorderTraversal( BSTNode root){
+		if( root == null)
+			return ;
+		inorderTraversal(root.left) ;
+		inorderTraversal(root.right) ;
+		System.out.print(root.data + " ");
+	}
 }
