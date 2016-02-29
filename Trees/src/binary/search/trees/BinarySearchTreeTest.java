@@ -4,6 +4,8 @@ public class BinarySearchTreeTest {
 
 	public static void main( String[] args) {
 		BinarySearchTrees bst = new BinarySearchTrees() ;
+		
+		System.out.println("INSERTIONS");
 		bst.root = bst.insert(bst.root, 7) ;
 		bst.root = bst.insert(bst.root, 4) ;
 		bst.root = bst.insert(bst.root, 11) ;
@@ -13,22 +15,53 @@ public class BinarySearchTreeTest {
 		bst.root = bst.insert(bst.root, 16) ;
 		bst.root = bst.insert(bst.root, 2) ;
 		bst.root = bst.insert(bst.root, 6) ;
+		bst.root = bst.insert(bst.root, 17) ;
+		bst.root = bst.insert(bst.root, 25) ;
 		System.out.println("Inserting elements ...");
 		
 		System.out.println("InOrder Traversal");
-		bst.inorderTraversal(bst.root) ;
+		bst.utils.inorderTraversal(bst.root) ;
 		
 		System.out.println();
 		System.out.println("PreOrder Traversal");
-		bst.preorderTraversal(bst.root) ;
+		bst.utils.preorderTraversal(bst.root) ;
 		
 		System.out.println();
 		System.out.println("PostOrder Traversal");
-		bst.postorderTraversal(bst.root) ;
+		bst.utils.postorderTraversal(bst.root) ;
 		
 		System.out.println();
-		System.out.println("The least element is " + bst.minValue(bst.root));
-		System.out.println("The least element is ( Recursively) " + bst.minValue_rec(bst.root));
-		System.out.println("The largest element is " + bst.maxValue(bst.root));
+		System.out.println("The least element is " + bst.utils.minValue(bst.root));
+		System.out.println("The least element is ( Recursively) " + bst.utils.minValue_rec(bst.root));
+		System.out.println("The largest element is " + bst.utils.maxValue(bst.root));
+		
+		System.out.println("SEARCHING");
+		
+		int val = 11 ;
+		if(bst.search(bst.root, val) )
+			System.out.println(val + " is present");
+		else
+			System.out.println(val + " is not present");
+		
+//		System.out.println("DELETIONS");
+//		System.out.println("After Deleting " + val);
+//		bst.root = bst.delete(bst.root, val) ;
+//		bst.utils.inorderTraversal(bst.root) ;
+//		System.out.println();
+//		
+//		val = 25 ;
+//		System.out.println("After Deleting " + val);
+//		bst.root = bst.delete(bst.root, val) ;
+//		bst.utils.inorderTraversal(bst.root) ;
+//		System.out.println();
+		
+		val = 23 ;
+		System.out.println("After Deleting " + val);
+		bst.root = bst.delete(bst.root, val) ;
+		bst.utils.inorderTraversal(bst.root) ;
+		System.out.println();
+		
+		bst.root = bst.utils.mirror(bst.root) ;
+		bst.utils.inorderTraversal(bst.root) ;
 	}
 }

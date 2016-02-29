@@ -4,6 +4,7 @@ package binary.search.trees;
 public class BinarySearchTrees implements IBinarySearchTree {
 
 	BSTNode root = null ;
+	BSTUtils utils = new BSTUtils() ;
 	/**
 	 *  This method looks up the entire binary tree for an appropriate 
 	 *  position for inserting the data.
@@ -50,8 +51,10 @@ public class BinarySearchTrees implements IBinarySearchTree {
 			return search(root.right, data) ;
 
 	}
+
+
 	/**
-	 * At each step of recursion, the root of the 
+	 *  Each step of recursion, returns the root of the subtree after the deletion. 																																																																							
 	 */
 	public BSTNode delete(BSTNode root, int data) {
 
@@ -59,80 +62,48 @@ public class BinarySearchTrees implements IBinarySearchTree {
 			return null ;
 
 		else if( data < root.data){
+			// The data to be deleted is in the left subtree. 
+			// The appropriate node is deleted and the root of the tree the remains after deletion is returned.
 			root.left = delete(root.left, data) ;
+
 		}else if( data > root.data){
 			root.right = delete(root.right, data) ;
 		}else if( root.data == data){
+
 			// Node to be deleted is found.
-			//			if( )
+			
+			// Case 1: node having no children/leaf node.
+			if( root.left == null && root.right == null ){
+				// Root of the subtree after deleting the node to be deleted is null
+				return null ;
+			}
+
+			// Case 2: Node to be deleted has exactly 1 child.
+			else if( root.left != null && root.right == null ){
+				// Return the child node as it will now be the new root.
+				return root.left ;
+			}
+
+			else if( root.left == null && root.right != null ){
+				//Return the child node as it will now be the new root.
+				return root.right ;
+			}
+
+			// Case 3: Node to be deleted has exactly 2 children.
+			else if( root.left != null && root.right != null ){
+				// 1. Find the node in the right subtree that has the min value.
+				BSTNode minNode = utils.minNode(root.right) ;
+				// 2. Replace the value of the root node with that min value.
+				root.data = minNode.data ;
+				// 3. Now that min value will appear as a duplicate in the right subtree. Delete that value from the right subtree recursively.
+				return delete(root.right, minNode.data) ;
+			}
+		}else{
+			// node to be deleted is not found.
+			return null ;
 		}
-		return null ;
+		return root;
 	}
 
 
-	public int size( BSTNode root){
-
-		if( root == null)
-			return 0 ;
-
-		return ( 1 + size( root.left) + size(root.right) );
 	}
-
-	public int minValue( BSTNode root){
-		BSTNode current = root ;
-
-		while( current.left != null){
-			current = current.left ;
-		}
-
-		return current.data ;
-	}
-
-	public int maxValue( BSTNode root){
-		BSTNode current = root ;
-
-		while( current.right != null){
-			current = current.right ;
-		}
-
-		return current.data ;
-	}
-
-	public int minValue_rec( BSTNode root){
-
-		if( root == null)
-			return 0;
-
-		if( root.left == null && root.right == null)
-			return root.data ;
-
-		else
-			return minValue_rec(root.left) ;
-	}
-
-	// Traversals
-	public void inorderTraversal( BSTNode root){
-
-		if( root == null)
-			return ;
-		inorderTraversal(root.left) ;
-		System.out.print(root.data + " ");
-		inorderTraversal(root.right) ;
-	}
-
-	public void preorderTraversal( BSTNode root){
-		if( root == null)
-			return ;
-		System.out.print(root.data + " ");
-		inorderTraversal(root.left) ;
-		inorderTraversal(root.right) ;
-	}
-
-	public void postorderTraversal( BSTNode root){
-		if( root == null)
-			return ;
-		inorderTraversal(root.left) ;
-		inorderTraversal(root.right) ;
-		System.out.print(root.data + " ");
-	}
-}

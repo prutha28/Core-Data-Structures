@@ -5,25 +5,25 @@
 		<item value="345" key="DIALOG_X_ORIGIN"/>
 	</section>
 	<section name="org.eclipse.ui.dialogs.FilteredResourcesSelectionDialog">
-		<item value="false" key="ShowDerived"/>
 		<item value="true" key="ShowStatusLine"/>
+		<item value="false" key="ShowDerived"/>
 		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;workingSet workingSetName=&quot;&quot;/&gt;" key="WorkingSet"/>
 		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode&gt;&#x0A;&lt;infoNode path=&quot;/Arrays/src/dynamic/arrays/DynamicArray.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Arrays/src/arrays/sorted/SortedArrayTest.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Queues/src/queues/using/fixed/sized/arrays/Queue.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Queues/src/queues/using/fixed/sized/arrays/QueueTest.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Stacks/src/applications/using/stacks/BracketCheck.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Java Practice/src/hackerRank/Frog.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Java Practice/src/hackerrank/zap/HalloweenCake.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Java Practice/src/hackerrank/sab/Selection.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/DP/src/maximumContiguousSum/MaximumContiguousSum.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Java Practice/src/hackerRank/MaximizeSubarraySum.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/cracking Coding/src/Strings/StringCompression.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Trees/src/binary/search/trees/BinarySearchTrees.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Heaps/src/heap/Heap.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Java Practice/src/SummaryRanges.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/DP/src/LongestCommonSubstring.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Java Practice/src/hackerRank/GemsProblem.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Java Practice/src/hackerrank/zap/MakePalindrome.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/DP/src/LongestCommonSubsequence_DP.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/DP/src/LongestCommonSubsequence_Recursion.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Sorting Algorithms/src/insertion/sort/InsertionSort.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;/historyRootNode&gt;&#x0A;&lt;/History&gt;" key="History"/>
 		<section name="DialogBoundsSettings">
 			<item value="640" key="DIALOG_WIDTH"/>
 			<item value="53" key="DIALOG_Y_ORIGIN"/>
+			<item value="624" key="DIALOG_HEIGHT"/>
 			<item value="350" key="DIALOG_X_ORIGIN"/>
-			<item value="596" key="DIALOG_HEIGHT"/>
 			<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 		</section>
-	</section>
-	<section name="WORKBENCH_SETTINGS">
-		<list key="ENABLED_TRANSFERS">
-		</list>
 	</section>
 	<section name="ExternalProjectImportWizard">
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
 	</section>
 	<section name="NewWizardAction">
 		<item value="org.eclipse.jdt.ui.wizards.JavaProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>

@@ -32,28 +32,13 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
-<part id="2"/>
-<part id="3"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Node.java" partName="Node.java" path="/home/prutha/Desktop/Data Structures/Trees/src/binary/trees/traversals/Node.java" title="Node.java" tooltip="Trees/src/binary/trees/traversals/Node.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Trees/src/binary/trees/traversals/Node.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="4" selectionOffset="47" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BinaryTreeBFS.java" partName="BinaryTreeBFS.java" path="/home/prutha/Desktop/Data Structures/Trees/src/binary/trees/traversals/BinaryTreeBFS.java" title="BinaryTreeBFS.java" tooltip="Trees/src/binary/trees/traversals/BinaryTreeBFS.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Trees/src/binary/trees/traversals/BinaryTreeBFS.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="195" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BinaryTree.java" partName="BinaryTree.java" path="/home/prutha/Desktop/Data Structures/Trees/src/binary/trees/traversals/BinaryTree.java" title="BinaryTree.java" tooltip="Trees/src/binary/trees/traversals/BinaryTree.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Trees/src/binary/trees/traversals/BinaryTree.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="196" selectionTopPixel="0"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GemsProblem.java" partName="GemsProblem.java" path="/home/prutha/Desktop/Data Structures/Java Practice/src/hackerRank/GemsProblem.java" title="GemsProblem.java" tooltip="Java Practice/src/hackerRank/GemsProblem.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Java Practice/src/hackerRank/GemsProblem.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1926" selectionTopPixel="850"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BinarySearchTrees.java" partName="BinarySearchTrees.java" path="/home/prutha/Desktop/Data Structures/Trees/src/binary/search/trees/BinarySearchTrees.java" title="BinarySearchTrees.java" tooltip="Trees/src/binary/search/trees/BinarySearchTrees.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Trees/src/binary/search/trees/BinarySearchTrees.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1409" selectionTopPixel="884"/>
 </editor>
 </editors>
 <views>
@@ -104,7 +89,7 @@
 </viewState>
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
-<viewState group_libraries="1" layout="2" linkWithEditor="1" rootMode="1" workingSetName="">
+<viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="">
 <customFilters userDefinedPatternsEnabled="false">
 <xmlDefinedFilters>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.LibraryFilter" isEnabled="false"/>
@@ -416,13 +401,8 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Trees/src/binary/trees/Node.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Java Practice/src/hackerRank/IsAnyAnagramPalindrome.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Java Practice/src/hackerRank/GemsProblem.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Trees/src/binary/search/trees/BinarySearchTrees.java"/>
 </editors>
-<item historyLabel="MissingNumbers.java" index="0">
-<position/>
-</item>
-<item historyLabel="MissingNumbers.java" index="0">
-<position/>
-</item>
 <item historyLabel="MissingNumbers.java" index="0">
 <position/>
 </item>
@@ -564,8 +544,14 @@
 <item historyLabel="GemsProblem.java" index="11">
 <position info="not_deleted" x="1272" y="0"/>
 </item>
-<item active="true" historyLabel="GemsProblem.java" index="11">
-<position info="not_deleted" x="1330" y="0"/>
+<item historyLabel="GemsProblem.java" index="11">
+<position info="not_deleted" x="1926" y="0"/>
+</item>
+<item historyLabel="BinarySearchTrees.java" index="12">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item active="true" historyLabel="BinarySearchTrees.java" index="12">
+<position info="not_deleted" x="1267" y="6"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -584,6 +570,9 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BinarySearchTrees.java" tooltip="Trees/src/binary/search/trees/BinarySearchTrees.java">
+<persistable path="/Trees/src/binary/search/trees/BinarySearchTrees.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GemsProblem.java" tooltip="Java Practice/src/hackerRank/GemsProblem.java">
 <persistable path="/Java Practice/src/hackerRank/GemsProblem.java"/>
 </file>
@@ -625,9 +614,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Anagram.java" tooltip="Java Practice/src/hackerRank/Anagram.java">
 <persistable path="/Java Practice/src/hackerRank/Anagram.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DollarsIcecream.java" tooltip="Java Practice/src/hackerRank/DollarsIcecream.java">
-<persistable path="/Java Practice/src/hackerRank/DollarsIcecream.java"/>
 </file>
 </mruList>
 </workbench>

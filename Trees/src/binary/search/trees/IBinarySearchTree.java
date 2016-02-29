@@ -9,5 +9,4 @@ public interface IBinarySearchTree{
 
 	public BSTNode delete( BSTNode root, int data ) ;
 
-	public int size( BSTNode root ) ;
 }
