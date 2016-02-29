@@ -64,9 +64,7 @@ public class BinarySearchTreeTest {
 		bst.root = bst.utils.mirror(bst.root) ;
 		bst.utils.inorderTraversal(bst.root) ;
 		
-		System.out.println();
-		System.out.println("Doubling the tree");
-		bst.utils.doubleTree(bst.root) ;
+		bst.root = bst.utils.doubleTree(bst.root) ;
 		bst.utils.inorderTraversal(bst.root) ;
 	}
 }

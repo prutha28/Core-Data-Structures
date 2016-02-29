@@ -106,17 +106,20 @@ public class BSTUtils {
 	}
 
 
-	public void doubleTree( BSTNode root ){
+	public BSTNode doubleTree( BSTNode root ){
 
-		if( root == null)
-			return  ;
+		if( root == null){
+			return null ;
+		}
 
-		doubleTree(root.left) ;
-		doubleTree(root.right) ;
+		else if ( root !=null){
+			BSTNode newNode = new BSTNode(root.data) ;
+			newNode.left = root.left ;
+			root.left = newNode ;
+		}
 
-		BSTNode newNode = new BSTNode(root.data) ;
-		newNode.left = root.left ;
-		root.left = newNode ;
-
+		root.left = doubleTree(root.left) ;
+		root.right = doubleTree(root.right) ;
+		return root ;
 	}
 }

@@ -111,12 +111,11 @@ public class BSTUtils {
 		if( root == null)
 			return  ;
 
-		doubleTree(root.left) ;
-		doubleTree(root.right) ;
-
 		BSTNode newNode = new BSTNode(root.data) ;
 		newNode.left = root.left ;
 		root.left = newNode ;
 
+		doubleTree(root.left) ;
+		doubleTree(root.right) ;
 	}
 }
