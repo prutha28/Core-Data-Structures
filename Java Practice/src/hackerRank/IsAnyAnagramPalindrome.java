@@ -41,17 +41,12 @@ public class IsAnyAnagramPalindrome {
 		
 		// Now check how many of the character counts(values in the map) are odd/even.
 		
-		Iterator<Integer> itr = charCountsMap.values().iterator() ;
-		
-		int evens = 0 ;
 		int odds = 0 ;
-		
+		Iterator<Integer> itr = charCountsMap.values().iterator() ;
 		while( itr.hasNext()){
 			int count = itr.next() ;
 			
-			if( count %2 == 0 )
-				evens++ ;
-			else
+			if( count %2 != 0 )
 				odds++ ;
 		}
 		return (odds == 0 || odds ==1) ;

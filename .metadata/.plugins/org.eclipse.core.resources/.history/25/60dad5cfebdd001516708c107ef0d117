@@ -1,0 +1,9 @@
+package binary.trees.traversals;
+
+public class Node {
+
+	int data ;
+	
+	
+	
+}

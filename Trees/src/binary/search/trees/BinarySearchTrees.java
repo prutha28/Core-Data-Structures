@@ -50,10 +50,10 @@ public class BinarySearchTrees implements IBinarySearchTree {
 			return search(root.right, data) ;
 
 	}
-
+	/**
+	 * At each step of recursion, the root of the 
+	 */
 	public BSTNode delete(BSTNode root, int data) {
-
-		BSTNode prev = root ;
 
 		if( root == null)
 			return null ;
