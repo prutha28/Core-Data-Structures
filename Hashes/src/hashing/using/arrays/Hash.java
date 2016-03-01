@@ -6,10 +6,10 @@ import java.util.Set;
 public class Hash<Integer, V> implements IHash<Integer, V>{
 
 	private static final int SIZE = 10;
-	int hashArray[] ;
+	int buckets[] ;
 	
 	public Hash(){
-		hashArray = new int[ SIZE ] ;
+		buckets = new int[ SIZE ] ;
 	}
 	
 	public boolean put(Integer key, V value) {
