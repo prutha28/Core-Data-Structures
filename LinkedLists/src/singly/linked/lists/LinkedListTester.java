@@ -75,7 +75,7 @@ public class LinkedListTester {
 		
 		result.head = utils.insertSort(ll.head) ;
 		result.print() ;
-		
+		System.out.println("------------------------------------------");
 		result.head = utils.sortedInsert( result.head, 88) ;
 		result.head = utils.sortedInsert( result.head, 40) ;
 		result.head = utils.sortedInsert( result.head, 21) ;
@@ -83,9 +83,24 @@ public class LinkedListTester {
 		result.head = utils.sortedInsert( result.head, 10) ;
 		result.print() ;
 		
-		System.out.println("After removing duplicates");
+		System.out.println("------------------------------------------");
+		result.head = utils.sortedInsert2( result.head, 88) ;
+		result.head = utils.sortedInsert2( result.head, 40) ;
+		result.head = utils.sortedInsert2( result.head, 21) ;
+		result.head = utils.sortedInsert2( result.head, 5) ;
+		result.head = utils.sortedInsert2( result.head, 10) ;
+		result.print() ;
+//		System.out.println("After removing duplicates");
 //		result.head = utils.removeDuplicates(result.head) ;
 //		result.print() ;
+//		
+//		result.head = utils.reversell(result.head) ;
+//		result.print() ;
+		
+		System.out.println("Cloning the previous linked list.");
+		Node clonedHead = utils.clone(result.head) ;
+		LinkedList clonedLL = new LinkedList(clonedHead) ;
+		clonedLL.print() ;
 		
 		
 	}

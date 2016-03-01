@@ -112,6 +112,35 @@ public class LinkedListUtils {
 		return resultHead ;
 	}
 
+	// Same as above, but using a single pointer.
+	public Node sortedInsert2( Node head, int key ){
+		
+		Node newnode = new Node( key) ;
+		
+		if( head == null || head.data > key){
+			newnode.next = head ;
+			head = newnode ;
+			return head ;
+		}
+		
+		
+		Node current = head ;
+		
+		while( current.next != null && current.next.data < key){
+			current = current.next ;
+		}
+		
+		if( current.next == null){
+			current.next = newnode ;
+		}else{ // if(current.next.data >= key)
+			newnode.next = current.next ;
+			current.next = newnode ;
+		}
+		return head ;
+		
+	}
+	
+	
 	/**
 	 * Given the reference to a linked list ( unsorted), rearrange the nodes 
 	 * so that they are sorted.
@@ -210,4 +239,47 @@ public class LinkedListUtils {
 		return head;
 
 	}
+
+	public Node reversell(Node head) {
+
+		// Empty List
+		if( head == null)
+			return null ;
+		
+		// Single element list
+		else if( head.next == null){
+			return head ;
+		}
+		
+		Node previous = head ;
+		Node current = head.next ;
+		Node nextnode = head.next.next ;
+		
+		while( current.next != null){
+			nextnode = current.next ;
+			current.next = previous ;
+			previous = current ;
+			current = nextnode ;
+		}
+		current.next = previous ; // Tricky!
+		head.next = null ;		// Making the first link's next pointer null.
+		head = current ;		// new head.
+		return head ;
+	}
+	
+	// Recursively clones the linked list.
+	// Traverses till the end( where the head becomes null)
+	public static Node clone( Node head){
+		
+		// Base Case
+		if( head == null)
+			return null ;	// happens at the node after the last one.
+		
+		Node cloned = clone( head.next) ;
+		Node newnode = new Node( head.data) ;
+		newnode.next = cloned ;
+		return newnode ;	// At each stage the address of the cloned node is returned. This is then set as the next ptr in the previous level of recursion.
+	}
+	
+	
 }

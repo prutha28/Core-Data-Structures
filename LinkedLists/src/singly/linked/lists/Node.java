@@ -2,8 +2,8 @@ package singly.linked.lists;
 
 public class Node {
 
-	int data ;
-	Node next ;
+	public int data ;
+	public Node next ;
 	
 	public Node(){
 		this( -1) ;
