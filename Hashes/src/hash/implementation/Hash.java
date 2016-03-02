@@ -83,12 +83,24 @@ public class Hash implements IHash {
 	}
 
 	public Person remove(String key) {
-		int index = hash(key) % capacity ;
+		int hashCode = hash(key) ;
+		int index = hashCode % capacity ;
+		Item removed = null ;
 		
 		if( buckets[index] == null){
 			return null ;
 		}else{
-//			Item currentItem = 
+
+			Item currentItem = buckets[index] ;
+			while( currentItem != null){
+				
+				if( currentItem.hashCode == hashCode && currentItem.key.equals(key) ){
+					removed = currentItem ;
+					buckets[index ] = currentItem.next ;
+					return removed.person ;
+				}
+				currentItem = currentItem.next ;
+			}
 		}
 		return null;
 	}
@@ -122,8 +134,28 @@ public class Hash implements IHash {
 		return false;
 	}
 
+	/**
+	 * Returns the number of elements in the hash map.
+	 * 
+	 * The outer loop iterates over the indices of the buckets array ( 0 to buckets.len-1)
+	 * At each index, we keep a current node pointer that iterates till the end of the linked list at each index of the buckets array.
+	 */
 	public int size() {
-		return 0;
+		
+		int index = 0  ;
+		Item currentItem  ;
+		int size = 0 ;
+		
+		while( index < buckets.length){
+			currentItem = buckets[index] ;
+			
+			while( currentItem != null){
+				size++ ;
+				currentItem = currentItem.next ;
+			}
+			index++ ;
+		}
+		return size;
 	}
 
 	public Set<String> keySet() {
