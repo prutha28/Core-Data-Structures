@@ -1,6 +1,8 @@
 package singly.linked.lists;
 
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
 
 public class LinkedListUtils {
 
@@ -114,22 +116,22 @@ public class LinkedListUtils {
 
 	// Same as above, but using a single pointer.
 	public Node sortedInsert2( Node head, int key ){
-		
+
 		Node newnode = new Node( key) ;
-		
+
 		if( head == null || head.data > key){
 			newnode.next = head ;
 			head = newnode ;
 			return head ;
 		}
-		
-		
+
+
 		Node current = head ;
-		
+
 		while( current.next != null && current.next.data < key){
 			current = current.next ;
 		}
-		
+
 		if( current.next == null){
 			current.next = newnode ;
 		}else{ // if(current.next.data >= key)
@@ -137,10 +139,10 @@ public class LinkedListUtils {
 			current.next = newnode ;
 		}
 		return head ;
-		
+
 	}
-	
-	
+
+
 	/**
 	 * Given the reference to a linked list ( unsorted), rearrange the nodes 
 	 * so that they are sorted.
@@ -187,25 +189,70 @@ public class LinkedListUtils {
 	// Remove duplicates from sorted linked list : O(nlogn) for sorting Time & O(1) Space.
 	public Node removeDuplicates( Node head ){
 
-		Node prev = this.insertSort(head) ;
-		Node current = prev.next ;
-
 		// Empty List
-		if( current == null)
+		if( head == null)
 			return null ;
 
-		while( prev != null){
+		if( head.next == null)
+			return head ;
 
-			current = prev.next ;
+		Node prev = head ;
+		Node current = prev.next ;
 
-			if( current != null && prev.data == current.data){
-				prev.next = current.next ;
-				current.next = null ;
+		while( current != null){
+
+			//			current = prev.next ;
+
+			if( prev.data == current.data){
+				prev.next = current.next ;	// Tricky !  Dont advance prev yet. There could be 3 adjacent elements that are equal.
+			}else{
+				prev = current ;	// Tricky ! Only advance prev when adjacent elements are not equal 
 			}
 
-			prev = prev.next ;
+			current = current.next ;
 		}
 		return head ;
+	}
+
+
+	public Node removeDuplicatesSorted( Node head ) {
+
+		if( head == null ) 
+			return null ;
+
+		else if( head.next == null)
+			return head ;
+
+		Node current = head ;
+
+		// Step 1: Traverse the linked list & Maintain the counts.
+		// Note that we are using a LinkedHashMap, so keys can be retreived in the the order of insertion.
+		LinkedHashMap<Integer, Integer> nodeCountMap = new LinkedHashMap<Integer, Integer>();
+
+		while( current != null){
+
+			if( nodeCountMap.get(current.data) == null){
+				nodeCountMap.put(current.data, 1) ;
+			}else{
+				int count = nodeCountMap.get(current.data) ;
+				nodeCountMap.put(current.data, 1 + count) ;
+			}
+
+			current = current.next ;
+		}
+
+
+		Iterator<Integer> itr = nodeCountMap.keySet().iterator() ;
+		Node newHead = new Node( itr.next()) ;
+		Node newCurrent = newHead ;
+
+		while( itr.hasNext()){
+			Node newnode = new Node( itr.next()) ;
+			newCurrent.next = newnode ;
+			newCurrent = newnode ;
+		}
+
+		return newHead ;
 	}
 
 
@@ -224,7 +271,7 @@ public class LinkedListUtils {
 			if( elementPresentMap != null){
 				if( elementPresentMap.get(key) == Boolean.TRUE){
 					// Element is already present
-//					elementPresentMap.put(key, false) ;
+					//					elementPresentMap.put(key, false) ;
 					prev.next = current.next ;
 					current.next = null ;
 				}
@@ -245,16 +292,16 @@ public class LinkedListUtils {
 		// Empty List
 		if( head == null)
 			return null ;
-		
+
 		// Single element list
 		else if( head.next == null){
 			return head ;
 		}
-		
+
 		Node previous = head ;
 		Node current = head.next ;
 		Node nextnode = head.next.next ;
-		
+
 		while( current.next != null){
 			nextnode = current.next ;
 			current.next = previous ;
@@ -266,20 +313,168 @@ public class LinkedListUtils {
 		head = current ;		// new head.
 		return head ;
 	}
-	
+
 	// Recursively clones the linked list.
 	// Traverses till the end( where the head becomes null)
 	public static Node clone( Node head){
-		
+
 		// Base Case
 		if( head == null)
 			return null ;	// happens at the node after the last one.
-		
+
 		Node cloned = clone( head.next) ;
 		Node newnode = new Node( head.data) ;
 		newnode.next = cloned ;
 		return newnode ;	// At each stage the address of the cloned node is returned. This is then set as the next ptr in the previous level of recursion.
 	}
-	
-	
+
+	/**
+	 * Appends 2 linked lists & returns the hea dof the resulting linked list.
+	 * @param aHead
+	 * @param bHead
+	 * @return
+	 */
+	public static Node append( Node aHead, Node bHead){
+
+		if( aHead == null){
+			return bHead ;
+		}
+
+		Node aCurrent = aHead ;
+
+		while( aCurrent.next != null ){
+			aCurrent = aCurrent.next ;
+		}
+
+		aCurrent.next = bHead ;
+		bHead = null ;
+
+		return aHead ;
+	}
+
+	/**
+	 * Splits the list into half & returns the head of the latter half
+	 * @param head
+	 * @return
+	 */
+	public Node frontBackSplit( Node head ){
+
+		if( head == null)
+			return null ;
+
+		else if( head.next == null ){
+			return head ;
+		}
+
+		Node slow = head ;
+		Node fast = head.next ;
+
+		while( fast != null){
+			fast = fast.next ;
+
+			if( fast != null){
+				slow = slow.next ;
+				fast = fast.next ;
+			}
+		}
+
+		Node newHead = slow.next ;
+		slow.next = null ;
+		return newHead ;
+	}
+
+	/**
+	 * Given two sorted linked lists, perform the intersection of the lists and return the head of the 
+	 * resultant linked list.
+	 * @param head1
+	 * @param head2
+	 * @return
+	 */
+	public Node sortedIntersect(Node head1, Node head2) {
+
+		if( head1 == null)
+			return head2 ;
+
+		if( head2 == null)
+			return head1 ;
+
+		if( head1 == null && head2 == null)
+			return null ;
+
+		Node current1 = head1;
+		Node current2 = head2;
+		LinkedList result = new LinkedList() ;
+
+		while( current1 != null && current2 != null){
+
+			if( current1.data == current2.data){
+				result.push(current1.data) ;
+				current1 = current1.next ;
+				current2 = current2.next ; 
+			}else if( current1.data < current2.data){
+				current1 = current1.next ;
+			}else{
+				current2 = current2.next ;
+			}
+		}
+
+		return result.head ;
+
+	}
+
+
+	/**
+	 * Given the head pointer to a linked list, split it into 2 sublists, such that
+	 * alternate nodes are placed in the 2 lists.
+	 * For the sake of convenience we shall print both the lists. 
+	 * @param head
+	 * @return the pointer to the second list
+	 */
+	public void alternatingSplit( Node head ){
+
+		if( head == null ||  head.next == null){
+			System.out.println("Empty List.");
+			return  ;
+		}
+
+		Node aHead = head ;
+		Node bHead = head.next ;
+
+		Node current = head ;
+		Node aCurrent = bHead ;
+		Node bCurrent = aHead ;
+
+		while( current != null){
+			aCurrent = current ;
+			current = current.next ;
+			bCurrent = current ;
+			if( current != null)
+				current = current.next ;
+		}
+
+		System.out.println("The first list:");
+
+		aCurrent = aHead ;
+		while( aCurrent != null){
+			System.out.print(aCurrent.data + " ");
+			aCurrent = aCurrent.next ;
+		}
+		System.out.println();
+		
+		bCurrent = bHead ;
+		System.out.println("The second list:");
+		while( bCurrent != null){
+			System.out.print(bCurrent.data + " ");
+			bCurrent = bCurrent.next ;
+		}
+		
+		System.out.println();
+	}
+
+
+
 }
+
+
+
+
