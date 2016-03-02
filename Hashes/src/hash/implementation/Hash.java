@@ -268,5 +268,6 @@ public class Hash implements IHash {
 	
 	public void clear(){
 		
+		
 	}
 }

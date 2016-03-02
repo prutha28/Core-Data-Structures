@@ -28,4 +28,5 @@ public interface IHash {
 	
 	public Collection<Item> entries() ;
 	
+	public void clear() ;
 }

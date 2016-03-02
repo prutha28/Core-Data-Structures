@@ -102,5 +102,15 @@ public class HashTest {
 			System.out.println("The key " + lookUpPerson + " is not present in the hash.");
 		}
 		
+		// Clearing contents of hashmap
+		
+		if( !hash.isEmpty()){
+			hash.clear() ;
+		}else{
+			System.out.println("Hash map is already empty.");
+		}
+		
+		
+		
 	}
 }
