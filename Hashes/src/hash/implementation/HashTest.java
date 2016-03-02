@@ -40,6 +40,27 @@ public class HashTest {
 		}
 		
 		System.out.println("The number of elements in teh hash map after removing is " + hash.size());
+
+		System.out.println();
+		System.out.println("Iterating over the keys");
+		
+		for( String key : hash.keySet()){
+			System.out.println("Key : " + key + ", Value : " + hash.get(key));
+		}
+		
+		System.out.println();
+		System.out.println("Iterating over the values");
+		
+		for( Person person : hash.values()){
+			System.out.println(person);
+		}
+		System.out.println();
+		System.out.println("Iterating over the items");
+		
+		for( Item item : hash.entries()){
+			System.out.println(item);
+			System.out.println();
+		}
 		
 		
 	}

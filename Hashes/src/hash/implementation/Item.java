@@ -24,5 +24,11 @@ public class Item {
 	public Item( String key, Person person, int hashCode){
 		this( key, person) ;
 		this.hashCode = hashCode ;
+	}	
+	
+	public String toString() {
+		return "Item [key=" + key + ", person=" + person + ", hashCode="
+				+ hashCode + ", next=" + next + "]";
 	}
+
 }

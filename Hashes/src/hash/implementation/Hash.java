@@ -1,6 +1,9 @@
 package hash.implementation;
 
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -135,6 +138,7 @@ public class Hash implements IHash {
 	}
 
 	/**
+	 * See basic logic for iteration in this method.
 	 * Returns the number of elements in the hash map.
 	 * 
 	 * The outer loop iterates over the indices of the buckets array ( 0 to buckets.len-1)
@@ -159,13 +163,72 @@ public class Hash implements IHash {
 	}
 
 	public Set<String> keySet() {
-		return null;
+		
+		Set<String> keys = new HashSet<String>() ;
+				
+		int index = 0 ;
+		Item currentItem ;
+		
+		while( index < buckets.length){
+			currentItem = buckets[index] ;
+			
+			while( currentItem != null){
+				keys.add(currentItem.key) ;
+				currentItem = currentItem.next ;
+			}
+			
+			index++ ;
+		}
+		
+		return keys ;
 	}
 
 	public Collection<Person> values() {
-		return null;
+		List<Person> values = new ArrayList<Person>() ;
+		
+		int index = 0 ;
+		Item currentItem ;
+		
+		while( index < buckets.length){
+			currentItem = buckets[index] ;
+			
+			while( currentItem != null){
+				values.add(currentItem.person) ;
+				currentItem = currentItem.next ;
+			}
+			
+			index++ ;
+		}
+		
+		return values ;
 	}
 
+	/**
+	 * We iterate over the complete hashmap to 
+	 * @return
+	 */
+	public Collection<Item> entries() {
+		List<Item> entries = new ArrayList<Item>() ;
+		
+		int index = 0 ;
+		Item currentItem ;
+		
+		while( index < buckets.length){
+			currentItem = buckets[index] ;
+			
+			while( currentItem != null){
+				entries.add(currentItem) ;
+				currentItem = currentItem.next ;
+			}
+			
+			index++ ;
+		}
+		
+		return entries ;
+	}
+	
+	
+	
 	/**
 	 * This method takes the key string and processes it to return an
 	 * index into the array.
@@ -186,12 +249,8 @@ public class Hash implements IHash {
 
 		return hashCode ;
 	}
+	
 
-	public Collection<Person> entries() {
-		return null;
-	}
-	
-	
 	public void print(){
 		
 		for (int index = 0; index < buckets.length; index++) {

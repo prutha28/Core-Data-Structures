@@ -26,6 +26,6 @@ public interface IHash {
 	
 	public Collection<Person> values() ;
 	
-	public Collection<Person> entries() ;
+	public Collection<Item> entries() ;
 	
 }
