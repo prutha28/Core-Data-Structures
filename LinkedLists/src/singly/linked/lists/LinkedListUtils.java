@@ -472,6 +472,37 @@ public class LinkedListUtils {
 	}
 
 
+	public Node shuffleMerge( Node head1, Node head2){
+		
+		Node current = null ;
+		Node current1 = head1 ;
+		Node current2 = head2 ;
+		
+		while( current1 != null && current2 != null){
+			current = current1 ;
+			current1 = current1.next ;
+			current.next = current2 ;
+			current2 = current2.next ;
+			current = current.next.next ;
+		}
+		
+		while( current1 != null){
+			current.next = current1 ;
+			current1 = current1.next ;
+			current = current.next ;
+		}
+		
+		while( current2 != null){
+			current.next = current2 ;
+			current2 = current2.next ;
+			current = current.next ;
+		}
+		
+		return head1 ;
+	}
+	
+	
+	
 
 }
 

@@ -138,5 +138,24 @@ public class LinkedListTester {
 		clonedLL2.print() ;
 		System.out.println("Linked list after spliting");
 		utils.alternatingSplit(clonedLL2.head) ;
+		
+		// Shuffle Merge
+		LinkedList ll1 = new LinkedList() ;
+		ll1.push(1) ;
+		ll1.push(2) ;
+		ll1.push(3) ;
+		ll1.print() ;
+		
+		LinkedList ll2 = new LinkedList() ;
+		ll2.push(7) ;
+		ll2.push(13) ;
+		ll2.push(11) ;
+		ll2.print() ;
+		
+		Node resultHead = utils.shuffleMerge(ll1.head, ll2.head) ;
+		LinkedList r = new LinkedList(resultHead) ;
+		r.print() ;
+		
+		
 	}
 }
