@@ -40,9 +40,12 @@ public class CountSort {
 		// B is the output array
 		int B[] = new int[ A.length] ;
 
-		for (int i = 0; i < B.length; i++) {
+		// at this point, each the element C[A[i]] represents the no of elements less than or equal to A[i]
+		// Therefore, C[A[i]] should be the correct index position for A[i] in the output array.
+		
+		for (int i = B.length-1; i > 0; i--) {
 			B[Count[A[i]] - 1] = A[i] ;				// Tricky! Dont forget the -1 in the index
-			Count[A[i]] = Count[A[i]] - 1;
+			Count[A[i]]-- ;	
 		}
 
 		for (int i = 0; i < B.length; i++) {
