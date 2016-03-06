@@ -21,11 +21,5 @@ public class Trie {
 		add(word.substring(1)) ;
 		
 	}
-	
-	
-	public boolean isWord( String s ){
 		
-		
-	}
-	
 }
