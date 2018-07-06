@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/Queues/src/queues/using/fixed/sized/arrays/QueueTest.java"/>
+<listEntry value="/Graduation/src/queues/using/fixed/sized/arrays/QueueTest.java"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="1"/>
 </listAttribute>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="queues.using.fixed.sized.arrays.QueueTest"/>
-<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Queues"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Graduation"/>
 </launchConfiguration>

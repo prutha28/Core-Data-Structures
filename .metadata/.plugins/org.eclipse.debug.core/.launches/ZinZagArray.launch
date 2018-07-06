@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/Sorting Algorithms/src/insertion/sort/ZinZagArray.java"/>
+<listEntry value="/Graduation/src/sorting/insertion/ZinZagArray.java"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="1"/>
 </listAttribute>
-<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="insertion.sort.ZinZagArray"/>
-<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Sorting Algorithms"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="sorting.insertion.ZinZagArray"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Graduation"/>
 </launchConfiguration>
