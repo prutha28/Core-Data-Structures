@@ -1,9 +1,0 @@
-package string.operations.using.stacks;
-
-public class PalindromeCheck {
-
-	public static void main(String[] args) {
-
-	}
-
-}

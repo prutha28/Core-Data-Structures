@@ -1,20 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item value="330" key="DIALOG_WIDTH"/>
-		<item value="232" key="DIALOG_Y_ORIGIN"/>
-		<item value="680" key="DIALOG_X_ORIGIN"/>
-		<item value="456" key="DIALOG_HEIGHT"/>
-		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
-	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item value="true" key="wrap"/>
-		<item value="false" key="casesensitive"/>
 		<item value="false" key="isRegEx"/>
+		<item value="Node" key="selection"/>
+		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
-		<item value="BSTNode" key="selection"/>
 		<list key="findhistory">
+			<item value="ListNode"/>
 			<item value="Node"/>
 			<item value="top"/>
 			<item value="A"/>
@@ -24,10 +18,18 @@
 			<item value="T"/>
 		</list>
 		<list key="replacehistory">
+			<item value="Node"/>
 			<item value="BSTNode"/>
 			<item value="String"/>
 			<item value="elementOccurencesInRockMap"/>
 			<item value="int"/>
 		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="290" key="DIALOG_WIDTH"/>
+		<item value="1|.SF NS Text|11.0|0|COCOA|1|.SFNSText" key="DIALOG_FONT_NAME"/>
+		<item value="409" key="DIALOG_HEIGHT"/>
+		<item value="232" key="DIALOG_Y_ORIGIN"/>
+		<item value="680" key="DIALOG_X_ORIGIN"/>
 	</section>
 </section>

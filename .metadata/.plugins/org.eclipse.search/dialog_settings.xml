@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<section name="DialogBounds_SearchDialog">
-		<item value="594" key="DIALOG_WIDTH"/>
-		<item value="43" key="DIALOG_Y_ORIGIN"/>
-		<item value="515" key="DIALOG_HEIGHT"/>
-		<item value="353" key="DIALOG_X_ORIGIN"/>
-		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+	<section name="SearchDialog.ScopePart">
+		<item value="0" key="scope"/>
+	</section>
+	<section name="">
+		<item value="1000" key="org.eclipse.jdt.search.resultpage.limit"/>
+		<item value="TRUE" key="org.eclipse.jdt.search.resultpage.limit_enabled"/>
 	</section>
 	<section name="Search">
 		<list key="Search.processedPageIds">
@@ -19,7 +19,15 @@
 			<item value="org.eclipse.pde.internal.ui.search.SearchPage"/>
 		</list>
 	</section>
-	<section name="SearchDialog.ScopePart">
-		<item value="0" key="scope"/>
+	<section name="org.eclipse.jdt.ui.JavaSearchResultPage">
+		<item value="1000" key="org.eclipse.jdt.search.resultpage.limit"/>
+		<item value="TRUE" key="org.eclipse.jdt.search.resultpage.limit_enabled"/>
+	</section>
+	<section name="DialogBounds_SearchDialog">
+		<item value="594" key="DIALOG_WIDTH"/>
+		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<item value="515" key="DIALOG_HEIGHT"/>
+		<item value="43" key="DIALOG_Y_ORIGIN"/>
+		<item value="353" key="DIALOG_X_ORIGIN"/>
 	</section>
 </section>

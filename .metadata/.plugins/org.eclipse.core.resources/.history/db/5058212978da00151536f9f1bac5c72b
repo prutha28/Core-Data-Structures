@@ -1,9 +1,0 @@
-package binary.search.trees;
-
-public class BinarySearchTreeTest {
-
-	public static void main( String[] args) {
-		BinarySearchTrees bst = new BinarySearchTrees() ;
-		bst.insert(bst.root, 1) ;
-	}
-}

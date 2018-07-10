@@ -1,5 +1,0 @@
-package arrays.sorted;
-
-public class FullArrayException extends Exception {
-
-}

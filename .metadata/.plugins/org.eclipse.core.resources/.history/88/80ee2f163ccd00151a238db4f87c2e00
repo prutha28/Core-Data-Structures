@@ -1,5 +1,0 @@
-package queues.using.arrays;
-
-public class QueueFullException extends Exception {
-
-}
